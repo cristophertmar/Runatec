@@ -1,0 +1,95 @@
+﻿
+@{
+    ViewBag.Title = "CuentasCliente";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link href="~/Content/CrearCuenta/cuentascliente.css?v=@ViewData["qversion"]" rel="stylesheet" />
+        <link href="~/Content/jquery-ui.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div>
+            <input id="version_v" value=@ViewData["qversion"] style="display:none">
+        </div>
+        <table class="tabla_inputs">
+
+            <tr>
+                <td>Nombres:</td>
+                <td><input type="text" id="txt_nombres"/></td>
+
+                <td><label>Estado:</label></td>
+                <td>
+                    <select id="select_estado" style="width:250px;">
+                        <option value="">TODOS</option>
+                        <option value="ACTIVO">ACTIVO</option>
+                        <option value="INACTIVO">INACTIVO</option>
+                        <option value="PENDIENTE">PENDIENTE DE APROBACIÓN</option>
+                    </select>
+                </td>
+                <td>
+                    <button class="boton" id="btnBuscar" style="cursor:pointer; margin-left:20px;">Buscar</button>
+                </td>
+            </tr>
+
+        </table>
+        <table class="tabla_carga">
+            <thead>
+                <tr>
+                    <td>Fecha de Creación</td>
+                    <td style="display:none;">Id Usuario</td>
+                    <td>Perfil</td>
+                    <td>Usuario</td>
+                    <td>Nombres/Razón Social</td>
+                    <td>Sexo</td>
+                    <td>E-mail</td>
+                    <td>Estado</td>
+                    <td>Por Calificar</td>
+                </tr>
+            </thead>
+            <tbody id="GridListar">
+
+            </tbody>
+        </table>
+        <div style="margin:20px auto; text-align:center;" id="aviso"></div>
+        <div id="div_paginacion" class="div_paginacion"></div>
+
+        <div id="fondoPopup" class="fondo">&nbsp;</div>
+        @*popup de Confirmación*@
+        <div id="PopupConfirmar" class="contenedorpopup" style="overflow:hidden">
+            <div id="PopupConfirmardivheader" style="width:100%;">
+                <table style="width:100% ; border-spacing:0px 0px; ">
+                    <tr onmouseover="this.style.cursor='move'">
+                        <td style="padding-left:75px;"></td>
+                        <td id="CerrarPopupConfirmar" style="text-align:right;">
+                            
+                            <span><i class="fas fa-times iconocerrar" onclick="CerrarPopupConfirmar();"></i></span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <table>
+                    <tr>
+                        <td colspan="2" class="titulo">¿Qué desea realizar?</td>
+                    </tr>
+                    <tr>
+                        <td><button id="btn_aprobar" class="botoncalificar">Aprobar</button></td>
+                        <td><button id="btn_rechazar" class="botoncalificar">Rechazar</button></td>
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+
+        <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+        <script src="~/Scripts/icons.js"></script>
+        <script src="~/Scripts/jquery-ui.min.js"></script>
+        <script src="~/Scripts/Suscripcion/cuentascliente.js?v=@ViewData["qversion"]"></script>
+
+    </body>
+</html>
+

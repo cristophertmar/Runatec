@@ -1,0 +1,294 @@
+I:\Fuentes\CreatecR\RunatecAdmin_20191211\CapaDatos\bin\Release\CapaDatos.dll
+I:\Fuentes\CreatecR\RunatecAdmin_20191211\CapaDatos\bin\Release\CapaDatos.pdb
+I:\Fuentes\CreatecR\RunatecAdmin_20191211\CapaDatos\bin\Release\Entidad.dll
+I:\Fuentes\CreatecR\RunatecAdmin_20191211\CapaDatos\bin\Release\Entidad.pdb
+I:\Fuentes\CreatecR\RunatecAdmin_20191211\CapaDatos\obj\Release\CapaDatos.csprojResolveAssemblyReference.cache
+I:\Fuentes\CreatecR\RunatecAdmin_20191211\CapaDatos\obj\Release\CapaDatos.dll
+I:\Fuentes\CreatecR\RunatecAdmin_20191211\CapaDatos\obj\Release\CapaDatos.pdb
+J:\fuentes\MINAGRI\RUNATEC_ADMIN\Ambiente_Desarrollo\Runatec_20200127 v3\CapaDatos\bin\Release\CapaDatos.dll
+J:\fuentes\MINAGRI\RUNATEC_ADMIN\Ambiente_Desarrollo\Runatec_20200127 v3\CapaDatos\bin\Release\CapaDatos.pdb
+J:\fuentes\MINAGRI\RUNATEC_ADMIN\Ambiente_Desarrollo\Runatec_20200127 v3\CapaDatos\bin\Release\Entidad.dll
+J:\fuentes\MINAGRI\RUNATEC_ADMIN\Ambiente_Desarrollo\Runatec_20200127 v3\CapaDatos\bin\Release\Newtonsoft.Json.dll
+J:\fuentes\MINAGRI\RUNATEC_ADMIN\Ambiente_Desarrollo\Runatec_20200127 v3\CapaDatos\bin\Release\RestSharp.dll
+J:\fuentes\MINAGRI\RUNATEC_ADMIN\Ambiente_Desarrollo\Runatec_20200127 v3\CapaDatos\bin\Release\Entidad.pdb
+J:\fuentes\MINAGRI\RUNATEC_ADMIN\Ambiente_Desarrollo\Runatec_20200127 v3\CapaDatos\bin\Release\Newtonsoft.Json.xml
+J:\fuentes\MINAGRI\RUNATEC_ADMIN\Ambiente_Desarrollo\Runatec_20200127 v3\CapaDatos\bin\Release\RestSharp.xml
+J:\fuentes\MINAGRI\RUNATEC_ADMIN\Ambiente_Desarrollo\Runatec_20200127 v3\CapaDatos\obj\Release\CapaDatos.csprojResolveAssemblyReference.cache
+J:\fuentes\MINAGRI\RUNATEC_ADMIN\Ambiente_Desarrollo\Runatec_20200127 v3\CapaDatos\obj\Release\CapaDatos.dll
+J:\fuentes\MINAGRI\RUNATEC_ADMIN\Ambiente_Desarrollo\Runatec_20200127 v3\CapaDatos\obj\Release\CapaDatos.pdb
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Runatec\Runatec_20200127 v3\CapaDatos\bin\Release\CapaDatos.dll
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Runatec\Runatec_20200127 v3\CapaDatos\bin\Release\CapaDatos.pdb
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Runatec\Runatec_20200127 v3\CapaDatos\bin\Release\Entidad.dll
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Runatec\Runatec_20200127 v3\CapaDatos\bin\Release\Newtonsoft.Json.dll
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Runatec\Runatec_20200127 v3\CapaDatos\bin\Release\RestSharp.dll
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Runatec\Runatec_20200127 v3\CapaDatos\bin\Release\Entidad.pdb
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Runatec\Runatec_20200127 v3\CapaDatos\bin\Release\Newtonsoft.Json.xml
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Runatec\Runatec_20200127 v3\CapaDatos\bin\Release\RestSharp.xml
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Runatec\Runatec_20200127 v3\CapaDatos\obj\Release\CapaDatos.csprojResolveAssemblyReference.cache
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Runatec\Runatec_20200127 v3\CapaDatos\obj\Release\CapaDatos.dll
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Runatec\Runatec_20200127 v3\CapaDatos\obj\Release\CapaDatos.pdb
+J:\fuentes\MINAGRI\RUNATEC_ADMIN\Ambiente_Desarrollo\Runatec_20200203\CapaDatos\bin\Release\CapaDatos.dll
+J:\fuentes\MINAGRI\RUNATEC_ADMIN\Ambiente_Desarrollo\Runatec_20200203\CapaDatos\bin\Release\CapaDatos.pdb
+J:\fuentes\MINAGRI\RUNATEC_ADMIN\Ambiente_Desarrollo\Runatec_20200203\CapaDatos\bin\Release\Entidad.dll
+J:\fuentes\MINAGRI\RUNATEC_ADMIN\Ambiente_Desarrollo\Runatec_20200203\CapaDatos\bin\Release\Newtonsoft.Json.dll
+J:\fuentes\MINAGRI\RUNATEC_ADMIN\Ambiente_Desarrollo\Runatec_20200203\CapaDatos\bin\Release\RestSharp.dll
+J:\fuentes\MINAGRI\RUNATEC_ADMIN\Ambiente_Desarrollo\Runatec_20200203\CapaDatos\bin\Release\Entidad.pdb
+J:\fuentes\MINAGRI\RUNATEC_ADMIN\Ambiente_Desarrollo\Runatec_20200203\CapaDatos\bin\Release\Newtonsoft.Json.xml
+J:\fuentes\MINAGRI\RUNATEC_ADMIN\Ambiente_Desarrollo\Runatec_20200203\CapaDatos\bin\Release\RestSharp.xml
+J:\fuentes\MINAGRI\RUNATEC_ADMIN\Ambiente_Desarrollo\Runatec_20200203\CapaDatos\obj\Release\CapaDatos.csprojResolveAssemblyReference.cache
+J:\fuentes\MINAGRI\RUNATEC_ADMIN\Ambiente_Desarrollo\Runatec_20200203\CapaDatos\obj\Release\CapaDatos.dll
+J:\fuentes\MINAGRI\RUNATEC_ADMIN\Ambiente_Desarrollo\Runatec_20200203\CapaDatos\obj\Release\CapaDatos.pdb
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Runatec\Runatec_20200204\CapaDatos\bin\Release\CapaDatos.dll
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Runatec\Runatec_20200204\CapaDatos\bin\Release\CapaDatos.pdb
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Runatec\Runatec_20200204\CapaDatos\bin\Release\Entidad.dll
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Runatec\Runatec_20200204\CapaDatos\bin\Release\Newtonsoft.Json.dll
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Runatec\Runatec_20200204\CapaDatos\bin\Release\RestSharp.dll
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Runatec\Runatec_20200204\CapaDatos\bin\Release\Entidad.pdb
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Runatec\Runatec_20200204\CapaDatos\bin\Release\Newtonsoft.Json.xml
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Runatec\Runatec_20200204\CapaDatos\bin\Release\RestSharp.xml
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Runatec\Runatec_20200204\CapaDatos\obj\Release\CapaDatos.csprojResolveAssemblyReference.cache
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Runatec\Runatec_20200204\CapaDatos\obj\Release\CapaDatos.dll
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Runatec\Runatec_20200204\CapaDatos\obj\Release\CapaDatos.pdb
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Runatec\Runatec_20200205\CapaDatos\bin\Release\CapaDatos.dll
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Runatec\Runatec_20200205\CapaDatos\bin\Release\CapaDatos.pdb
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Runatec\Runatec_20200205\CapaDatos\bin\Release\Entidad.dll
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Runatec\Runatec_20200205\CapaDatos\bin\Release\Newtonsoft.Json.dll
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Runatec\Runatec_20200205\CapaDatos\bin\Release\RestSharp.dll
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Runatec\Runatec_20200205\CapaDatos\bin\Release\Entidad.pdb
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Runatec\Runatec_20200205\CapaDatos\bin\Release\Newtonsoft.Json.xml
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Runatec\Runatec_20200205\CapaDatos\bin\Release\RestSharp.xml
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Runatec\Runatec_20200205\CapaDatos\obj\Release\CapaDatos.csprojResolveAssemblyReference.cache
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Runatec\Runatec_20200205\CapaDatos\obj\Release\CapaDatos.dll
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Runatec\Runatec_20200205\CapaDatos\obj\Release\CapaDatos.pdb
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Runatec\Runatec_20200211\CapaDatos\bin\Release\CapaDatos.dll
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Runatec\Runatec_20200211\CapaDatos\bin\Release\CapaDatos.pdb
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Runatec\Runatec_20200211\CapaDatos\bin\Release\Entidad.dll
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Runatec\Runatec_20200211\CapaDatos\bin\Release\Newtonsoft.Json.dll
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Runatec\Runatec_20200211\CapaDatos\bin\Release\RestSharp.dll
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Runatec\Runatec_20200211\CapaDatos\bin\Release\Entidad.pdb
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Runatec\Runatec_20200211\CapaDatos\bin\Release\Newtonsoft.Json.xml
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Runatec\Runatec_20200211\CapaDatos\bin\Release\RestSharp.xml
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Runatec\Runatec_20200211\CapaDatos\obj\Release\CapaDatos.csprojResolveAssemblyReference.cache
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Runatec\Runatec_20200211\CapaDatos\obj\Release\CapaDatos.dll
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Runatec\Runatec_20200211\CapaDatos\obj\Release\CapaDatos.pdb
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Runatec\Runatec_20200213\CapaDatos\bin\Release\CapaDatos.dll
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Runatec\Runatec_20200213\CapaDatos\bin\Release\CapaDatos.pdb
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Runatec\Runatec_20200213\CapaDatos\bin\Release\Entidad.dll
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Runatec\Runatec_20200213\CapaDatos\bin\Release\Newtonsoft.Json.dll
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Runatec\Runatec_20200213\CapaDatos\bin\Release\RestSharp.dll
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Runatec\Runatec_20200213\CapaDatos\bin\Release\Entidad.pdb
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Runatec\Runatec_20200213\CapaDatos\bin\Release\Newtonsoft.Json.xml
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Runatec\Runatec_20200213\CapaDatos\bin\Release\RestSharp.xml
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Runatec\Runatec_20200213\CapaDatos\obj\Release\CapaDatos.csprojResolveAssemblyReference.cache
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Runatec\Runatec_20200213\CapaDatos\obj\Release\CapaDatos.dll
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Runatec\Runatec_20200213\CapaDatos\obj\Release\CapaDatos.pdb
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Runatec\Runatec_20200214\CapaDatos\bin\Release\CapaDatos.dll
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Runatec\Runatec_20200214\CapaDatos\bin\Release\CapaDatos.pdb
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Runatec\Runatec_20200214\CapaDatos\bin\Release\Entidad.dll
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Runatec\Runatec_20200214\CapaDatos\bin\Release\Newtonsoft.Json.dll
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Runatec\Runatec_20200214\CapaDatos\bin\Release\RestSharp.dll
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Runatec\Runatec_20200214\CapaDatos\bin\Release\Entidad.pdb
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Runatec\Runatec_20200214\CapaDatos\bin\Release\Newtonsoft.Json.xml
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Runatec\Runatec_20200214\CapaDatos\bin\Release\RestSharp.xml
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Runatec\Runatec_20200214\CapaDatos\obj\Release\CapaDatos.csprojResolveAssemblyReference.cache
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Runatec\Runatec_20200214\CapaDatos\obj\Release\CapaDatos.dll
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Runatec\Runatec_20200214\CapaDatos\obj\Release\CapaDatos.pdb
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Runatec\Runatec_20200219\CapaDatos\bin\Release\CapaDatos.dll
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Runatec\Runatec_20200219\CapaDatos\bin\Release\CapaDatos.pdb
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Runatec\Runatec_20200219\CapaDatos\bin\Release\Entidad.dll
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Runatec\Runatec_20200219\CapaDatos\bin\Release\Newtonsoft.Json.dll
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Runatec\Runatec_20200219\CapaDatos\bin\Release\RestSharp.dll
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Runatec\Runatec_20200219\CapaDatos\bin\Release\Entidad.pdb
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Runatec\Runatec_20200219\CapaDatos\bin\Release\Newtonsoft.Json.xml
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Runatec\Runatec_20200219\CapaDatos\bin\Release\RestSharp.xml
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Runatec\Runatec_20200219\CapaDatos\obj\Release\CapaDatos.csprojResolveAssemblyReference.cache
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Runatec\Runatec_20200219\CapaDatos\obj\Release\CapaDatos.dll
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Runatec\Runatec_20200219\CapaDatos\obj\Release\CapaDatos.pdb
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200220\CapaDatos\bin\Release\CapaDatos.dll
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200220\CapaDatos\bin\Release\CapaDatos.pdb
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200220\CapaDatos\bin\Release\Entidad.dll
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200220\CapaDatos\bin\Release\Newtonsoft.Json.dll
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200220\CapaDatos\bin\Release\RestSharp.dll
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200220\CapaDatos\bin\Release\Entidad.pdb
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200220\CapaDatos\bin\Release\Newtonsoft.Json.xml
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200220\CapaDatos\bin\Release\RestSharp.xml
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200220\CapaDatos\obj\Release\CapaDatos.csprojResolveAssemblyReference.cache
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200220\CapaDatos\obj\Release\CapaDatos.dll
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200220\CapaDatos\obj\Release\CapaDatos.pdb
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200220 v3\CapaDatos\bin\Release\CapaDatos.dll
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200220 v3\CapaDatos\bin\Release\CapaDatos.pdb
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200220 v3\CapaDatos\bin\Release\Entidad.dll
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200220 v3\CapaDatos\bin\Release\Newtonsoft.Json.dll
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200220 v3\CapaDatos\bin\Release\RestSharp.dll
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200220 v3\CapaDatos\bin\Release\Entidad.pdb
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200220 v3\CapaDatos\bin\Release\Newtonsoft.Json.xml
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200220 v3\CapaDatos\bin\Release\RestSharp.xml
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200220 v3\CapaDatos\obj\Release\CapaDatos.csprojResolveAssemblyReference.cache
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200220 v3\CapaDatos\obj\Release\CapaDatos.dll
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200220 v3\CapaDatos\obj\Release\CapaDatos.pdb
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200225\CapaDatos\bin\Release\CapaDatos.dll
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200225\CapaDatos\bin\Release\CapaDatos.pdb
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200225\CapaDatos\bin\Release\Entidad.dll
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200225\CapaDatos\bin\Release\Newtonsoft.Json.dll
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200225\CapaDatos\bin\Release\RestSharp.dll
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200225\CapaDatos\bin\Release\Entidad.pdb
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200225\CapaDatos\bin\Release\Newtonsoft.Json.xml
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200225\CapaDatos\bin\Release\RestSharp.xml
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200225\CapaDatos\obj\Release\CapaDatos.csprojResolveAssemblyReference.cache
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200225\CapaDatos\obj\Release\CapaDatos.dll
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200225\CapaDatos\obj\Release\CapaDatos.pdb
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200228\CapaDatos\bin\Release\CapaDatos.dll
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200228\CapaDatos\bin\Release\CapaDatos.pdb
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200228\CapaDatos\bin\Release\Entidad.dll
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200228\CapaDatos\bin\Release\Newtonsoft.Json.dll
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200228\CapaDatos\bin\Release\RestSharp.dll
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200228\CapaDatos\bin\Release\Entidad.pdb
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200228\CapaDatos\bin\Release\Newtonsoft.Json.xml
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200228\CapaDatos\bin\Release\RestSharp.xml
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200228\CapaDatos\obj\Release\CapaDatos.csprojResolveAssemblyReference.cache
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200228\CapaDatos\obj\Release\CapaDatos.dll
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200228\CapaDatos\obj\Release\CapaDatos.pdb
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200304\CapaDatos\bin\Release\CapaDatos.dll
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200304\CapaDatos\bin\Release\CapaDatos.pdb
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200304\CapaDatos\bin\Release\Entidad.dll
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200304\CapaDatos\bin\Release\Newtonsoft.Json.dll
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200304\CapaDatos\bin\Release\RestSharp.dll
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200304\CapaDatos\bin\Release\Entidad.pdb
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200304\CapaDatos\bin\Release\Newtonsoft.Json.xml
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200304\CapaDatos\bin\Release\RestSharp.xml
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200304\CapaDatos\obj\Release\CapaDatos.csprojResolveAssemblyReference.cache
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200304\CapaDatos\obj\Release\CapaDatos.dll
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200304\CapaDatos\obj\Release\CapaDatos.pdb
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200312\CapaDatos\bin\Release\CapaDatos.dll
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200312\CapaDatos\bin\Release\CapaDatos.pdb
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200312\CapaDatos\bin\Release\Entidad.dll
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200312\CapaDatos\bin\Release\Newtonsoft.Json.dll
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200312\CapaDatos\bin\Release\RestSharp.dll
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200312\CapaDatos\bin\Release\Entidad.pdb
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200312\CapaDatos\bin\Release\Newtonsoft.Json.xml
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200312\CapaDatos\bin\Release\RestSharp.xml
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200312\CapaDatos\obj\Release\CapaDatos.csprojResolveAssemblyReference.cache
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200312\CapaDatos\obj\Release\CapaDatos.dll
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200312\CapaDatos\obj\Release\CapaDatos.pdb
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200611\CapaDatos\bin\Release\CapaDatos.dll
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200611\CapaDatos\bin\Release\CapaDatos.pdb
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200611\CapaDatos\bin\Release\Entidad.dll
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200611\CapaDatos\bin\Release\Newtonsoft.Json.dll
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200611\CapaDatos\bin\Release\RestSharp.dll
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200611\CapaDatos\bin\Release\Entidad.pdb
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200611\CapaDatos\bin\Release\Newtonsoft.Json.xml
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200611\CapaDatos\bin\Release\RestSharp.xml
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200611\CapaDatos\obj\Release\CapaDatos.csprojResolveAssemblyReference.cache
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200611\CapaDatos\obj\Release\CapaDatos.dll
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200611\CapaDatos\obj\Release\CapaDatos.pdb
+D:\vs\Chaskis\Runatec_20200626\CapaDatos\bin\Release\CapaDatos.dll
+D:\vs\Chaskis\Runatec_20200626\CapaDatos\bin\Release\CapaDatos.pdb
+D:\vs\Chaskis\Runatec_20200626\CapaDatos\bin\Release\Entidad.dll
+D:\vs\Chaskis\Runatec_20200626\CapaDatos\bin\Release\Newtonsoft.Json.dll
+D:\vs\Chaskis\Runatec_20200626\CapaDatos\bin\Release\RestSharp.dll
+D:\vs\Chaskis\Runatec_20200626\CapaDatos\bin\Release\Entidad.pdb
+D:\vs\Chaskis\Runatec_20200626\CapaDatos\bin\Release\Newtonsoft.Json.xml
+D:\vs\Chaskis\Runatec_20200626\CapaDatos\bin\Release\RestSharp.xml
+D:\vs\Chaskis\Runatec_20200626\CapaDatos\obj\Release\CapaDatos.csprojAssemblyReference.cache
+D:\vs\Chaskis\Runatec_20200626\CapaDatos\obj\Release\CapaDatos.csproj.CopyComplete
+D:\vs\Chaskis\Runatec_20200626\CapaDatos\obj\Release\CapaDatos.dll
+D:\vs\Chaskis\Runatec_20200626\CapaDatos\obj\Release\CapaDatos.pdb
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200707\CapaDatos\bin\Release\CapaDatos.dll
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200707\CapaDatos\bin\Release\CapaDatos.pdb
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200707\CapaDatos\bin\Release\Entidad.dll
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200707\CapaDatos\bin\Release\Newtonsoft.Json.dll
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200707\CapaDatos\bin\Release\RestSharp.dll
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200707\CapaDatos\bin\Release\Entidad.pdb
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200707\CapaDatos\bin\Release\Newtonsoft.Json.xml
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200707\CapaDatos\bin\Release\RestSharp.xml
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200707\CapaDatos\obj\Release\CapaDatos.csprojResolveAssemblyReference.cache
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200707\CapaDatos\obj\Release\CapaDatos.dll
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200707\CapaDatos\obj\Release\CapaDatos.pdb
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200807\CapaDatos\bin\Release\CapaDatos.dll
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200807\CapaDatos\bin\Release\CapaDatos.pdb
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200807\CapaDatos\bin\Release\Entidad.dll
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200807\CapaDatos\bin\Release\Newtonsoft.Json.dll
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200807\CapaDatos\bin\Release\RestSharp.dll
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200807\CapaDatos\bin\Release\Entidad.pdb
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200807\CapaDatos\bin\Release\Newtonsoft.Json.xml
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200807\CapaDatos\bin\Release\RestSharp.xml
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200807\CapaDatos\obj\Release\CapaDatos.csprojResolveAssemblyReference.cache
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200807\CapaDatos\obj\Release\CapaDatos.dll
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200807\CapaDatos\obj\Release\CapaDatos.pdb
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200812\CapaDatos\bin\Release\CapaDatos.dll
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200812\CapaDatos\bin\Release\CapaDatos.pdb
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200812\CapaDatos\bin\Release\Entidad.dll
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200812\CapaDatos\bin\Release\Newtonsoft.Json.dll
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200812\CapaDatos\bin\Release\RestSharp.dll
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200812\CapaDatos\bin\Release\Entidad.pdb
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200812\CapaDatos\bin\Release\Newtonsoft.Json.xml
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200812\CapaDatos\bin\Release\RestSharp.xml
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200812\CapaDatos\obj\Release\CapaDatos.csprojResolveAssemblyReference.cache
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200812\CapaDatos\obj\Release\CapaDatos.dll
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200812\CapaDatos\obj\Release\CapaDatos.pdb
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200901\CapaDatos\bin\Release\CapaDatos.dll
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200901\CapaDatos\bin\Release\CapaDatos.pdb
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200901\CapaDatos\bin\Release\Entidad.dll
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200901\CapaDatos\bin\Release\Newtonsoft.Json.dll
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200901\CapaDatos\bin\Release\RestSharp.dll
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200901\CapaDatos\bin\Release\Entidad.pdb
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200901\CapaDatos\bin\Release\Newtonsoft.Json.xml
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200901\CapaDatos\bin\Release\RestSharp.xml
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200901\CapaDatos\obj\Release\CapaDatos.csprojResolveAssemblyReference.cache
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200901\CapaDatos\obj\Release\CapaDatos.dll
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200901\CapaDatos\obj\Release\CapaDatos.pdb
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200902\CapaDatos\bin\Release\CapaDatos.dll
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200902\CapaDatos\bin\Release\CapaDatos.pdb
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200902\CapaDatos\bin\Release\Entidad.dll
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200902\CapaDatos\bin\Release\Newtonsoft.Json.dll
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200902\CapaDatos\bin\Release\RestSharp.dll
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200902\CapaDatos\bin\Release\Entidad.pdb
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200902\CapaDatos\bin\Release\Newtonsoft.Json.xml
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200902\CapaDatos\bin\Release\RestSharp.xml
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200902\CapaDatos\obj\Release\CapaDatos.csprojResolveAssemblyReference.cache
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200902\CapaDatos\obj\Release\CapaDatos.dll
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200902\CapaDatos\obj\Release\CapaDatos.pdb
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200904\CapaDatos\bin\Release\CapaDatos.dll
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200904\CapaDatos\bin\Release\CapaDatos.pdb
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200904\CapaDatos\bin\Release\Entidad.dll
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200904\CapaDatos\bin\Release\Newtonsoft.Json.dll
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200904\CapaDatos\bin\Release\RestSharp.dll
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200904\CapaDatos\bin\Release\Entidad.pdb
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200904\CapaDatos\bin\Release\Newtonsoft.Json.xml
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200904\CapaDatos\bin\Release\RestSharp.xml
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200904\CapaDatos\obj\Release\CapaDatos.csprojResolveAssemblyReference.cache
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200904\CapaDatos\obj\Release\CapaDatos.dll
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20200904\CapaDatos\obj\Release\CapaDatos.pdb
+C:\Users\Shakira\Desktop\Runatec_20200929_KAMILA\CapaDatos\bin\Release\CapaDatos.dll
+C:\Users\Shakira\Desktop\Runatec_20200929_KAMILA\CapaDatos\bin\Release\CapaDatos.pdb
+C:\Users\Shakira\Desktop\Runatec_20200929_KAMILA\CapaDatos\bin\Release\Entidad.dll
+C:\Users\Shakira\Desktop\Runatec_20200929_KAMILA\CapaDatos\bin\Release\Newtonsoft.Json.dll
+C:\Users\Shakira\Desktop\Runatec_20200929_KAMILA\CapaDatos\bin\Release\RestSharp.dll
+C:\Users\Shakira\Desktop\Runatec_20200929_KAMILA\CapaDatos\bin\Release\Entidad.pdb
+C:\Users\Shakira\Desktop\Runatec_20200929_KAMILA\CapaDatos\bin\Release\Newtonsoft.Json.xml
+C:\Users\Shakira\Desktop\Runatec_20200929_KAMILA\CapaDatos\bin\Release\RestSharp.xml
+C:\Users\Shakira\Desktop\Runatec_20200929_KAMILA\CapaDatos\obj\Release\CapaDatos.csprojResolveAssemblyReference.cache
+C:\Users\Shakira\Desktop\Runatec_20200929_KAMILA\CapaDatos\obj\Release\CapaDatos.dll
+C:\Users\Shakira\Desktop\Runatec_20200929_KAMILA\CapaDatos\obj\Release\CapaDatos.pdb
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20201009\CapaDatos\bin\Release\CapaDatos.dll
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20201009\CapaDatos\bin\Release\CapaDatos.pdb
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20201009\CapaDatos\bin\Release\Entidad.dll
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20201009\CapaDatos\bin\Release\Newtonsoft.Json.dll
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20201009\CapaDatos\bin\Release\RestSharp.dll
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20201009\CapaDatos\bin\Release\Entidad.pdb
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20201009\CapaDatos\bin\Release\Newtonsoft.Json.xml
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20201009\CapaDatos\bin\Release\RestSharp.xml
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20201009\CapaDatos\obj\Release\CapaDatos.csprojResolveAssemblyReference.cache
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20201009\CapaDatos\obj\Release\CapaDatos.dll
+I:\Fuentes\Chaskis\Ambiente_Desarrollo\Chaskis\Runatec_20201009\CapaDatos\obj\Release\CapaDatos.pdb
+I:\Fuentes\Chaskis\Ambiente_Produccion\ChaskisWeb\Runatec_20201130\CapaDatos\bin\Release\CapaDatos.dll
+I:\Fuentes\Chaskis\Ambiente_Produccion\ChaskisWeb\Runatec_20201130\CapaDatos\bin\Release\CapaDatos.pdb
+I:\Fuentes\Chaskis\Ambiente_Produccion\ChaskisWeb\Runatec_20201130\CapaDatos\bin\Release\Entidad.dll
+I:\Fuentes\Chaskis\Ambiente_Produccion\ChaskisWeb\Runatec_20201130\CapaDatos\bin\Release\Newtonsoft.Json.dll
+I:\Fuentes\Chaskis\Ambiente_Produccion\ChaskisWeb\Runatec_20201130\CapaDatos\bin\Release\RestSharp.dll
+I:\Fuentes\Chaskis\Ambiente_Produccion\ChaskisWeb\Runatec_20201130\CapaDatos\bin\Release\Entidad.pdb
+I:\Fuentes\Chaskis\Ambiente_Produccion\ChaskisWeb\Runatec_20201130\CapaDatos\bin\Release\Newtonsoft.Json.xml
+I:\Fuentes\Chaskis\Ambiente_Produccion\ChaskisWeb\Runatec_20201130\CapaDatos\bin\Release\RestSharp.xml
+I:\Fuentes\Chaskis\Ambiente_Produccion\ChaskisWeb\Runatec_20201130\CapaDatos\obj\Release\CapaDatos.csprojResolveAssemblyReference.cache
+I:\Fuentes\Chaskis\Ambiente_Produccion\ChaskisWeb\Runatec_20201130\CapaDatos\obj\Release\CapaDatos.dll
+I:\Fuentes\Chaskis\Ambiente_Produccion\ChaskisWeb\Runatec_20201130\CapaDatos\obj\Release\CapaDatos.pdb

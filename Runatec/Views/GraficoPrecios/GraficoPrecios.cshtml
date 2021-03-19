@@ -1,0 +1,104 @@
+﻿
+@{
+    ViewBag.Title = "GraficoPrecios";
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/GraficoPrecios/graficoprecios.css?v=@ViewData["qversion"]" rel="stylesheet" />
+    <link href="~/Content/GraficoPrecios/multiselect.css?v=@ViewData["qversion"]" rel="stylesheet" />
+    <link href="~/Content/GraficoPrecios/multiselect2.css?v=@ViewData["qversion"]" rel="stylesheet" />
+    <script src="~/Scripts/GraficoPrecios/multiselect.js?v=@ViewData["qversion"]"></script>
+    <script src="~/Scripts/GraficoPrecios/multiselect2.js?v=@ViewData["qversion"]"></script>
+
+    <link href="~/Content/LayoutPublico/css/bootstrap-fullscreen-select.css" rel="stylesheet" />
+    <script src="~/Scripts/LayoutPublico/js/bootstrap-fullscreen-select.min.js"></script>
+
+</head>
+<body>
+    <div>
+        <input id="version_v" value=@ViewData["qversion"] style="display:none">
+    </div>
+
+    <div id="contenedor_total">
+        <div class="text-center"><label id="titulo" class="titulo"></label></div>
+        <div class="contenedor_select">
+            <div>
+                <label class="lab">Producto(s):</label>
+                <select class="form-control" multiple id="selectproductos"></select>
+            </div>
+            <div>
+                <label class="lab">Mercado(s):</label>
+                <select class="form-control" multiple id="selectmercados"></select>
+            </div>
+        </div>
+        
+        <div><label class="lab">Seleccione el tipo de periodo:</label></div>
+        <div>
+            <div><label><input type="radio" name="fecha" id="rb_rangofechas" class="form-check-input" value="1" />Por rango de fechas</label></div>
+            <div><label><input type="radio" name="fecha" id="rb_periodoatras" class="form-check-input" value="2" />Por periodo histórico</label></div>
+        </div>
+        <div style="display:none;" id="tr_rangofechas">
+            <div><label>Fecha Inicio:</label><input type="date" id="txt_fechainicio" class="form-control" readonly /></div>
+            <div><label>Fecha Fin:</label><input type="date" id="txt_fechafin" class="form-control" readonly /></div>
+        </div>
+        <div style="display:none;" id="tr_periodoatras">
+            <select id="select_periodoatras" class="form-control">
+                <option value="0">-- Seleccione periodo --</option>
+                <option value="1">1 mes atrás</option>
+                <option value="2">2 meses atrás</option>
+                <option value="3">3 meses atrás</option>
+                <option value="4">4 meses atrás</option>
+                <option value="5">5 meses atrás</option>
+                <option value="6">6 meses atrás</option>
+                <option value="7">7 meses atrás</option>
+            </select>
+        </div>
+        <div class="center"><a class="btn btn-success" id="btngraficar" onclick="Graficar();">Graficar</a></div>
+
+        <div class="contenedor_reporte">
+            <div id="grafico_precios"></div>
+            <!--Grafico Lineal-->
+        </div>
+
+        <div id="scrollToHere">
+        </div>
+
+        <div id="fondoPopup" class="fondoproceso">&nbsp;</div>
+        <div id="PopupEnProceso" class="ventanaproceso" style="overflow:hidden">
+            <div id="loading_wrap">
+                <img src="~/imagenes/CargaPrecios/loading.gif" />
+            </div>
+        </div>
+    </div>
+
+        <script>
+            $('#selectproductos').multiselect({
+                columns: 1,
+                title: 'Seleccionar',
+                search: true,
+            });
+            $('#selectmercados').multiselect2({
+                columns: 1,
+                title: 'Seleccionar',
+                search: true,
+            });
+            //Cuando el dispositivo es de menos de 700px de ancho se usa el select mobile
+            if ($(window).width() <= 700) {
+                $("#select_periodoatras").addClass("mobileSelect");
+                $('.mobileSelect').mobileSelect({
+                    animation: 'scale',
+                    animationSpeed: 400
+                });
+            }
+        </script>
+
+        <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+        <script src="~/Scripts/GraficoPrecios/graficoprecios.js?v=@ViewData["qversion"]"></script>
+
+        <script src="~/Scripts/font-all.js"></script>
+
+</body>
+</html>

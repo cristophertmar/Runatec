@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="~/imagenes/logoprincipal_chaskis.png" type="image/png" />
+    <title>@ViewBag.Title - Chaskis</title>
+    <link href="~/Content/Layout/layout.css?v=@ViewData["qversion"]" rel="stylesheet" />
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/Layout/layout.js?v=@ViewData["qversion"]"></script>
+    <script src="~/Scripts/icons.js"></script>
+</head>
+<body>
+
+    <div id="header">
+        @*<a href="../Menu/Menu"><img src="~/imagenes/logo2.png" /></a>*@
+        <a href="../Menu/Menu"><img src="~/imagenes/logoprincipal_chaskis.png" /></a>
+        <h1 id="titulo" style="margin-top:2%"></h1>
+        <div style="margin:auto 0;">
+            <a id="btncerrar" style="cursor:pointer;" onclick="CerrarSesion()"><i class="fas fa-power-off"></i><span style="padding-left:5px;">Cerrar Sesión</span></a><br />
+            <a id="version_l" style="color:#258924; font-size:12px;float:right;margin-top:10px;"></a>
+        </div>
+    </div>
+
+    <div id="contenedor">
+        <ul id="menu" class="nav"></ul>
+        @*<div id="buzon">
+            <span>
+                <img src="~/imagenes/buzon.png" title="Buzón" />
+                <label class="buzon_numero">1</label>
+
+            </span>
+        </div>*@
+    </div>
+
+    <div id="contenedorpagina" class="container body-content">
+        @RenderBody()
+    </div>
+    <div id="fondoPopup" class="fondoproceso">&nbsp;</div>
+    <div id="PopupEnProceso" class="ventanaproceso" style="overflow:hidden">
+        <div id="loading_wrap">
+            <img src="~/imagenes/CargaPrecios/loading.gif" />
+        </div>
+    </div>
+</body>
+</html>

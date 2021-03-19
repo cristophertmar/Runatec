@@ -1,0 +1,27 @@
+﻿.tablapreferencia{
+    padding-top:20px;
+}
+
+#tablaencabezado{
+    background-color:rgb(25,165,25);
+    padding:10px;
+    margin-left:20%;
+    margin-top:30px;
+    border-radius:5px;
+    width:55%;       
+}
+
+#tablaencabezado td{    
+    color:white;
+    padding:15px;    
+}
+
+td a{
+    padding:0 5px;
+    font-size:18px;
+    cursor:pointer;
+}
+td input{
+    outline:none;
+    background-color:#DEF3CA;
+}

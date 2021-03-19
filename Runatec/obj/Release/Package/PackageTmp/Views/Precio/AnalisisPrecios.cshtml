@@ -1,0 +1,83 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+
+    <link href="~/Content/CargaPrecios/analisisprecios.css?v=@ViewData["qversion"]" rel="stylesheet" />
+    <link href="~/Content/GraficoPrecios/multiselect.css" rel="stylesheet" />
+    <script src="~/Scripts/GraficoPrecios/multiselect.js"></script>
+
+    <title>Análisis de Promedios</title>
+</head>
+<body>
+    <div>
+        <input id="version_v" value=@ViewData["qversion"] style="display:none">
+    </div>
+    <div id="contenedor_total">
+        <div>
+            <div class="text-center"><label id="titulo" class="titulo"></label></div>
+        </div>
+
+    <div id="contenedor_filtros">
+
+        <div>
+            <label class="lab">Producto(s):</label>
+            <select name="selectproductos[]" multiple id="selectproductos"></select>
+        </div>
+        <div>
+            <label class="lab">Mercado:</label>
+            <select id="select_mercado" class="form-control"></select>
+        </div>
+        <div id="contenedor_fecha">
+            <div>
+                <label class="lab">Mes de Inicio:</label>
+                <input type="month" id="txt_fechainicio" class="form-control" />
+            </div>
+            <div>
+                <label class="lab">Mes de Fin:</label>
+                <input type="month" id="txt_fechafin" class="form-control" />
+            </div>
+        </div>
+        
+        <div>
+            <label class="lab">Amplitud:</label>
+            <select class="form-control" id="select_amplitud">
+                <option value="0">--Seleccionar--</option>
+                <option value="7">Semanal</option>
+                <option value="15">Quincenal</option>
+                <option value="30">Mensual</option>
+            </select>
+        </div>
+        <div>
+            <a id="btngraficar" class="btn btn-success" onclick="Graficar();"> Graficar </a>
+        </div>
+    </div>
+        
+        <figure class="highcharts-figure">
+            <div id="contenedor_grafico" class="contain"></div>
+        </figure>
+
+        <div id="scrollToHere">
+        </div>
+    </div>
+    <script>
+        $('#selectproductos').multiselect({
+            columns: 1,
+            title: 'Seleccionar',
+            search: true,
+        });
+
+    </script>
+
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/CargaPrecios/AnalisisPrecios.js?v=@ViewData["qversion"]"></script>
+    <script src="~/Scripts/font-all.js"></script>
+
+</body>
+</html>

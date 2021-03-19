@@ -1,0 +1,329 @@
+﻿
+@{
+    ViewBag.Title = "ListarUsuario";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Usuario</title>
+    <link href="~/Content/Mantenimiento/ListarUsuario.css?v=@ViewData["qversion"]" rel="stylesheet" />    
+    <link href="~/Content/jquery-ui.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div>
+        <input id="version_v" value=@ViewData["qversion"] style="display:none">
+    </div>
+    <div id="fondoPopup" class="fondo">&nbsp;</div>
+    @*popup usuario*@
+    <div id="PopupUsuario" class="ventana" style="overflow:hidden">
+        <div id="PopupUsuariodivheader" style="width:100%;">
+            <table style="width:100% ; border-spacing:0px 0px; ">
+                <tr style="background:rgb(25,165,25);" onmouseover="this.style.cursor='move'">
+                    <td style="width:100%; height:40px; text-align:center;">
+                        &nbsp;&nbsp;
+                        <span id="tituloPopup">&nbsp;</span>&nbsp;&nbsp;
+                    </td>
+                    <td id="CerrarPopupUsuario" onclick="CerrarPopupUsuario();">
+                        <span><i class="far fa-window-close iconocerrar"></i></span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <table class="tablapopup" style="margin:auto; padding:10px">
+                <tr style="display:none;">
+                    <td>Id Usuario</td>
+                    <td><input type="text" id="txt_nidusuario" /></td>
+                </tr>
+                <tr>
+                    <td>Tipo de documento:</td>
+                    <td>
+                        <select id="select_nidtipodocumento">
+                            <option value="0"> -- Seleccionar -- </option>
+                            <option value="1">DNI</option>
+                            <option value="2">RUC</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Número de documento:</td>
+                    <td><input type="text" id="txt_numerodocumento" onKeyPress="return soloNumeros(event)" /></td>
+                </tr>
+                <tr>
+                    <td>Nombres:</td>
+                    <td><input type="text" id="txt_nombres" onKeyPress="return soloLetras(event)" /></td>
+                </tr>
+                <tr>
+                    <td>Apellido Paterno:</td>
+                    <td><input type="text" id="txt_paterno" onKeyPress="return soloLetras(event)" /></td>
+                </tr>
+                <tr>
+                    <td>Apellido Materno:</td>
+                    <td><input type="text" id="txt_materno" onKeyPress="return soloLetras(event)" /></td>
+                </tr>
+                <tr>
+                    <td>Sexo:</td>
+                    <td>
+                        <select id="select_sexo">
+                            <option value="0"> -- Seleccionar -- </option>
+                            <option value="1"> Masculino </option>
+                            <option value="2"> Femenino</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Razón Social:</td>
+                    <td><input type="text" id="txt_razonsocial" /></td>
+                </tr>
+                <tr style="display:none;">
+                    <td>Usuario:</td>
+                    <td><input type="text" id="txt_usuario" /></td>
+                </tr>
+                <tr>
+                    <td>E-mail:</td>
+                    <td><input type="text" id="txt_email" /></td>
+                </tr>
+                <tr>
+                    <td>Teléfono:</td>
+                    <td><input type="text" id="txt_telefono" onKeyPress="return soloNumeros(event)" /></td>
+                </tr>
+                <tr>
+                    <td>Celular:</td>
+                    <td><input type="text" id="txt_celular" onKeyPress="return soloNumeros(event)" /></td>
+                </tr>
+                <tr>
+                    <td>Dirección:</td>
+                    <td><input type="text" id="txt_direccion" /></td>
+                </tr>
+                <tr>
+                    <td>Ubigeo:</td>
+                    <td style="display:none;"><input type="text" id="txt_idubigeo" /></td>
+                    <td><input type="text" id="txt_ubigeo" /></td>
+                </tr>
+                <tr>
+                    <td>Estado:</td>
+                    <td>
+                        <select id="select_estado"></select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Perfil:</td>
+                    <td>
+                        <select id="select_perfil">
+                        </select>
+                    </td>
+                </tr>
+            </table>
+            @*Asignar Categoria Mesa de Ayuda al usuario*@
+            <div id="contenedor_usucat_MA">
+                <button id="boton_acordeon" class="boton_acordeon">Mesa de Ayuda: Categorías a cargo.</button>
+                <div id="div_usucat_MA">
+                    <table class="centrar" id="tabla_usucat_MA">
+                        <tbody id="tbody_listar_categoriaMA">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+
+        </div>
+        <div>
+            <table style="margin:auto">
+                <tr>
+                    <td>
+                        <button id="btn_grabar" class="boton">Grabar</button>
+                    </td>
+                    <td>
+                        <button id="btn_cancelar" class="boton">Cancelar</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+    <!--Pop up preferencias-->
+    <div id="fondoPopup" class="fondo">&nbsp;</div>
+
+    <div id="PopupPreferencias" class="ventanapreferencia" style="overflow:hidden">
+        <div id="PopupPreferenciasdivheader" style="width:100%;">
+            <table style="width:100% ; border-spacing:0px 0px; ">
+                <tr  style="background:rgb(25,165,25);" onmouseover="this.style.cursor='move'">
+                    <td style="width:100%; height:50px; text-align:center;">
+                        &nbsp;&nbsp;
+                        <span id="tituloPopupPreferencias">&nbsp;</span>&nbsp;&nbsp;
+                    </td>
+                    <td id="CerrarPopupPreferencias" onclick="CerrarPopupPreferencias();">
+                        <span><i class="far fa-window-close iconocerrar"></i></span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <input type="text" id="txt_nidusuariopreferencia" style="display:none;"/>
+            <input type="text" id="txt_nombresusuariopreferencia" style="display:none;"/>
+            <div style="display:flex;"><label class="label_titulo">Mercados</label></div>
+            <!--Seccion Preferencias de mercados-->
+                    <div style="display:flex;">
+                        
+                        <!--Seccion mercados seleccionados en preferencias-->
+                        <table class="tabla_contenidomercados">
+                            <thead>
+                                <tr><td style="display:none;">Id</td><td class="titulospreferencia">Mercados preferidos</td></tr>
+                            </thead>
+                            <tbody id="contenidomercado">
+                                
+                            </tbody>
+                        </table>
+
+                        <table class="tabla_boton">
+                            <tr><td><button class="botonpreferencia" onclick="QuitarMercado();"><i title="Quitar" class="fas fa-angle-double-right"></i></button></td></tr>
+                            <tr><td><button class="botonpreferencia" onclick="AgregarMercado();"><i title="Agregar" class="fas fa-angle-double-left"></i></button></td></tr>
+                        </table>
+
+                        <!--Seccion mercados NO seleccionados en preferencias-->
+                        <table class="tabla_contenidomercados">
+                            <thead>
+                                <tr><td style="display:none;">Id</td><td class="titulospreferencia">Mercados no seleccionados</td></tr>
+                            </thead>
+                            <tbody id="contenido_nomercado"></tbody>
+
+                        </table>
+                    </div>
+            <div style="display:flex;"><label class="label_titulo">Productos</label></div>
+
+            <!--Seccion Preferencias de productos-->
+
+                    <div style="display:flex;">
+
+                        <!--Seccion productos seleccionados en preferencias-->
+                        <table class="tabla_contenidoproductos">
+                            <thead>
+                                <tr><td style="display:none;">Id</td><td id="titulo_productospreferidos" class="titulospreferencia"></td></tr>
+                            </thead>
+                            <tbody id="contenidoproducto"></tbody>
+                        </table>
+                        <table class="tabla_boton">
+                            <tr><td><button class="botonpreferencia" onclick="QuitarProducto();"><i title="Quitar" class="fas fa-angle-double-right"></i></button></td></tr>
+                            <tr><td><button class="botonpreferencia" onclick="AgregarProducto();"><i title="Agregar" class="fas fa-angle-double-left"></i></button></td></tr>
+                        </table>
+                        <!--Seccion productos NO seleccionados en preferencias-->
+                        <table class="tabla_contenidoproductos">
+                            <thead>
+                                <tr><td style="display:none;">Id</td><td class="titulospreferencia">Productos no seleccionados</td></tr>
+                            </thead>
+                            <tbody id="contenido_noproducto"></tbody>
+
+                        </table>
+
+                    </div>
+                </div>
+        </div>
+
+    @*listado usuarios*@
+    <table class="tabla_inputs">
+        <tr>
+            <td>
+                Nombres / Razón social
+            </td>
+
+            <td>
+                <input type="text" id="txt_buscarnombres" />
+            </td>
+            <td>
+                Celular:
+            </td>
+            <td>
+                <input type="text" id="txt_buscarcelular" />
+            </td>
+            <td>
+                Perfil:
+            </td>
+            <td>
+                <select id="select_buscarperfil"></select>
+            </td>
+            <td><button id="btn_buscar" class="boton">Buscar</button></td>
+
+        </tr>
+        
+    </table>
+    <table class="tabla_carga">
+        <thead>
+            <tr>
+                <td class="excepto"><button id="AgregarUsuario" class="boton"><i style="padding-right:3px; width:8px;" class="fas fa-plus"></i>Agregar</button></td>
+            </tr>
+            <tr>
+                <td>Perfil</td>
+                <td style="font-size:13px; width:120px;">Tipo Documento</td>
+                <td>Nro. Documento</td>
+                <td>Nombres / Razón social</td>
+                <td>Celular</td>
+                <td>Estado</td>
+                <td colspan="2"></td>
+            </tr>
+        </thead>
+        <tbody id="GridListar"></tbody>
+    </table>
+    <div id="div_paginacion" class="div_paginacion"></div>
+
+</body>
+</html>
+
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script src="~/Scripts/jquery-ui.min.js"></script>
+<script src="~/Scripts/Mantenimiento/ListarUsuario.js?v=@ViewData["qversion"]"></script>
+<script>
+                    //BUSQUEDA CON LISTA AUTOCOMPLETAR.
+
+                    $("#txt_ubigeo").autocomplete({
+                        source: function (request, response) {
+                            $.ajax({
+                                type: "POST",
+                                url: "../Services/AutocompletarUbigeo",
+                                data: "{vdescripcion:'" + $("#txt_ubigeo").val() + "'}",
+                                dataType: "json",
+                                contentType: "application/json; charset=utf-8",
+                                success: function (data) {
+                                    if (data.length > 0) {
+                                        response($.map(data, function (item) {
+                                            return {
+                                                label: item.vdescripcion,
+                                                value: item.nidubigeo
+
+                                            };
+                                        }));
+
+
+                                    }
+                                    else {
+                                        $("#txt_idubigeo").val(0);
+                                        $("#txt_ubigeo").val('');
+
+
+                                    }
+
+                                },
+                                failure: function (response) {
+                                    alert(response.d);
+                                },
+                                error: OnError
+                            })
+                        },
+                        select: function (event, ui) {
+                            event.preventDefault();
+                            $("#txt_idubigeo").val(ui.item.value);
+                            $("#txt_ubigeo").val(ui.item.label);
+                        },
+                        focus: function (event, ui) {
+                            event.preventDefault();
+                            $("#txt_idubigeo").val(ui.item.value);
+                            $("#txt_ubigeo").val(ui.item.label);
+                        }
+                    });
+</script>

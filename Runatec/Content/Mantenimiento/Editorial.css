@@ -1,0 +1,47 @@
+﻿.iconoeditar{
+    text-align:right;
+    cursor:pointer;
+}
+.centrar {
+    text-align: center;
+}
+textarea{
+    width:400px;
+    height:50px;
+    border-radius:5px;
+    padding:2px 5px;
+    outline:none;
+}
+#txt_contenido{
+    
+    height:100px;
+}
+.titulo{
+    font-size:13px;
+    padding:0!important;
+}
+#campo_imagen img{
+    width:180px;
+    margin:0;
+}
+
+#select_estado, #txt_fecha{
+    height:25px;
+}
+
+.file{
+    display:none;
+}
+
+.labelfile{
+    display:inline-block;
+    color:#808080;
+    cursor:pointer;
+    border:2px solid #808080;
+    padding:6px;
+    width:200px;
+}
+.labelfile:hover{
+    opacity:0.6;
+
+}

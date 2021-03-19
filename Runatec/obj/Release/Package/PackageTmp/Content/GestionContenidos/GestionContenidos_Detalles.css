@@ -1,0 +1,85 @@
+﻿.tablageneral{
+    width:80%;
+    margin:auto;
+}
+    .tablageneral tr td{
+        padding-bottom: 10px !important;
+    }
+#campo_imagen {
+    margin: 10px;
+}
+
+    #campo_imagen img {
+        margin: 15px;
+        height: 250px;
+    }
+
+.editartext {
+    padding: 20px !important;
+    border: solid 1px #cecece!important;
+    border-radius: 5px;
+    text-align:justify;
+}
+
+#titulo{
+        font-family: 'Lexend Deca', sans-serif;
+    font-weight:bold;
+        color: #258924;
+}
+
+a:hover{
+    text-decoration:none!important;
+}
+
+.boton{
+    font-family: 'Lexend Deca', sans-serif;
+    color:white;
+    border:none;
+	border-radius:5px;
+	background:rgba(25,165,25,.9);
+    outline:none;
+    cursor:pointer;
+    padding:15px;
+    margin:10px;
+    text-transform:uppercase;
+    font-size:12px;
+    height:auto;
+    width:150px;
+}
+.boton:hover{
+    background:rgba(25,165,25,.7);
+}
+.iconoeditar {
+    text-align: right;
+    cursor: pointer;
+}
+
+.centrar {
+    text-align: center;
+}
+
+.etiqueta {
+    font-size: 18px;
+    padding: 0 !important;
+    margin: 20px 10px 10px 25px !important;
+    color: #19a819;
+    font-weight: 500;
+}
+
+#campo_imagen img {
+    width: 320px;
+    margin: 15px;
+}
+
+    .boton:hover {
+        background: rgba(25,165,25,.7);
+    }
+
+@media (max-width: 700px) {
+    iframe {
+        width: 100%;
+    }
+    .etiqueta{
+        font-size:14px;
+    }
+}

@@ -1,0 +1,90 @@
+﻿#tablaencabezado{
+    background-color:rgb(25,165,25);
+    padding:10px;
+    margin-left:3%;
+    margin-top:30px;
+    margin-bottom:20px;
+    border-radius:5px;
+    width:94%;
+}
+#tablaencabezado td{    
+    color:white;
+    padding:10px;    
+}
+
+/*el width encabezado descripcion está en duro igual que sus td para que al hacer zoom no de descuadren uno del otro*/
+ .encdescripcion{
+    width:800px;
+}
+
+#GridListar tr .vlogdescripcion{
+    display:flex;
+    height:50px;
+    overflow-x:scroll;
+    width:810px;
+    white-space: nowrap;
+    
+}
+
+.boton_blanco{
+    background-color:white; 
+    color:rgb(25,165,25);
+    font-family: 'Lexend Deca', sans-serif;
+    border: none;
+    border-radius: 7px;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 12px;
+    
+}
+.boton_blanco:hover{
+    background-color:#f2f2f2;
+}
+
+input{
+    margin:0 8px;
+    display:block;
+    height:22px;
+	padding:0 10px;
+    border-width: 1px;
+    border-color: #cecece;
+	border-radius:25px;
+    font-size:14px;
+    outline:none;
+    font-family: 'Lexend Deca', sans-serif;
+    
+}
+[type="date"] {
+  background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  92% 50% no-repeat ;
+}
+[type="date"]::-webkit-inner-spin-button {
+  display: none;
+}
+[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+[type="date"] {
+    height: 25px;
+    border-radius: 25px;
+    outline: none;
+    padding: 0 10px;
+}
+
+label{
+    margin: 0 10px;
+}
+
+.boton{
+    font-family: 'Lexend Deca', sans-serif;
+    color:white;
+    border:none;
+	border-radius:7px;
+	background:rgba(25,165,25,.9);
+    outline:none;
+    cursor:pointer;
+    padding:10px 20px;
+    text-transform:uppercase;
+    font-size:12px;
+}

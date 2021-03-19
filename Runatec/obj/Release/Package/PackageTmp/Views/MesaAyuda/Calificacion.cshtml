@@ -1,0 +1,91 @@
+﻿
+@{
+    ViewBag.Title = "Calificación";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="~/Content/MesaAyuda/Calificacion.css?v=@ViewData["qversion"]" rel="stylesheet" />
+</head>
+<body>
+    <div>
+        <input id="version_v" value=@ViewData["qversion"] style="display:none">
+    </div>
+    <table class="tabla_inputs">
+        
+        <tr>
+            <td>Fecha Inicio:</td>
+            <td><input type="date" id="txt_fechainicio" /></td>
+            <td>Fecha Fin:</td>
+            <td><input type="date" id="txt_fechafin" /></td>
+            <td>Usuario:</td>
+            <td><input type="text" id="txt_usuario" /></td>
+            <td>Calificación:</td>
+            <td>
+                <select id="select_calificacion">
+                    <option value="0" style="color:black; font-size:15px;">-- Seleccionar --</option>
+                    <option value="1">★</option>
+                    <option value="2">★★</option>
+                    <option value="3">★★★</option>
+                    <option value="4">★★★★</option>
+                    <option value="5">★★★★★</option>
+                </select>
+            </td>
+            <td><button id="btn_buscar" class="boton" style="margin-left:15px;">Buscar</button></td>
+        </tr>
+    </table>
+    <table class="tabla_carga">
+        <thead>
+            <tr>
+                <td class="excepto"><button id="VerDetalle" class="boton"><i style="padding-right:3px; width:8px;" class="fas fa-list"></i>Ver Detalle</button></td>
+            </tr>
+            <tr>
+                <td>Cantidad</td>
+                <td>Usuario Administrador</td>
+                <td>Calificación</td>
+                <td></td>
+            </tr>
+        </thead>
+        <tbody id="tbody_listar"></tbody>
+    </table>
+    <div id="div_paginacion"></div>
+
+
+    <div id="fondoPopup" class="fondo">&nbsp;</div>
+    @*popup Detalle de Calificaciones*@
+    <div id="PopupCalificacion" class="ventana" style="overflow:hidden">
+        <div id="PopupCalificaciondivheader" style="width:100%;">
+            <table style="width:100% ; border-spacing:0px 0px; ">
+                <tr style="background:rgb(25,165,25);" onmouseover="this.style.cursor='move'">
+                    <td style="width:100%; height:40px; text-align:center;">
+                        &nbsp;&nbsp;
+                        <span id="tituloPopup">&nbsp;</span>&nbsp;&nbsp;
+                    </td>
+                    <td id="CerrarPopupCalificacion" onclick="CerrarPopupCalificacion();">
+                        <span><i class="far fa-window-close iconocerrar"></i></span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="div_tabladetalles">
+            <table class="tabladetalles">
+                <thead>
+                    <tr>
+                        <td>Fecha</td>
+                        <td>Usuario Productor</td>
+                        <td>Usuario Operador</td>
+                        <td>Categoría</td>
+                        <td>Calificación</td>
+                    </tr>
+                </thead>
+                <tbody id="tbody_detallecalificacion"></tbody>
+            </table>
+        </div>
+    </div>
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/MesaAyuda/Calificacion.js?v=@ViewData["qversion"]"></script>
+    <script src="~/Scripts/icons.js"></script>
+</body>
+</html>

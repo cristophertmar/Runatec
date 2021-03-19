@@ -1,0 +1,156 @@
+﻿
+@{
+    ViewBag.Title = "Noticia";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <link href="~/Content/jquery-ui.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-ui.min.js"></script>
+    <script src="~/Scripts/Mantenimiento/Noticia.js?v=@ViewData["qversion"]"></script>
+    <link href="~/Content/Mantenimiento/Noticia.css?v=@ViewData["qversion"]" rel="stylesheet" />
+</head>
+<body>
+    <div>
+        <input id="version_v" value=@ViewData["qversion"] style="display:none">
+    </div>
+
+    <table class="tabla_carga">
+        <thead>
+            <tr>
+                <td class="excepto"><button id="AgregarNoticia" class="boton"><i style="padding-right:3px; width:8px;" class="fas fa-plus"></i>Agregar</button></td>
+                <td class="excepto"><button id="PrioridadNoticia" class="boton"><i style="padding-right:3px; width:8px;" class="fas fa-sort-amount-up"></i>Ordenar Prioridad</button></td>
+            </tr>
+            <tr>
+                <td width="95">Fecha</td>
+                <td>Título</td>
+                <td>Comentario</td>
+                <td>Estado</td>
+                <td colspan="2"></td>
+            </tr>
+        </thead>
+        <tbody id="tablanoticia">
+        </tbody>
+    </table>
+
+    @*popup noticia*@
+    <div id="fondoPopup" class="fondo">&nbsp;</div>
+    <div id="PopupNoticia" class="ventana" style="overflow:hidden">
+        <div id="PopupNoticiadivheader" style="width:100%;">
+            <table style="width:100% ; border-spacing:0px 0px; ">
+                <tr style="background:rgb(25,165,25);" onmouseover="this.style.cursor='move'">
+                    <td style="width:100%; height:40px; text-align:center;">
+                        &nbsp;&nbsp;
+                        <span id="tituloPopup">&nbsp;</span>&nbsp;&nbsp;
+                    </td>
+                    <td id="CerrarPopupNoticia" onclick="CerrarPopupNoticia();">
+                        <span><i class="far fa-window-close iconocerrar"></i></span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <table class="tablapopup">
+                <tr style="display:none;"><td colspan="2"><input id="txt_idnoticia" /></td></tr>
+                <tr>
+                    <td colspan="2" id="campo_imagen" class="centrar"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="centrar">
+                        <label id="labelfile" for="txt_imagen" class="labelfile"><i class="fas fa-upload"></i> Elige una imagen</label>
+                        <input id="txt_imagen" class="file" type="file" accept="image/*" />
+
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="titulo">Título:</td>
+                </tr>
+                <tr>
+                    <td colspan="2"><textarea id="txt_titulo"></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="titulo">Link:</td>
+                </tr>
+                <tr>
+                    <td colspan="2"><textarea id="txt_link"></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="titulo">Contenido:</td>
+                </tr>
+                <tr>
+                    <td colspan="2"><textarea id="txt_contenido"></textarea></td>
+
+                </tr>
+                <tr>
+                    <td class="titulo">Estado:</td>
+                    <td class="titulo">Fecha:</td>
+                </tr>
+                <tr>
+                    <td>
+                        <select id="select_estado">
+                            <option value="">--Seleccionar--</option>
+                            <option value="0">INACTIVO</option>
+                            <option value="1">ACTIVO</option>
+                        </select>
+                    </td>
+                    <td><input type="date" id="txt_fecha" /></td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <table style="margin:auto">
+                <tr style="height:20px;"></tr>
+                <tr>
+                    <td>
+                        <input type="button" class="boton" id="GrabarNoticia" value="Grabar" />
+                    </td>
+                    <td>
+                        <input type="button" class="boton" onclick="CerrarPopupNoticia();" value="Cancelar" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    @*popup prioridad noticia*@
+    <div id="fondoPopup" class="fondo">&nbsp;</div>
+    <div id="PopupPrioridadNoticia" class="ventana" style="overflow:hidden">
+        <div id="PopupNoticiadivheader" style="width:100%;">
+            <table style="width:100% ; border-spacing:0px 0px; ">
+                <tr style="background:rgb(25,165,25);" onmouseover="this.style.cursor='move'">
+                    <td style="width:100%; height:40px; text-align:center;">
+                        &nbsp;&nbsp;
+                        <span id="tituloPopupPrioridad" style="text-transform: uppercase;font-size: 15px;color: white;">&nbsp;</span>&nbsp;&nbsp;
+                    </td>
+                    <td id="CerrarPopupPrioridadNoticia" onclick="CerrarPopupPrioridadNoticia();">
+                        <span><i class="far fa-window-close iconocerrar"></i></span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div style="display:flex;">
+            <table class="tabla_prioridad">
+                <thead>
+                    <tr>
+                        <td>N°</td>
+                        <td>Título</td>
+                    </tr>
+                </thead>
+                <tbody id="GridPopup"></tbody>
+
+            </table>
+            <div style="margin:auto 5%;">
+                <a title="Subir" onclick="SubirPrioridad();"><i style="cursor:pointer;" class="fas fa-arrow-up"></i></a><br />
+                <a title="Subir" onclick="BajarPrioridad();"><i style="cursor:pointer;" class="fas fa-arrow-down"></i></a>
+            </div>
+        </div>
+        <div>
+        </div>
+    </div>
+
+</body>
+</html>
+

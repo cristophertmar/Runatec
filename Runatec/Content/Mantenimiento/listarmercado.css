@@ -1,0 +1,15 @@
+﻿/*Reduce el tamaño del ancho, ya que la tabla tiene pocos campos*/
+.tablamercado{
+    max-width:90%;
+    padding-top:40px;
+}
+
+td a{
+    padding:0 5px;
+    font-size:18px;
+    cursor:pointer;
+}
+input{
+    width:360px;
+    height:18px;
+}

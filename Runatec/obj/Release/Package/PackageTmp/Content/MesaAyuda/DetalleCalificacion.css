@@ -1,0 +1,65 @@
+﻿.popupdetalle {
+    margin: 20px auto;
+}
+.popupdetalle tr{
+    height:28px;
+}
+textarea {
+    resize: none;
+}
+.popupdetalle textarea, .popupdetalle input {
+    width: 280px;
+    border-radius: 5px;
+    border: 1px solid;
+    border-color: #cecece;
+    padding: 0 5px;
+    background: white;
+    outline: none;
+}
+
+.popupdetalle input {
+    height: 23px;
+}
+#td_calificacion {
+    text-align: center;
+    color: gold;
+    font-size: 25px;
+    stroke: black;
+    stroke-width: 15px;
+    padding-bottom:15px;
+}
+[type="date"] {
+    background: #fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png) 92% 50% no-repeat;
+}
+
+    [type="date"]::-webkit-inner-spin-button {
+        display: none;
+    }
+
+    [type="date"]::-webkit-calendar-picker-indicator {
+        opacity: 0;
+    }
+
+[type="date"] {
+    height: 25px;
+    border-radius: 25px;
+    outline: none;
+    padding: 0 10px;
+    font-size: 14px;
+    border: 1px solid;
+    border-color: #cecece;
+}
+.tabla_inputs td input[type="text"], select {
+    display: block;
+    height: 25px;
+    padding: 0 10px;
+    border: 1px solid;
+    border-color: #cecece;
+    border-radius: 25px;
+    font-size: 14px;
+    outline: none;
+    font-family: 'Lexend Deca', sans-serif;
+}
+.tabla_inputs td{
+    padding-right:10px;
+}

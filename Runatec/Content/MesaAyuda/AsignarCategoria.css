@@ -1,0 +1,30 @@
+﻿body {
+}
+.centrar{
+    margin:auto;
+}
+select{
+    width:250px;
+    height:25px;
+}
+
+.titulo_categoria {
+    text-transform: uppercase;
+    background-color: rgb(25,165,25);
+    color: white;
+}
+
+.titulo_categoria td{
+    padding: 5px 10px;
+    text-align:center;
+}
+#td_box {
+    text-align: center;
+}
+.td_centrar {
+    text-align: center;
+    padding: 15px 0;
+}
+tbody td{
+    padding:5px 0;
+}

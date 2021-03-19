@@ -1,0 +1,59 @@
+﻿
+@{
+    ViewBag.Title = "ListarSMSEnviados";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="~/Content/Consulta/ListarSMSEnviados.css?v=@ViewData["qversion"]" rel="stylesheet" />
+</head>
+<body>
+    <div>
+        <input id="version_v" value=@ViewData["qversion"] style="display:none">
+    </div>
+    <table class="tabla_inputs">
+
+        <tr>
+            <td><label>Tipo:</label></td>
+            <td>
+                <input type="text" id="txt_tipo"/>
+            </td>
+
+            <td><label>Celular:</label></td>
+            <td>
+                <input type="text" id="txt_celular"/>
+            </td>
+
+            <td><label>Fecha:</label></td>
+            <td>
+                <input type="date" id="txt_fecha"/>
+            </td>
+
+            <td>
+                <button class="boton" type="button" id="btnBuscar" style="cursor:pointer">Buscar</button>
+            </td>
+
+        </tr>
+
+    </table>
+
+    <table class="tabla_carga">
+        <thead>
+            <tr>
+                <td>Usuario</td>
+                <td>Celular</td>
+                <td>Fecha</td>
+                <td>Tipo</td>
+                <td>Estado</td>
+                <td class="encdescripcion">Descripción</td>
+            </tr>
+        </thead>
+        <tbody id="GridListar"></tbody>
+    </table>
+    <div id="div_paginacion" class="div_paginacion"></div>
+    <script src="~/Scripts/Consulta/ListarSMSEnviados.js?v=@ViewData["qversion"]"></script>
+
+</body>
+</html>

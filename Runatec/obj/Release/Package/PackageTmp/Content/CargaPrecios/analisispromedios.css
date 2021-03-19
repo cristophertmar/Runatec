@@ -1,0 +1,177 @@
+﻿span{
+    margin:auto 10px;
+}
+.lab {
+    color: #258924;
+    margin: auto 0;
+}
+
+
+/*Select de productos*/
+#listaproducto label{
+    color:black;
+    font-size:12px;
+    width:650px;
+}
+#listaproducto{
+    width:650px;
+}
+
+#listaproducto{
+    z-index:1;
+    overflow:auto;
+    height:250px;
+    margin:auto 10px!important;
+}
+
+
+
+ul li a:hover{
+    text-decoration:none;
+}
+span:hover{
+    text-decoration:none;
+
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  float: left;
+  min-width: 160px;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  font-size: 14px;
+  list-style: none;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+          box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  background-clip: padding-box;
+}
+
+.open > .dropdown-menu {
+  display: block;
+}
+
+/*Select de productos*/
+button{
+    width:500px;
+        color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+    display: inline-block;
+    padding: 3px 12px;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.428571429;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid #bdbdbd;
+    border-radius: 4px;
+    outline:none;
+}
+
+#fecha{
+    height:auto;
+    margin:auto 10px;
+    outline:none;
+    padding: 3px 12px;
+    border: 1px solid #bdbdbd;
+    border-radius: 4px;
+
+}
+
+#grafico_precios{
+    margin: 3%;
+}
+/*Barra que contiene los elementos select, fecha y boton graficar*/
+.barra{
+    display: flex;
+    justify-content:flex-start;
+    margin:40px 50px;
+}
+
+#btngraficar {
+    padding: 12px 20px;
+    border-radius: 20px;
+    font-size: 12px;
+    color: #ffffff;
+    background-color: #19a819;
+    text-transform: uppercase;
+    margin: 0 0 0 20px;
+    cursor: pointer;
+
+}
+
+select{
+    display:block;
+    width:450px;
+    height:28px;
+	padding:0 10px;
+	border-radius:25px;
+    font-size:14px;
+    outline:none;
+    font-family: 'Lexend Deca', sans-serif;
+    margin:auto 10px;
+}
+
+[type="month"] {
+  background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  92% 50% no-repeat ;
+}
+[type="month"]::-webkit-inner-spin-button {
+  display: none;
+}
+[type="month"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+[type="month"]{
+    height:25px;
+    border-radius:25px;
+    outline:none;
+    padding:0 10px;
+    font-size:14px;
+    margin: auto 10px;
+}
+/*GRAFICO BARRAS*/
+.highcharts-figure, .highcharts-data-table table {
+    min-width: 360px; 
+    max-width: 800px;
+    margin: 1em auto;
+}
+
+.highcharts-data-table table {
+	font-family: Verdana, sans-serif;
+	border-collapse: collapse;
+	border: 1px solid #EBEBEB;
+	margin: 10px auto;
+	text-align: center;
+	width: 100%;
+	max-width: 500px;
+
+}
+.highcharts-data-table caption {
+    padding: 1em 0;
+    font-size: 1.2em;
+    color: #555;
+}
+.highcharts-data-table th {
+	font-weight: 600;
+    padding: 0.5em;
+}
+.highcharts-data-table td, .highcharts-data-table th, .highcharts-data-table caption {
+    padding: 0.5em;
+}
+.highcharts-data-table thead tr, .highcharts-data-table tr:nth-child(even) {
+    background: #f8f8f8;
+}
+.highcharts-data-table tr:hover {
+    background: #f1f7ff;
+}
+

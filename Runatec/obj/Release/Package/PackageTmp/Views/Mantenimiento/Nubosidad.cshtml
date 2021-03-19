@@ -1,0 +1,37 @@
+﻿
+@{
+    ViewBag.Title = "Nubosidad";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="~/Content/Mantenimiento/Clima.css?v=@ViewData["qversion"]" rel="stylesheet" />
+</head>
+<body>
+    <div>
+        <input id="version_v" value=@ViewData["qversion"] style="display:none">
+    </div>
+    <table class="tabla_carga">
+        <thead>
+            <tr>
+                <td class="excepto"><button id="AgregarNubosidad" class="boton"><i style="padding-right:3px; width:8px;" class="fas fa-plus"></i>Agregar</button></td>
+            </tr>
+            <tr>
+                <td>Fecha</td>
+                <td>Despejado</td>
+                <td>Mayormente Despejado</td>
+                <td>Parcialmente Nublado</td>
+                <td>Mayormente Nublado</td>
+                <td>Nublado</td>
+                <td colspan="3"></td>
+            </tr>
+        </thead>
+        <tbody id="tbody_listar"></tbody>
+    </table>
+    <div id="div_paginacion"></div>
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/Mantenimiento/Clima/Nubosidad.js?v=@ViewData["qversion"]"></script>
+</body>
+</html>

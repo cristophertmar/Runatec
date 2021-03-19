@@ -1,0 +1,47 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Iniciar Sesión</title>
+    <link rel="icon" href="~/imagenes/logoprincipal_chaskis.png" type="image/png" />
+    <link href="~/Content/Login/login.css?v=@ViewData["qversion"]" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div>
+        <input id="version_v" value=@ViewData["qversion"] style="display:none">
+    </div>
+    <div class="login1">
+        <div class="login2">
+            @*<img src="~/imagenes/login/logo.png"/>*@
+            <img style="width:200px; height:110px; margin-top:2%;" src="~/imagenes/logoprincipal_chaskis.png" />
+            <div id="formulario">
+
+                <form>
+                    <h2>Inicio de Sesión</h2>
+                    <div class="datos">
+                        <input id="txtusuario" type="text" placeholder="Escribe tu usuario." />
+                    </div>
+                    <div class="datos">
+                        <input id="txtpassword" type="password" placeholder="Escribe tu contraseña." />
+                    </div>
+                    <input type="button" id="btnlogin" value="Ingresar" />
+                    <h2><a href="../CrearCuenta/CrearCuenta" class="ocultar register_mobile">¿No estás registrado?</a></h2>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/Login/login.js?v=@ViewData["qversion"]"></script>
+
+</body>
+
+</html>
+

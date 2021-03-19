@@ -1,0 +1,185 @@
+﻿/* vietnamese */
+@font-face {
+    font-family: 'Lexend Deca';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Lexend Deca Regular'), local('LexendDeca-Regular'), url(https://fonts.gstatic.com/s/lexenddeca/v1/K2F1fZFYk-dHSE0UPPuwQ5qoJy_KZA.woff2) format('woff2');
+    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+    font-family: 'Lexend Deca';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Lexend Deca Regular'), local('LexendDeca-Regular'), url(https://fonts.gstatic.com/s/lexenddeca/v1/K2F1fZFYk-dHSE0UPPuwQ5qpJy_KZA.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: 'Lexend Deca';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Lexend Deca Regular'), local('LexendDeca-Regular'), url(https://fonts.gstatic.com/s/lexenddeca/v1/K2F1fZFYk-dHSE0UPPuwQ5qnJy8.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+body {
+    margin: 0px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 16px;
+    color:rgba(0,0,0,0.7);
+}
+table{
+    
+}
+
+.titulo{
+    text-align:center;
+}
+/* Encabezado e imagen */
+.div_head {
+    height:80px;
+    background-color: #19a819;
+    display: flex;
+    justify-content: space-between;
+}
+.div_head img{
+    height:60px;
+    margin:auto 10px;
+}
+/* Tablas */
+.centrartabla {
+    margin: 30px auto;
+    width: 55%;
+}
+
+/* Tabla que contiene los datos */
+.tablacontenidoservicio {
+    border-collapse: collapse;
+}
+.tablacontenidoservicio td {
+    border: none;
+    padding: 10px 5px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.tablacontenidoservicio tr:nth-child(even) {
+    background-color: #DEF3CA;
+}
+
+#head_calificacion {
+    padding-bottom:15px;
+}
+/* Línea entre el título y la sección de puntuación*/
+#tr_calificacion td {
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
+#tr_calificacion2 td {
+    padding-top: 10px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding-bottom: 20px;
+}
+#body_calificacion{
+    padding:15px 0;
+}
+/* Tabla que contiene la sección de puntuación */
+.tablacontenidocalificacion {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #dfdddd;
+}
+
+.tablacontenidocalificacion #tr_calificacion td {
+    padding-top: 20px;
+    margin:auto;
+}
+
+.centrar_td{
+    margin:auto;
+    text-align:center;
+}
+
+textarea {
+    outline: none;
+    width: 700px;
+    border-radius: 5px;
+    border: 1px solid;
+    border-color: #cecece;
+    padding: 5px;
+    resize: none;
+}
+
+.boton {
+    font-family: 'Lexend Deca', sans-serif;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    background: rgba(25,165,25,.9);
+    outline: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+/****************ESTRELLAS************************/
+
+.rate {
+    height: 200px;
+    width:500px;
+    margin:auto;
+}
+.rate h2 {
+    text-align:center;
+    font-size:35px;
+    margin:0;
+    letter-spacing:3px;
+}
+.rate p {
+    text-align: center;
+    font-size: 18px;
+}
+.label_star{
+    margin:0 15px;
+}
+.rate:not(:checked) > input {
+    position: absolute;
+}
+
+.rate:not(:checked) > label {
+    float: right;
+    width: 1em;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 70px;
+    color: #ccc;
+}
+
+.rate:not(:checked) > label:before {
+    content: '★ ';
+    font-size:70px;
+}
+
+.rate > input:checked ~ label {
+    color: #ffc700;
+    font-size: 70px;
+}
+
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;
+}
+
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #ffc700;
+}
+
+.ocultar{
+    display:none;
+}

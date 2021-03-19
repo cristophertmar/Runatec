@@ -1,0 +1,160 @@
+﻿/*input[type=text]{
+    display: block;
+    width:98%;
+    margin:15px;
+    padding: 5px 10px;
+    border-width: 1px;
+    border-color: #cecece;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+    font-family: 'Lexend Deca', sans-serif;
+}*/
+
+.iconoeditar{
+    text-align:right;
+    cursor:pointer;
+}
+.centrar {
+    text-align: center;
+}
+
+.combo{
+    margin:5px 15px 15px 0px;
+    padding:10px;
+    height:auto;
+    width:auto;
+    text-transform:uppercase;
+}
+
+#txt_titulo{
+    margin:5px 15px 15px 0px;
+    padding:10px;
+    width:98%;
+    height:auto;
+    border-radius:2px;
+    border:solid 1px #cecece;
+}
+
+#txt_descripcion{
+    width:98%;
+    height:80px;
+    border-radius:5px;
+    padding:10px 5px 10px 10px;
+    margin:10px 10px 10px 0px!important;
+    border:solid 1px #cecece;
+}
+
+/*BARRA DE TITULO*/
+#titulo{
+   font-family: 'Lexend Deca', sans-serif;
+   font-weight:bold;
+   color: #258924;
+}
+#btncerrar{
+    margin: 0px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 16px;
+    color: #258924;
+}
+
+
+/*--------------------------------*/
+
+.etiqueta{
+    font-size:13px;
+    padding:0!important;
+    margin:20px 10px 10px 15px;
+    color:rgb(25,165,25);
+}
+
+.file{
+    display:none;
+}
+
+.labelfile{
+    display:inline-block;
+    color:#808080;
+    cursor:pointer;
+    border:2px solid #808080;
+    padding:6px;
+    width:200px;
+}
+.labelfile:hover{
+    opacity:0.6;
+}
+
+#campo_imagen img{
+    width:320px;
+    margin:15px 35px 15px 15px;
+}
+
+.tabla_prioridad{
+    overflow-y:scroll;
+    font-size:15px;
+    margin: 0 20px; 
+    width:500px;
+    display:inline-block;
+    height:400px;
+
+}
+
+.tabla_prioridad tr:nth-child(even){background-color: #DEF3CA;}
+
+.tabla_prioridad td{
+    padding:5px 0;
+}
+
+.tabla_prioridad thead{
+    font-size:18px;
+    text-align:center;
+    font-weight:600;
+}
+
+#txt_fecha{
+    height:25px;
+}
+
+.file{
+    display:none;
+}
+
+.labelfile{
+    display:inline-block;
+    color:#808080;
+    cursor:pointer;
+    border:2px solid #808080;
+    padding:6px;
+    margin:15px 35px 35px 15px;
+    width:200px;
+}
+.labelfile:hover{
+    opacity:0.6;
+
+}
+.tablapopup {
+    overflow-y: scroll;
+    font-size: 15px;
+    display: inline-block;
+    margin: 0 35px;
+    height: 450px;
+}
+
+.boton{
+    font-family: 'Lexend Deca', sans-serif;
+    color:white;
+    border:none;
+	border-radius:5px;
+	background:rgba(25,165,25,.9);
+    outline:none;
+    cursor:pointer;
+    padding:15px;
+    margin:10px;
+    text-transform:uppercase;
+    font-size:12px;
+    height:auto;
+    width:150px;
+}
+.boton:hover{
+    background:rgba(25,165,25,.7);
+}

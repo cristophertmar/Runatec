@@ -1,0 +1,367 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Bienvenidos</title>
+    <style>
+        .container{
+            margin:auto;
+            width:90%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="text-center"><label id="titulo" class="titulo">Consulta de Avance de Siembras y Producción</label></div>
+
+        <div class="header">
+        </div>
+
+        <!-- 1. Create a DIV container to insert the component -->
+        <div id="pivotContainer" style="padding-bottom: 30px;"></div>
+
+        <!-- 2. Include flexmonster.js file -->
+        <script src="~/flexmonster/flexmonster.js"></script>
+
+        <!-- 3. Create an instance of the component using new Flexmonster() -->
+        <script type="text/javascript">
+
+            var jsonData = [
+                {
+                    "Producto": { "type": "string" },
+                    "Mes": { "type": "string" },
+                    "Volumen": { "type": "number", "caption": "Volumen (TN)" },
+                    "Area": { "type": "number", "caption": "Área Sembrada" },
+                    "Precio": { "type": "number", "caption": "Precio Promedio (S/.)" }
+                },
+                {
+                    "Producto": "Ajo Napuri",
+                    "Mes": "Ago-19",
+                    "Volumen": "",
+                    "Area": 218,
+                    "Precio": ""
+                },
+                {
+                    "Producto": "Ajo Napuri",
+                    "Mes": "Set-19",
+                    "Volumen": "",
+                    "Area": 398,
+                    "Precio": ""
+                },
+                {
+                    "Producto": "Ajo Napuri",
+                    "Mes": "Oct-19",
+                    "Volumen": "",
+                    "Area": 670.3,
+                    "Precio": ""
+                },
+                {
+                    "Producto": "Ajo Napuri",
+                    "Mes": "Nov-19",
+                    "Volumen": "",
+                    "Area": 560,
+                    "Precio": ""
+                },
+                {
+                    "Producto": "Ajo Napuri",
+                    "Mes": "Dic-19",
+                    "Volumen": "",
+                    "Area": 213,
+                    "Precio": ""
+                },
+                {
+                    "Producto": "Ajo Napuri",
+                    "Mes": "Ene-20",
+                    "Volumen": 148.94,
+                    "Area": 139,
+                    "Precio": 5.88
+                },
+                {
+                    "Producto": "Ajo Napuri",
+                    "Mes": "Feb-20",
+                    "Volumen": 126.62,
+                    "Area": 370.5,
+                    "Precio": 7.19
+                },
+                {
+                    "Producto": "Ajo Napuri",
+                    "Mes": "Mar-20",
+                    "Volumen": "",
+                    "Area": 797,
+                    "Precio": 9.26
+                },
+                {
+                    "Producto": "Ajo Napuri",
+                    "Mes": "Abr-20",
+                    "Volumen": "",
+                    "Area": 1108,
+                    "Precio": 9.47
+                },
+                {
+                    "Producto": "Ajo Napuri",
+                    "Mes": "May-20",
+                    "Volumen": "",
+                    "Area": 899.5,
+                    "Precio": 10.19
+                },
+                {
+                    "Producto": "Ajo Napuri",
+                    "Mes": "Jun-20",
+                    "Volumen": 100.33,
+                    "Area": 3207.5,
+                    "Precio": 10.57
+                },
+                {
+                    "Producto": "Ajo Napuri",
+                    "Mes": "Jul-20",
+                    "Volumen": 105.42,
+                    "Area": "",
+                    "Precio": 10.36
+                },
+                {
+                    "Producto": "Ajo Napuri",
+                    "Mes": "Ago-20",
+                    "Volumen": 79.57,
+                    "Area": "",
+                    "Precio": ""
+                },
+                {
+                    "Producto": "Cebolla C. Roja",
+                    "Mes": "Ago-19",
+                    "Volumen": 1834,
+                    "Area": "",
+                    "Precio": ""
+                },
+                {
+                    "Producto": "Cebolla C. Roja",
+                    "Mes": "Set-19",
+                    "Volumen": "",
+                    "Area": 1499.2,
+                    "Precio": ""
+                },
+                {
+                    "Producto": "Cebolla C. Roja",
+                    "Mes": "Oct-19",
+                    "Volumen": "",
+                    "Area": 1361.5,
+                    "Precio": ""
+                },
+                {
+                    "Producto": "Cebolla C. Roja",
+                    "Mes": "Nov-19",
+                    "Volumen": "",
+                    "Area": 829.25,
+                    "Precio": ""
+                },
+                {
+                    "Producto": "Cebolla C. Roja",
+                    "Mes": "Dic-19",
+                    "Volumen": "",
+                    "Area": 634.2,
+                    "Precio": ""
+                },
+                {
+                    "Producto": "Cebolla C. Roja",
+                    "Mes": "Ene-20",
+                    "Volumen": 566.42,
+                    "Area": 890.9,
+                    "Precio": 0.72
+                },
+                {
+                    "Producto": "Cebolla C. Roja",
+                    "Mes": "Feb-20",
+                    "Volumen": 610.86,
+                    "Area": 1540.7,
+                    "Precio": 0.72
+                },
+                {
+                    "Producto": "Cebolla C. Roja",
+                    "Mes": "Mar-20",
+                    "Volumen": "",
+                    "Area": 2471.5,
+                    "Precio": 1.49
+                },
+                {
+                    "Producto": "Cebolla C. Roja",
+                    "Mes": "Abr-20",
+                    "Volumen": "",
+                    "Area": 1120,
+                    "Precio": 1.54
+                },
+                {
+                    "Producto": "Cebolla C. Roja",
+                    "Mes": "May-20",
+                    "Volumen": "",
+                    "Area": 676,
+                    "Precio": 1.67
+                },
+                {
+                    "Producto": "Cebolla C. Roja",
+                    "Mes": "Jun-20",
+                    "Volumen": 513.60,
+                    "Area": 974.5,
+                    "Precio": 1.81
+                },
+                {
+                    "Producto": "Cebolla C. Roja",
+                    "Mes": "Jul-20",
+                    "Volumen": 603.42,
+                    "Area": "",
+                    "Precio": 1.15
+                },
+                {
+                    "Producto": "Cebolla C. Roja",
+                    "Mes": "Ago-20",
+                    "Volumen": 587.57,
+                    "Area": "",
+                    "Precio": 1.07
+                },
+                {
+                    "Producto": "Maiz Choclo",
+                    "Mes": "Ago-19",
+                    "Volumen": 4239.3,
+                    "Area": "",
+                    "Precio": ""
+                },
+                {
+                    "Producto": "Maiz Choclo",
+                    "Mes": "Set-19",
+                    "Volumen": "",
+                    "Area": 7355.5,
+                    "Precio": ""
+                },
+                {
+                    "Producto": "Maiz Choclo",
+                    "Mes": "Oct-19",
+                    "Volumen": "",
+                    "Area": 8756,
+                    "Precio": ""
+                },
+                {
+                    "Producto": "Maiz Choclo",
+                    "Mes": "Nov-19",
+                    "Volumen": "",
+                    "Area": 6052,
+                    "Precio": ""
+                },
+                {
+                    "Producto": "Maiz Choclo",
+                    "Mes": "Dic-19",
+                    "Volumen": "",
+                    "Area": 2757.4,
+                    "Precio": ""
+                },
+                {
+                    "Producto": "Maiz Choclo",
+                    "Mes": "Ene-20",
+                    "Volumen": 392.90,
+                    "Area": 1237.05,
+                    "Precio": 1.09
+                },
+                {
+                    "Producto": "Maiz Choclo",
+                    "Mes": "Feb-20",
+                    "Volumen": 447.24,
+                    "Area": 1103.55,
+                    "Precio": 0.65
+                },
+                {
+                    "Producto": "Maiz Choclo",
+                    "Mes": "Mar-20",
+                    "Volumen": "",
+                    "Area": 479.9,
+                    "Precio": 0.72
+                },
+                {
+                    "Producto": "Maiz Choclo",
+                    "Mes": "Abr-20",
+                    "Volumen": "",
+                    "Area": 1403,
+                    "Precio": ""
+                },
+                {
+                    "Producto": "Maiz Choclo",
+                    "Mes": "May-20",
+                    "Volumen": "",
+                    "Area": 2444.5,
+                    "Precio": ""
+                },
+                {
+                    "Producto": "Maiz Choclo",
+                    "Mes": "Jun-20",
+                    "Volumen": 271.08,
+                    "Area": 1693.7,
+                    "Precio": 0.96
+                },
+                {
+                    "Producto": "Maiz Choclo",
+                    "Mes": "Jul-20",
+                    "Volumen": 251.90,
+                    "Area": "",
+                    "Precio": 1.28
+                },
+                {
+                    "Producto": "Maiz Choclo",
+                    "Mes": "Ago-20",
+                    "Volumen": 328.93,
+                    "Area": "",
+                    "Precio": 1.23
+                }];
+
+            var pivot = new Flexmonster({
+                container: "pivotContainer",
+                toolbar: true,
+                report: {
+                    dataSource: {
+                        data: jsonData
+                    },
+                    options: {
+                        grid: {
+                            type: "flat"
+                        },
+                        configuratorActive: false
+                    },
+                    slice: {
+                        columns: [{
+                            uniqueName: "Producto"
+                        }, {
+                            uniqueName: "Mes"
+                        }, {
+                            uniqueName: "Volumen"
+                        }, {
+                            uniqueName: "Area"
+                        }, {
+                            uniqueName: "Precio"
+                        }]
+                    }
+                },
+                licenseKey: "Z784-XB3D27-034S4A-5N465D"
+            });
+
+        </script>
+
+        @*<table class="BottomLinks">
+            <tr>
+                <td>
+                    <a href="./" target="_blank">Open source folder</a>
+                </td>
+                <td>
+                    <a href="http://www.flexmonster.com/doc/" target="_blank">Documentation</a>
+                </td>
+                <td>
+                    <a href="http://www.flexmonster.com/forum/" target="_blank">Technical support</a>
+                </td>
+                <td>
+                    <a href="http://www.flexmonster.com/feedback/" target="_blank">Give a feedback</a>
+                </td>
+            <tr>
+        </table>*@
+        <br />
+    </div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+﻿
+@{
+    ViewBag.Title = "AsignarCategoria";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<html>
+<head>
+    <link href="~/Content/MesaAyuda/AsignarCategoria.css?v=@ViewData["qversion"]" rel="stylesheet" />
+</head>
+<body>
+    <div>
+        <input id="version_v" value=@ViewData["qversion"] style="display:none">
+    </div>
+    <h1 id="titulo"></h1>
+    
+    <table class="centrar">
+        <thead>
+            <tr>
+                <td>Seleccione un Usuario:</td>
+                <td class="td_centrar">
+                    <select id="select_usuario_MA" name="select_usuario_MA"></select>
+                </td>
+            </tr>
+        </thead>
+        
+        <tbody id="tbody_listar_categoriaMA">
+         
+        </tbody>
+        <tr>
+            <td colspan="2" class="td_centrar">
+                <button id="btn_guardar_usucat_MA" class="boton">GUARDAR</button>
+            </td>
+        </tr>
+    </table>
+
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/MesaAyuda/AsignarCategoria.js?v=@ViewData["qversion"]"></script>
+</body>
+</html>
+

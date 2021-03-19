@@ -1,0 +1,65 @@
+﻿
+@{
+    ViewBag.Title = "Bienvenido(a) a Chaskis";
+    Layout = "~/Views/Shared/_Layout_Publico.cshtml";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/Inicio/Noticia.js?v=@ViewData["qversion"]"></script>
+    <link href="~/Content/Inicio/Noticia.css?v=@ViewData["qversion"]" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div>
+        <input id="version_v" value=@ViewData["qversion"] style="display:none">
+    </div>
+    <div style="display:flex;">
+        <section class="edit_banner">
+            <div id="editorial_content" class="edit_content">
+
+            </div>
+        </section>
+        <nav style="background:red;padding: 0;display:none;">
+            <p style="margin:0;">Navbar</p>
+        </nav>
+        <section class="banner">
+            <div id="slider_imagenes" class="sliders">
+            </div>
+
+            @*Banner que contiene el título y descipción de la noticia*@
+            <div id="slider_contenido" class="banner_content">
+            </div>
+            @*Contiene los controles de la noticia (puntos que indican qué noticia está activa)*@
+            <div class="slider_sm_controls">
+                <div class="left_control">
+                    <a data-control="prev">
+                        <i class="material-icons">
+                            navigate_before
+                        </i>
+                    </a>
+                </div>
+                <div class="right_control">
+                    <a data-control="next">
+                        <i class="material-icons">
+                            navigate_next
+                        </i>
+                    </a>
+                </div>
+            </div>
+            <div class="slider_sm_dots" id="slider_dots_container">
+            </div>
+        </section>
+        @*Puntos que indican en qué noticia está el carrusel*@
+        
+    </div>
+</body>
+
+</html>
+
+
+
+
+
+

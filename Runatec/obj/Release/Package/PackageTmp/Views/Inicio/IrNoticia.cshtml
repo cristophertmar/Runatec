@@ -1,0 +1,25 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Ver Noticia</title>
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <link href="~/Content/Inicio/IrNoticia.css?v=@ViewData["qversion"]" rel="stylesheet" />
+    <script src="~/Scripts/Inicio/IrNoticia.js?v=@ViewData["qversion"]"></script>
+</head>
+<body>
+    <div>
+        <input id="version_v" value=@ViewData["qversion"] style="display:none">
+    </div>
+
+    <div id="contenedor_noticia">
+    </div>
+    <div class="text-center"><a href=".." class="btn btn-success">Regresar</a></div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+﻿
+@{
+    ViewBag.Title = "Histórico de Precios";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Histórico de Precios</title>
+    <link href="~/Content/CargaPrecios/historicoprecios.css?v=@ViewData["qversion"]" rel="stylesheet" />
+</head>
+
+<body>
+    <div>
+        <input id="version_v" value=@ViewData["qversion"] style="display:none">
+    </div>
+
+    <div>
+        <table class="tabla_inputs">
+
+            <tr>
+
+                <td>Producto:</td>
+                <td><input type="text" id="txtproducto" /></td>
+                <td width="20"></td>
+                <td>Mercado:</td>
+                <td>
+                    <select id="select_mercado"></select>
+                </td>
+
+
+
+                <td>
+                    <button class="boton" id="btnBuscar" style="margin-left:20px;">Buscar</button>
+                </td>
+                <td>
+                    <button class="boton" id="btnExportar" onclick="ExportarExcel();"><i class="far fa-file-excel"></i>&nbsp;&nbsp;Exportar</button>
+                </td>
+
+            </tr>
+            <tr>
+                <td><label>Fecha de Inicio:</label></td>
+                <td><input type="date" id="txtfechainicio" /></td>
+                <td width="20"></td>
+                <td><label>Fecha de Fin:</label></td>
+                <td><input type="date" id="txtfechafin" /></td>
+            </tr>
+        </table>
+
+        <table class="tabla_carga">
+            <thead>
+                <tr>
+                    <td style="display:none;">ID</td>
+                    <td width="50">N°</td>
+                    <td width="150">Fecha</td>
+                    <td width="200">Mercado</td>
+                    <td>Producto</td>
+                    <td>Promedio</td>
+                </tr>
+            </thead>
+            <tbody id="GridListar"></tbody>
+        </table>
+    </div>
+    <div id="div_paginacion" class="div_paginacion"></div>
+    <div id="fondoPopup" class="fondoproceso">&nbsp;</div>
+    <div id="PopupEnProceso" class="ventanaproceso" style="overflow:hidden">
+        <div id="loading_wrap">
+            <img src="~/imagenes/CargaPrecios/loading.gif" />
+        </div>
+    </div>
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/CargaPrecios/HistoricoPrecios.js?v=@ViewData["qversion"]"></script>
+</body>
+</html>
+

@@ -1,0 +1,69 @@
+﻿
+@{
+    ViewBag.Title = "PreciosVenta";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+
+    <link href="~/Content/CargaPrecios/preciosventa.css?v=@ViewData["qversion"]" rel="stylesheet" />
+    <link href="~/Content/GraficoPrecios/multiselect.css" rel="stylesheet" />
+    <script src="~/Scripts/GraficoPrecios/multiselect.js"></script>
+
+    <title>Gráfico de Precios</title>
+</head>
+<body>
+    <div>
+        <input id="version_v" value=@ViewData["qversion"] style="display:none">
+    </div>
+
+    <div class="barra"  style="margin-bottom:20px;">
+        <label class="lab">Producto(s):</label>
+
+        <select name="selectproductos[]" multiple id="selectproductos"></select>
+        <label class="lab">Mercado:</label>
+        <select id="select_mercado"></select>
+
+    </div>
+    <div class="barra" style="margin-top:20px;">
+        <label class="lab">Fecha de Inicio:</label>
+        <input type="date" id="txt_fechainicio" />
+
+        <label class="lab">Fecha de Fin:</label>
+        <input type="date" id="txt_fechafin" />
+
+        <a id="btngraficar" onclick="Graficar();"> Graficar </a>
+    </div>
+    <div class="contenedor_reporte">
+        <div id="grafico_precios"></div>
+        <!--Grafico Lineal-->
+    </div>
+
+    <div id="scrollToHere">
+    </div>
+
+    <script>
+        $('#selectproductos').multiselect({
+            columns: 1,
+            title: 'Seleccionar',
+            search: true,
+        });
+
+    </script>
+
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/CargaPrecios/PreciosVenta.js?v=@ViewData["qversion"]"></script>
+    <script src="~/Scripts/GraficoPrecios/highcharts.js"></script>
+    <script src="~/Scripts/GraficoPrecios/highcharts-3d.js"></script>
+    <script src="~/Scripts/GraficoPrecios/exporting.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/font-all.js"></script>
+
+</body>
+</html>
+
+

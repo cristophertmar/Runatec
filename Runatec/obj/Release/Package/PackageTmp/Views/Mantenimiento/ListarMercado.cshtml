@@ -1,0 +1,47 @@
+﻿
+@{
+    ViewBag.Title = "ListarMercado";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Carga de Precios</title>
+    <link href="~/Content/Mantenimiento/listarmercado.css?v=@ViewData["qversion"]" rel="stylesheet" />
+    <link href="~/Content/jquery-ui.css" rel="stylesheet" />
+</head>
+<body>
+    <div>
+        <input id="version_v" value=@ViewData["qversion"] style="display:none">
+    </div>
+    <table class="tabla_carga tablamercado">
+        <thead>
+            <tr>
+                <td class="excepto"><button id="AgregarMercado" class="boton"><i style="padding-right:3px; width:8px;" class="fas fa-plus"></i>Agregar</button></td>
+                <td class="excepto" style="display:none;"><input type="text" id="txt_fila"/></td>
+            </tr>
+            <tr>
+                <td style="display:none">ID</td>
+                <td width="95">N°</td>
+                <td width="400">Nombre de Mercado</td>
+                <td width="200">Nombre Corto</td>
+                <td style="display:none">Id ubigeo</td>
+                <td width="350">Ubigeo</td>
+                <td colspan="3"></td>
+            </tr>
+        </thead>
+        <tbody id="GridListar">
+
+        </tbody>
+    </table>
+
+</body>
+</html>
+<link href="~/Content/jquery-ui.css" rel="stylesheet" />
+<script src="~/Scripts/jquery-ui.min.js"></script>
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script src="~/Scripts/Mantenimiento/ListarMercado.js?v=@ViewData["qversion"]"></script>
+<script src="~/Scripts/jquery-ui.min.js"></script>

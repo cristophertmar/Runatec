@@ -1,0 +1,157 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap" rel="stylesheet">
+    <link href="~/Content/CrearCuenta/crearcuenta.css?v=@ViewData["qversion"]" rel="stylesheet" />
+    <link href="~/Content/jquery-ui.css" rel="stylesheet" />
+    <script src="~/Scripts/icons.js"></script>
+    <title>Crea tu Cuenta</title>
+</head>
+<body>
+    <div>
+        <input id="version_v" value=@ViewData["qversion"] style="display:none">
+    </div>
+    <div class="contenedor">
+       
+        <table>
+            <tr>
+                <td colspan="3" class="titulo">Crea tu Cuenta <i class="fas fa-users"></i></td>
+            </tr>
+            <tr>
+                <td style="font-size:14px; padding-left:10px;">Tipo de Documento:<select placeholder="Tipo Documento" id="select_tipodocumento" class="select_tipodocumento"></select></td>
+                
+                
+                <td><input id="txt_numerodocumento" type="text" onkeypress="return soloNumeros(event)" placeholder="Número de Documento"/></td>
+            </tr>
+
+            <tr>
+                <td><input type="text" id="txt_paterno" onkeypress="return soloLetras(event)" placeholder="Apellido paterno"></td>
+                <td><input type="text" id="txt_materno" onkeypress="return soloLetras(event)" placeholder="Apellido materno"></td>
+            </tr>
+
+            <tr>
+                <td><input type="text" id="txt_nombres" onkeypress="return soloLetras(event)" placeholder="Nombres"></td>
+
+                <td style="font-size:14px; padding-left:10px;">
+                    Sexo:
+                    <select id="select_sexo">
+                        <option value="0"> -- </option>
+                        <option value="1"> M </option>
+                        <option value="2"> F </option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="3"><input type="text" id="txt_razonsocial" placeholder="Razón Social" style="width:475px;"/></td>
+            </tr>
+
+            <tr>
+                <td><input type="text" id="txt_usuario" placeholder="Usuario"/></td>
+            </tr>
+
+            <tr>
+                <td><input type="password" id="txt_contrasena" placeholder="Contraseña"/></td>
+            </tr>
+            <tr>
+                <td><input type="password" id="txt_contrasena2" placeholder="Repite tu contraseña" /></td>
+            </tr>
+            <tr id="tr_aviso"  style="display:none;padding-left:10px;">
+                <td id="aviso_contrasena"></td>
+            </tr>
+
+            <tr>
+                <td colspan="3"><input type="email" id="txt_email" placeholder="E-mail" style="width:475px;"/></td>
+            </tr>
+
+            <tr id="tr_aviso2"  style="display:none;padding-left:10px;">
+                <td id="aviso_email"></td>
+            </tr>
+
+            <tr>
+                <td><input type="text" id="txt_telefono" onKeyPress="return soloNumeros(event)" placeholder="Teléfono" /></td>
+            
+                <td><input type="text" id="txt_celular" onKeyPress="return soloNumeros(event)" placeholder="Celular"/></td>
+            </tr>
+
+            <tr>
+                <td colspan="3"><input type="text" id="txt_direccion" placeholder="Dirección" style="width:475px;"/></td>
+            </tr>
+
+            <tr>
+                <td style="display:none;"><input type="text" id="txt_idubigeo" /></td>
+                <td colspan="2"><input type="text" id="txt_ubigeo" placeholder="Ubigeo" style="width:475px;"/></td>
+            </tr>
+
+
+            <tr>
+                <td colspan="2" style="text-align:center; padding:20px 0;">
+                    <button class="boton_blanco" onclick="Regresar();">Regresar</button>
+                    <button id="boton_crearcuenta" class="boton_blanco">Crear Cuenta</button>
+                </td>
+            </tr>
+
+        </table>
+
+    </div>
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/CrearCuenta/crearcuenta.js?v=@ViewData["qversion"]"></script>
+    <script src="~/Scripts/jquery-ui.min.js"></script>
+
+    <script>
+                    //BUSQUEDA CON LISTA AUTOCOMPLETAR.
+
+                    $("#txt_ubigeo").autocomplete({
+                        source: function (request, response) {
+                            $.ajax({
+                                type: "POST",
+                                url: "../Services/AutocompletarUbigeo",
+                                data: "{vdescripcion:'" + $("#txt_ubigeo").val() + "'}",
+                                dataType: "json",
+                                contentType: "application/json; charset=utf-8",
+                                success: function (data) {
+                                    if (data.length > 0) {
+                                        response($.map(data, function (item) {
+                                            return {
+                                                label: item.vdescripcion,
+                                                value: item.nidubigeo
+
+                                            };
+                                        }));
+
+
+                                    }
+                                    else {
+                                        $("#txt_idubigeo").val(0);
+                                        $("#txt_ubigeo").val('');
+
+                                    }
+
+                                },
+                                failure: function (response) {
+                                    alert(response.d);
+                                },
+                                error: OnError
+                            })
+                        },
+                        select: function (event, ui) {
+                            event.preventDefault();
+                            $("#txt_idubigeo").val(ui.item.value);
+                            $("#txt_ubigeo").val(ui.item.label);
+                        },
+                        focus: function (event, ui) {
+                            event.preventDefault();
+                            $("#txt_idubigeo").val(ui.item.value);
+                            $("#txt_ubigeo").val(ui.item.label);
+                        }
+                    });
+    </script>
+</body>
+</html>

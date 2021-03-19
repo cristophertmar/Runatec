@@ -1,0 +1,67 @@
+﻿
+@{
+    ViewBag.Title = "AtenderSolicitud";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<html>
+<head>
+    <link href="~/Content/MesaAyuda/AtenderSolicitud.css?v=@ViewData["qversion"]" rel="stylesheet" />
+</head>
+<body>
+    <div>
+        <input id="version_v" value=@ViewData["qversion"] style="display:none">
+    </div>
+    <h1 id="nidsolicitud" style="display:none;">@ViewBag.nidsol</h1>
+<div id="contenedor_atencion">
+    <table>
+        <tr>
+            <td colspan="2" class="td_titulo">Datos de la Solicitud</td>
+        </tr>
+        <tr>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Fecha y Hora de Solicitud:</td>
+            <td><input type="text" id="txt_fecha_solicitud" readonly/></td>
+        </tr>
+        <tr>
+            <td>Asunto:</td>
+            <td><input id="txt_asunto_solicitud" readonly /></td>
+        </tr>
+        <tr>
+            <td style="vertical-align: top;">Mensaje:</td>
+            <td><textarea id="txt_contenido_solicitud" readonly rows="12"></textarea></td>
+        </tr>
+
+    </table>
+    <table>
+
+        <tr>
+            <td colspan="2" id="td_titulo" class="td_titulo">Datos de la Atención</td>
+        </tr>
+        <tr>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Fecha y Hora de Atención:</td>
+            <td><input type="datetime" id="txt_fecha_atencion"/></td>
+        </tr>
+        <tr style="display:none;">
+            <td>Asunto:</td>
+            <td><input type="text" id="txt_asunto_atencion" value="Respuesta de Solicitud en Mesa de Ayuda"/></td>
+        </tr>
+        <tr>
+            <td style="vertical-align: top;">Respuesta:</td>
+            <td><textarea id="txt_contenido_atencion" rows="12"></textarea></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td style="text-align:center;"><button id="btn_enviar" class="boton">ENVIAR</button></td>
+        </tr>
+    </table>
+</div>
+    <link href="~/Content/MesaAyuda/Consulta.css?v=@ViewData["qversion"]" rel="stylesheet" />
+    <script src="~/Scripts/MesaAyuda/AtenderSolicitud.js?v=@ViewData["qversion"]"></script>
+</body>
+</html>
+

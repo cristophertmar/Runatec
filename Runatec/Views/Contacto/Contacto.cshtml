@@ -1,0 +1,42 @@
+﻿
+@{
+    ViewBag.Title = "Contacto";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="~/Content/Contacto/Contacto.css?v=@ViewData["qversion"]" rel="stylesheet" />
+</head>
+<body>
+    <div>
+        <input id="version_v" value=@ViewData["qversion"] style="display:none">
+    </div>
+<div class="contenedor">
+    <div>
+        <h1 id="titulo">Contáctenos</h1>
+    </div>
+    <div>
+        <p style="color:#666;">
+            Si tienes alguna duda acerca de Chaskis te responderemos con mucho gusto,<br />
+            contáctanos a través de nuestro correo electrónico o visita nuestras redes.
+        </p>
+    </div>
+    <div>
+        @*<a><i class="far fa-envelope icono"></i></a><br />*@
+        <img src="~/imagenes/correo.png" id="img_correo" /><br />
+        <a href="mailto:mercados@chaskis.net?Subject=Contáctanos%20desde%20Chaskis" class="a_correo">mercados@chaskis.net</a>
+
+    </div>
+    <div>
+        
+        <span><i class="fab fa-facebook-square"></i></span>
+        <a href="https://www.facebook.com/CHASKIS.Junin" class="a_correo" target="_blank">¡Visítanos!</a>
+    </div>
+</div>
+    
+    
+</body>
+</html>
+

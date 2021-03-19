@@ -1,0 +1,133 @@
+﻿
+@{
+    ViewBag.Title = "GestionContenidos";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <link href="~/Content/jquery-ui.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-ui.min.js"></script>
+    <script src="~/Scripts/Mantenimiento/GestionContenidos.js?v=@ViewData["qversion"]"></script>
+    <link href="~/Content/Mantenimiento/GestionContenidos.css?v=@ViewData["qversion"]" rel="stylesheet" />
+</head>
+<body>
+    <div>
+        <input id="version_v" value=@ViewData["qversion"] style="display:none">
+    </div>
+
+    @*popup gestion contenido*@
+    <div id="fondoPopup" class="fondo">&nbsp;</div>
+    <div id="PopupGestionContenido" class="ventana" style="overflow:hidden">
+        
+    </div>
+
+
+    <div>
+        <table class="tabla_inputs">
+            <tr>
+                <td>Menu:</td>
+                <td>
+                    <select class="combo" id="select_MenuPublicoPadreGestCont"></select>
+                </td>
+                <td>Sub Menu:</td>
+                <td>
+                    <select class="combo" id="select_MenuPublicoHijoGestCont"></select>
+                </td>
+                <td>
+                    <button class="boton" id="btnListarContenidos">Ver Contenidos</button>
+                </td>
+                <td class="excepto"><button id="btnAgregar" class="boton"><i style="padding-right:3px; width:8px;" class="fas fa-plus"></i>Agregar</button></td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <input id="version_v" value=@ViewData["qversion"] style="display:none">
+    </div>
+    <table class="tabla_carga tablamercado">
+        <thead>
+            <tr>
+                
+                <td class="excepto" style="display:none;"><input type="text" id="txt_fila" /></td>
+            </tr>
+            <tr>
+                <td style="display:none">ID</td>
+                <td>Titulo</td>
+                <td>Descripción</td>
+                <td>Imagen</td>
+                <td>Estado</td>
+                <td></td>
+            </tr>
+        </thead>
+        <tbody id="GridListar"></tbody>
+    </table>
+
+
+    @*<div>
+        <table class="tabla_inputs">
+
+            <tr>
+                <td>*Titulo</td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" class="txt_titulo" />
+                </td>
+            </tr>
+            <tr>
+                <td>*Descripción</td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" class="txt_titulo" />
+                </td>
+            </tr>
+            <tr>
+                <td>*Detalles</td>
+            </tr>
+            <tr>
+                <td>
+                    <textarea></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>*Imagen</td>
+            </tr>
+            <tr>
+                <td colspan="2" id="campo_imagen" class="centrar"></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="centrar">
+                    <label id="labelfile" for="txt_imagen" class="labelfile"><i class="fas fa-upload"></i> Elige una imagen</label>
+                    <input id="txt_imagen" class="file" type="file" accept="image/*" />
+
+                </td>
+            </tr>
+        </table>
+    </div>*@
+
+
+
+    @*<table class="tabla_carga">
+        <thead>
+            <tr>
+                <td class="excepto"><button id="AgregarNoticia" class="boton"><i style="padding-right:3px; width:8px;" class="fas fa-plus"></i>Agregar</button></td>
+                <td class="excepto"><button id="PrioridadNoticia" class="boton"><i style="padding-right:3px; width:8px;" class="fas fa-sort-amount-up"></i>Ordenar Prioridad</button></td>
+            </tr>
+            <tr>
+                <td width="95">Fecha</td>
+                <td>Título</td>
+                <td>Comentario</td>
+                <td>Estado</td>
+                <td colspan="2"></td>
+            </tr>
+        </thead>
+        <tbody id="tablanoticia"></tbody>
+    </table>*@
+
+</body>
+</html>
+

@@ -1,0 +1,112 @@
+﻿
+@{
+    ViewBag.Title = "ProcesarPrecios";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Proceso de Precios</title>
+    <link href="~/Content/CargaPrecios/procesarprecios.css?v=@ViewData["qversion"]" rel="stylesheet" />
+</head>
+
+<body>
+    <div>
+        <input id="version_v" value=@ViewData["qversion"] style="display:none">
+    </div>
+    <div>
+        <div>
+            <table class="tabla_inputs">
+                <tr>
+                    <td><label>Mercado:</label></td>
+                    <td colspan="3">
+
+                        <select id="select_mercado"></select>
+                    </td>
+                    <td width="20"></td>
+                    <td>
+                        <input class="boton" type="button" id="btnBuscar" style="cursor:pointer" value="Buscar" />
+                    </td>
+                    <td width="10"></td>
+                    <td>
+                        <input class="boton" type="button" id="idProcesar" style="cursor:pointer" value="Procesar Registros" />
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <td><label>Fecha de Inicio:</label></td>
+                    <td>
+                        <input type="date" id="txtfechainicio" />
+                    </td>
+                    <td><label>Fecha de Fin:</label></td>
+                    <td>
+                        <input type="date" id="txtfechafin" style="margin-left: 8px;"/>
+                    </td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+
+
+        <div class="tabla_procesar">
+            <table class="tabla_carga tabla_procesar">
+                <thead>
+                    <tr>
+                        <td style="display:none">iddetalle</td>
+                        <td style="display:none">N°</td>
+                        <td>Fecha</td>
+                        <td>Mercado</td>
+                        <td style="display:none">ID Producto</td>
+                        <td>Descripción</td>
+                        <td>Precio 1</td>
+                        <td>Precio 2</td>
+                        <td>Precio 3</td>
+                        <td>Precio 4</td>
+                        <td>Precio 5</td>
+                        <td>Precio 6</td>
+                        <td>Precio 7</td>
+                        <td>Precio 8</td>
+                        <td>Precio 9</td>
+                        <td>Precio 10</td>
+                        <td>Promedio Actual</td>
+                        <td>Promedio Anterior</td>
+                        <td>% Variación</td>
+                        <td colspan="3"></td>
+                        <td><input type="checkbox" id="marcarTodo"/></td>
+                    </tr>
+                </thead>
+                <tbody id="GridListar"></tbody>
+            </table>
+            <div id="div_aviso" style="text-align:center;"></div>
+
+        </div>
+
+    </div>
+
+    <div id="fondoPopup" class="fondoproceso">&nbsp;</div>
+    <div id="PopupEnProceso" class="ventanaproceso" style="overflow:hidden">
+        <div id="loading_wrap">
+                <img src="~/imagenes/CargaPrecios/loading.gif" />
+        </div>
+    </div>
+
+    <script>
+      $("#selectall").on("click", function() {
+        $(".case").attr("checked", this.checked);
+      });
+    </script>
+
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/CargaPrecios/ProcesarPrecios.js?v=@ViewData["qversion"]"></script>
+    <script src="~/Scripts/doublescroll.js"></script>
+
+</body>
+</html>
+
+
+

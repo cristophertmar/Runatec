@@ -1,0 +1,241 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    @*<meta name="viewport" content="width=device-width" />
+
+
+        <link href="~/Content/LayoutPublico/css/font-awesome.min.css" rel="stylesheet" />
+        <link href="~/Content/LayoutPublico/css/font.css" rel="stylesheet" />
+        <link href="~/Content/LayoutPublico/css/layers.css" rel="stylesheet" />
+        <link href="~/Content/LayoutPublico/css/magnific-popup.css" rel="stylesheet" />
+        <link href="~/Content/LayoutPublico/css/navigation.css" rel="stylesheet" />
+        <link href="~/Content/LayoutPublico/css/nice-select.css" rel="stylesheet" />
+        <link href="~/Content/LayoutPublico/css/range.css" rel="stylesheet" />
+        <link href="~/Content/LayoutPublico/css/settings.css" rel="stylesheet" />
+        <link href="~/Content/LayoutPublico/css/swiper.min.css" rel="stylesheet" />
+
+        <link rel="icon" href="~/imagenes/logoprincipal_chaskis.png" type="image/png" />
+        <link href="~/Content/LayoutPublico/layoutpublico.css?v=@ViewData["qversion"]" rel="stylesheet" />
+        <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+        <script src="~/Scripts/LayoutPublico/layoutpublico.js?v=@ViewData["qversion"]"></script>
+        <script src="~/Scripts/icons.js"></script>
+        <script src="~/Scripts/Login/login.js?v=@ViewData["qversion"]"></script>
+
+        <script src="~/Scripts/GraficoPrecios/highcharts.js"></script>
+        <script src="~/Scripts/GraficoPrecios/highcharts-3d.js"></script>
+        <script src="~/Scripts/GraficoPrecios/exporting.js"></script>
+        <link href="~/Content/bootstrap.css" rel="stylesheet" />
+
+        <script src="~/Scripts/bootstrap.js"></script>
+
+        <link href="~/Content/LayoutPublico/style.css" rel="stylesheet" />
+
+        <title>@ViewBag.Title</title>*@
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <link href="~/assets/css/main.css" rel="stylesheet" />
+
+</head>
+<body>
+
+    <a id="version_l" style="color:white; display:none;"></a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-shaskis ">
+        <a class="navbar-brand " href="javascript:void(0) "><img src="assets/img/banner/logo.JPG "></a>
+        <button class="navbar-toggler " type="button " data-toggle="collapse " data-target="#navbarSupportedContent " aria-controls="navbarSupportedContent " aria-expanded="false " aria-label="Toggle navigation ">
+            <span class="navbar-toggler-icon "></span>
+        </button>
+
+        <div class="collapse navbar-collapse " id="navbarSupportedContent ">
+            <ul class="navbar-nav mr-auto "></ul>
+            <form class="form-inline my-2 my-lg-0 ">
+                <button type="button " class="btn btn-secondary btn-sm mr-sm-2 ">INGRESAR</button>
+                <button type="button " class="btn btn-outline-light btn-sm mr-sm-5 ">CREAR CUENTA</button>
+                <button class="btn btn-success btn-lg my-2 my-sm-0 " type="button"> <img src="assets/img/banner/playstore.svg " width="25px ">&nbsp;DESCARGAR APP</button>
+            </form>
+        </div>
+    </nav>
+
+    <div>
+        @RenderBody()
+    </div>
+
+    <footer class="footer c-white" style="position: relative;">
+        <div style="height: 100%; width: 80%; margin: auto;">
+            <div class="row">
+                <div class="col text-right" style="line-height:20;">
+                    <img src="~/assets/img/footer/logo_1.svg" />
+                </div>
+                <div class="col text-center" style="padding-top: 85px;">
+                    <div style="height: 150px; border-left: solid 2px #fff; border-right: solid 2px #fff; padding-top: 35px; padding-left: 10px; padding-right: 10px;">
+                        Chaskis, es un servicio de información que pretende ser una herramienta para la toma de decisiones del pequeño y mediano productor de la región Junín.
+                    </div>
+                </div>
+                <div class="col text-left" style="padding-top: 85px;">
+                    <div style="padding-top: 35px;">
+                        Contáctanos <br> mercados@chaskis.net <br> +51 914 398 249
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="position: absolute; right: 30px; bottom: 20px;">
+            <div style="display: flex;">
+                <img src="~/assets/img/footer/youtube.svg" width="40px" height="40px" />
+                <img src="~/assets/img/footer/twitter.svg" width="40px" height="40px" />
+                <img src="~/assets/img/footer/facebook.svg" width="40px" height="40px" />
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js "></script>
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/assets/js/slider.js"></script>
+
+</body>
+@*<body ondragstart="return false" onselectstart="return false" oncontextmenu="return false">
+    <div>
+        <a id="version_l" style="color:white; display:none;"></a>
+    </div>
+    <div class="preloader_wrapper">
+        <div class="preloader_inner">
+            <img style="width:100%; height:100%;" src="~/imagenes/CargaPrecios/loading.gif" alt="image" />
+        </div>
+    </div>
+    <div class="clv_main_wrapper index_v4">
+        <div class="header3_wrapper">
+            <div class="clv_header3">
+                <div class="row b_b">
+                    <div class="col-lg-2 col-md-2">
+                        <div class="clv_left_header">
+                            <div class="clv_logo">
+                                <a href=".."><img src="~/imagenes/logoprincipal_chaskis.png" id="img_download" alt="Chaskis" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-10 col-md-10">
+                        <div class="clv_right_header">
+                            <div class="clv_menu">
+                                
+                                <div class="cart_nav col-md-auto d-flex order-2 order-md-1">
+                                    <ul style="justify-content: flex-end;">
+                                        
+                                        <li>
+                                            <a onclick="Login();" class="clv_btn">INGRESAR</a>
+                                        </li>
+                                        <li>
+                                            <a onclick="CrearCuenta();" class="clv_btn">CREAR CUENTA</a>
+                                        </li>
+                                        
+                                        <li class="menu_toggle centrar_icono_mobile">
+                                            <p>
+                                                <i class="fas fa-bars"></i>
+                                            </p>
+                                            <p class="lbl_icon_title">Menú</p>
+                                        </li>
+                                        
+                                        <li id="li_ingresar" class="ocultar centrar_icono_mobile">
+                                            <a href="../Login/Login">
+                                                <p>
+                                                    <i class="far fa-user"></i>
+                                                </p>
+                                                <p class="lbl_icon_title">Ingresar</p>
+                                            </a>
+                                        </li>
+                                        
+                                        <li id="li_cerrarsesion" class="ocultar centrar_icono_mobile">
+                                            <a onclick="CerrarSesionProductor();">
+                                                <p>
+                                                    <i class="fas fa-sign-out-alt"></i>
+                                                </p>
+                                                <p class="lbl_icon_title">Salir</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="download_button_section col-md-auto d-flex order-1 order-md-2 justify-content-center">
+                                    <a id="btn_descargaApp" href="https://mega.nz/file/FNkQiJ4A#HpO6uacKq6g7oNrqYxd4ajB29LE9bYRSlRD8OlrYbI4" target="_blank" class="dl_btn">
+                                        <span><img src="~/imagenes/download.png" style="width:25px; height:25px; margin: 0 0 8px 5px;" alt="image" /></span>
+                                        <span>¡Descarga el app!</span>
+                                    </a>
+                                </div>
+                                
+                                <div style="margin-left: 20px" id="div_cerrarsesion">
+                                    <div><label id="lbl_bienvenida"></label></div>
+                                    <div class="ocultar_icono_mobile"><label id="lbl_cerrarsesion_web"><a onclick="CerrarSesionProductor();"><i class="fas fa-sign-out-alt"></i>&nbsp;Cerrar Sesión</a></label></div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="clv_header3">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12">
+                        <div class="clv_right_header">
+                            <div class="clv_menu menu_li">
+                                <div class="clv_menu_nav">
+                                    <ul id="menu"></ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="contenedorpagina">
+        @RenderBody()
+    </div>
+
+    <div id="contenedornoticia">
+
+    </div>
+    <a href="https://api.whatsapp.com/send?phone=51914398249" title="¡Escríbenos a WhatsApp!" class="float" target="_blank">
+        <i class="fab fa-whatsapp my-float"></i>
+    </a>
+    
+    <footer>
+        <div class="content_footer">
+            <div><img src="~/imagenes/logoprincipal_chaskis.png" /></div>
+            <div><h1>Contáctenos</h1></div>
+            <div><span><i class="far fa-envelope"></i>&nbsp;<a href="mailto:mercados@chaskis.net">mercados@chaskis.net</a></span></div>
+            <div><span><i class="fab fa-whatsapp"></i>&nbsp;<a href="https://api.whatsapp.com/send?phone=51914398249" target="_blank">914398249</a></span></div>
+            <div><span><i class="fab fa-facebook-square"></i>&nbsp;<a href="https://www.facebook.com/CHASKIS.Junin" target="_blank">¡Visítanos!</a></span></div>
+        </div>
+    </footer>
+    
+    
+    <div id="fondoPopup" class="fondoproceso">&nbsp;</div>
+    <div id="PopupEnProceso" class="ventanaproceso" style="overflow:hidden">
+        <div id="loading_wrap">
+            <img src="~/imagenes/CargaPrecios/loading.gif" />
+        </div>
+    </div>
+    <script src="~/Scripts/LayoutPublico/js/swiper.min.js"></script>
+    <script src="~/Scripts/LayoutPublico/js/magnific-popup.min.js"></script>
+    <script src="~/Scripts/LayoutPublico/js/jquery.themepunch.tools.min.js"></script>
+    <script src="~/Scripts/LayoutPublico/js/jquery.themepunch.revolution.min.js"></script>
+    <script src="~/Scripts/LayoutPublico/js/jquery.appear.js"></script>
+    <script src="~/Scripts/LayoutPublico/js/jquery.countTo.js"></script>
+    <script src="~/Scripts/LayoutPublico/js/isotope.min.js"></script>
+    <script src="~/Scripts/LayoutPublico/js/nice-select.min.js"></script>
+    <script src="~/Scripts/LayoutPublico/js/range.js"></script>
+
+    <script src="~/Scripts/LayoutPublico/js/revolution.extension.actions.min.js"></script>
+    <script src="~/Scripts/LayoutPublico/js/revolution.extension.carousel.min.js"></script>
+    <script src="~/Scripts/LayoutPublico/js/revolution.extension.kenburn.min.js"></script>
+    <script src="~/Scripts/LayoutPublico/js/revolution.extension.layeranimation.min.js"></script>
+    <script src="~/Scripts/LayoutPublico/js/revolution.extension.migration.min.js"></script>
+    <script src="~/Scripts/LayoutPublico/js/revolution.extension.navigation.min.js"></script>
+    <script src="~/Scripts/LayoutPublico/js/revolution.extension.parallax.min.js"></script>
+    <script src="~/Scripts/LayoutPublico/js/revolution.extension.slideanims.min.js"></script>
+    <script src="~/Scripts/LayoutPublico/js/revolution.extension.video.min.js"></script>
+    <script src="~/Scripts/LayoutPublico/js/custom.js"></script>
+</body>*@
+</html>

@@ -1,0 +1,82 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/Calificacion/servicio.css" rel="stylesheet" />
+    <title>Califica Nuestro Servicio</title>
+</head>
+<body>
+    <h1 id="nidsolicitud" style="display:none;">@ViewBag.nidsol</h1>
+    <h1 id="ticket" style="display:none;">@ViewBag.ticket</h1>
+
+    <div class="div_head">
+        <img src="~/imagenes/logoprincipal_chaskis.png" />
+    </div>
+    <h2 class="titulo">¡Tu opinión es muy importante!</h2>
+    <table class="tablacontenidoservicio centrartabla">
+        <tr>
+            <td>Abierto el:</td>
+            <td id="td_dfecha"></td>
+        </tr>
+        <tr>
+            <td>Última respuesta el:</td>
+            <td id="td_dfechaAtencion"></td>
+        </tr>
+        <tr>
+            <td>Personal involucrado:</td>
+            <td id="td_vnombres"></td>
+        </tr>
+        <tr>
+            <td>Duración Total:</td>
+            <td id="td_duracion"></td>
+        </tr>
+    </table>
+    @*Estrellas Calificación*@
+    <div class="rate">
+        <h2>Califícanos</h2>
+        <p>¿Qué le pareció la atención de su solicitud?</p>
+        <input type="radio" id="star5" name="rate" class="ocultar" value="5" />
+        <label for="star5" title="Muy bueno" class="label_star">5 stars</label>
+        <input type="radio" id="star4" name="rate" class="ocultar" value="4" />
+        <label for="star4" title="Bueno" class="label_star">4 stars</label>
+        <input type="radio" id="star3" name="rate" class="ocultar" value="3" />
+        <label for="star3" title="Regular" class="label_star">3 stars</label>
+        <input type="radio" id="star2" name="rate" class="ocultar" value="2" />
+        <label for="star2" title="Malo" class="label_star">2 stars</label>
+        <input type="radio" id="star1" name="rate" class="ocultar" value="1" />
+        <label for="star1" title="Muy malo" class="label_star">1 star</label>
+    </div>
+
+    <table class="tablacontenidocalificacion centrartabla">
+        <tr><td colspan="3" id="body_calificacion"></td></tr>
+        <tr>
+            <td width="30"></td>
+            <td><textarea id="txt_comentario" rows="8"></textarea></td>
+            <td></td>
+        </tr>
+        @*******************************@
+        <tr>
+            <td colspan="3" style="padding:30px 0 15px 0;">¿Cómo podemos hacer que tu experiencia sea mejor en el futuro?</td>
+        </tr>
+        <tr>
+            <td width="30"></td>
+            <td><textarea id="txt_comentariomejora" rows="8"></textarea></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="7" style="text-align:center; padding-top:15px;"><button class="boton" id="btn_enviar">Enviar</button></td>
+        </tr>
+
+    </table>
+
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/icons.js"></script>
+    <script src="~/Scripts/Calificacion/servicio.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+﻿body{
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.tabla_inputs{
+    padding:2% 0;
+    margin-left:2%;
+}
+
+[type="date"] {
+  background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  92% 50% no-repeat ;
+}
+[type="date"]::-webkit-inner-spin-button {
+  display: none;
+}
+[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+[type="date"]{
+    height:25px;
+    border-radius:25px;
+    outline:none;
+    padding:0 10px;
+    font-size:14px;
+}
+select{
+    display:block;
+    width:450px;
+    height:28px;
+	padding:0 10px;
+	border-radius:25px;
+    font-size:14px;
+    outline:none;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+label{
+    margin: 0 10px;
+}
+
+.inputs_precios{
+    width:35px;
+    text-align:center;
+    height:20px;
+}
+

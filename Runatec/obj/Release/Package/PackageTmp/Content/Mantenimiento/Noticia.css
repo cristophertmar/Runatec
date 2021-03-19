@@ -1,0 +1,72 @@
+﻿.iconoeditar{
+    text-align:right;
+    cursor:pointer;
+}
+.centrar {
+    text-align: center;
+}
+textarea{
+    width:400px;
+    height:60px;
+    border-radius:5px;
+    padding:2px 5px;
+    outline:none;
+}
+.titulo{
+    font-size:13px;
+    padding:0!important;
+}
+#campo_imagen img{
+    width:180px;
+    margin:0;
+}
+
+.tabla_prioridad{
+    overflow-y:scroll;
+    font-size:15px;
+    margin: 0 20px; 
+    width:500px;
+    display:inline-block;
+    height:400px;
+
+}
+
+.tabla_prioridad tr:nth-child(even){background-color: #DEF3CA;}
+
+.tabla_prioridad td{
+    padding:5px 0;
+}
+
+.tabla_prioridad thead{
+    font-size:18px;
+    text-align:center;
+    font-weight:600;
+}
+
+#select_estado, #txt_fecha{
+    height:25px;
+}
+
+.file{
+    display:none;
+}
+
+.labelfile{
+    display:inline-block;
+    color:#808080;
+    cursor:pointer;
+    border:2px solid #808080;
+    padding:6px;
+    width:200px;
+}
+.labelfile:hover{
+    opacity:0.6;
+
+}
+.tablapopup {
+    overflow-y: scroll;
+    font-size: 15px;
+    display: inline-block;
+    margin: 0 35px;
+    height: 450px;
+}

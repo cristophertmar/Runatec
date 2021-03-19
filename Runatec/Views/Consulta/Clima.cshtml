@@ -1,0 +1,89 @@
+﻿
+@{
+    ViewBag.Title = "Clima";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="~/Content/Consulta/graficoclima.css?v=@ViewData["qversion"]" rel="stylesheet" />
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+</head>
+<body>
+
+    <div>
+        <input id="version_v" value=@ViewData["qversion"] style="display:none">
+    </div>
+    <h1 id="titulo" style="color:#19a819; margin:25px 0; text-align:center;"></h1>
+
+    <!-- Graficos -->
+    @*<div class="div_reporte">
+            <div id="grafico_precipitacion"></div>
+            <p class="p_descripcion">El porcentaje de días en los que se observan diferentes tipos de precipitación, excluidas las cantidades ínfimas: solo lluvia, solo nieve, mezcla (llovió y nevó el mismo día).</p>
+        </div>*@
+
+    <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+
+    <figure class="highcharts-figure">
+        <div id="container"></div>
+        <p class="highcharts-description">
+            Chart showing how an HTML table can be used as the data source for the
+            chart using the Highcharts data module. The chart is built by
+            referencing the existing HTML data table in the page. Several common
+            data source types are available, including CSV and Google Spreadsheet.
+        </p>
+
+        <table id="datatable">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Jane</th>
+                    <th>John</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Apples</th>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <th>Pears</th>
+                    <td>2</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>Plums</th>
+                    <td>5</td>
+                    <td>11</td>
+                </tr>
+                <tr>
+                    <th>Bananas</th>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <th>Oranges</th>
+                    <td>2</td>
+                    <td>4</td>
+                </tr>
+            </tbody>
+        </table>
+    </figure>
+
+    <div id="scrollToHere">
+    </div>
+
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/GraficoPrecios/highcharts.js"></script>
+    <script src="~/Scripts/GraficoPrecios/highcharts-3d.js"></script>
+    <script src="~/Scripts/GraficoPrecios/exporting.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/font-all.js"></script>
+    <script src="~/Scripts/Clima/clima.js?v=@ViewData["qversion"]"></script>
+</body>
+</html>
+

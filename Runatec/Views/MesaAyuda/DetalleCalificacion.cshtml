@@ -1,0 +1,122 @@
+﻿
+@{
+    ViewBag.Title = "Detalle de Calificación";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="~/Content/MesaAyuda/DetalleCalificacion.css?v=@ViewData["qversion"]" rel="stylesheet" />
+
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/MesaAyuda/DetalleCalificacion.js?v=@ViewData["qversion"]"></script>
+</head>
+<body>
+    <div>
+        <input id="version_v" value=@ViewData["qversion"] style="display:none">
+    </div>
+    <table class="tabla_inputs">
+
+        <tr>
+            <td>Fecha Inicio:</td>
+            <td><input type="date" id="txt_fechainicio" /></td>
+            <td>Fecha Fin:</td>
+            <td><input type="date" id="txt_fechafin" /></td>
+            <td style="padding-left:10px;">Usuario:</td>
+            <td><input type="text" id="txt_usuario" style="width:300px;"/></td>
+            <td><button id="btn_buscar" class="boton" style="margin-left:15px;">Buscar</button></td>
+
+        </tr>
+        <tr>
+            <td>Calificación:</td>
+            <td>
+                <select id="select_calificacion">
+                    <option value="0" style="color:black; font-size:15px;">-- Seleccionar --</option>
+                    <option value="1">★</option>
+                    <option value="2">★★</option>
+                    <option value="3">★★★</option>
+                    <option value="4">★★★★</option>
+                    <option value="5">★★★★★</option>
+                </select>
+            </td>
+            <td height="50" style="padding-left:25px;">Categoría:</td>
+            <td><select id="select_categoria"></select></td>
+            
+        </tr>
+    </table>
+    <table class="tabla_carga">
+        <thead>
+            <tr>
+                <td>N°</td>
+                <td>Fecha Calificación</td>
+                <td>Categoría</td>
+                <td>Solicitante</td>
+                <td>Operador</td>
+                <td>Calificación</td>
+                <td></td>
+            </tr>
+        </thead>
+        <tbody id="tbody_listar"></tbody>
+    </table>
+    <div id="div_paginacion"></div>
+
+    <div id="fondoPopup" class="fondo">&nbsp;</div>
+    @*popup de Confirmación*@
+    <div id="PopupDetalle" class="ventana" style="overflow:hidden">
+        <div id="PopupDetalledivheader" style="width:100%;">
+            <table style="width:100% ; border-spacing:0px 0px; ">
+                <tr style="background:rgb(25,165,25);" @*onmouseover="this.style.cursor='move'"*@>
+                    <td style="width:100%; height:40px; text-align:center;">
+                        &nbsp;&nbsp;
+                        <span id="tituloPopup">&nbsp;</span>&nbsp;&nbsp;
+                    </td>
+                    <td id="CerrarPopupDetalle" onclick="CerrarPopupDetalle();">
+                        <span><i class="far fa-window-close iconocerrar"></i></span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <table class="popupdetalle">
+                <tr>
+                    <td id="td_calificacion" colspan="2"></td>
+                </tr>
+                <tr>
+                    <td>Fecha Solicitud:</td>
+                    <td><input type="text" id="txt_fecha_solicitud" readonly/></td>
+                </tr>
+                <tr>
+                    <td>Categoría:</td>
+                    <td><input type="text" id="txt_categoria_solicitud" readonly/></td>
+                </tr>
+                <tr>
+                    <td style="vertical-align: top;">Mensaje:</td>
+                    <td><textarea id="txt_descripcion_solicitud" rows="5" readonly></textarea></td>
+                </tr>
+                <tr>
+                    <td>Solicitante:</td>
+                    <td><input type="text" id="txt_nombres_productor" readonly/></td>
+                </tr>
+                <tr>
+                    <td>Fecha Atención:</td>
+                    <td><input type="text" id="txt_fecha_atencion" readonly/></td>
+                </tr>
+                <tr>
+                    <td style="vertical-align: top;">Respuesta:</td>
+                    <td><textarea id="txt_descripcion_atencion" rows="5" readonly></textarea></td>
+                </tr>
+                <tr>
+                    <td>Operador:</td>
+                    <td><input type="text" id="txt_nombres_admin" readonly/></td>
+                </tr>
+                <tr style="height:60px;">
+                    <td colspan="2" style="text-align:center;"><button class="boton" onclick="CerrarPopupDetalle();">Cerrar</button></td>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+
+</body>
+</html>

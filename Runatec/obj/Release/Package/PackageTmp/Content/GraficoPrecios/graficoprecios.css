@@ -1,0 +1,144 @@
+﻿/*
+1.General
+2.Web
+3.Mobile
+*/
+
+/*** 1.General ***/
+span {
+margin: auto;
+}
+.lab {
+    font-size: 15px;
+    margin: auto 0;
+    color: #19a819;
+}
+
+#grafico_precios {
+    margin: 3%;
+}
+
+
+/*popup proceso*/
+.ventanaproceso {
+    background-image: url('../../imagenes/CargaPrecios/loading.gif');
+    color: black;
+    display: none;
+    position: fixed;
+    top: 25%;
+    left: 15%;
+    z-index: 11;
+}
+
+.fondoproceso {
+    display: none;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    -moz-opacity: 0.3;
+    z-index: 10;
+    opacity: 0.30;
+    filter: alpha(opacity=30);
+}
+/*Fin popup proceso*/
+/*Select múltiples*/
+button {
+    width: 400px;
+}
+
+#listaproducto label, #listamercado label {
+    color: black;
+    font-size: 12px;
+    width: 550px;
+}
+
+#listaproducto, #listamercado {
+    width: 400px;
+    z-index: 100;
+    overflow: auto;
+    height: 250px;
+    margin: auto 10px !important;
+}
+
+#listamercado li:hover {
+    text-decoration: none;
+    background-color:none;
+    color:red;
+}
+
+span:hover {
+    text-decoration: none;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    font-size: 14px;
+    list-style: none;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    background-clip: padding-box;
+}
+
+.open > .dropdown-menu {
+    display: block;
+}
+/*Fin select múltiples*/
+
+/*** 2.Web ***/
+#contenedor_total div{
+    margin-bottom:10px;
+}
+
+#tr_rangofechas div{
+    margin-right:20px;
+}
+.contenedor_select {
+    display: flex;
+}
+.contenedor_select div{
+    margin-right:20px;
+}
+#select_periodoatras {
+    width: 25%;
+}
+@media (min-width: 701px) {
+    input[type="date"]{
+    width: 20%!important;
+    }
+}
+/*** 3.Mobile ***/
+@media (max-width: 700px) {
+    button {
+        width: 280px;
+    }
+
+    .contenedor_select {
+        display: block;
+    }
+
+    #listaproducto, #listamercado {
+        width: 240px;
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    #select_periodoatras{
+        width:100%;
+    }
+}

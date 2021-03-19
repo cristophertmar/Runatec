@@ -1,0 +1,46 @@
+﻿body{
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+/*Inputs-botones para ingreso de archivo*/
+.tabla_inputs{
+    padding:2% 0;
+    margin-left:4%;
+}
+
+input[type=file] {
+}
+input{
+    margin:0 3px;
+}
+
+#mercado{
+    padding:5px;
+    text-align:center;
+    vertical-align: central;
+    background-color:#DEF3CA;
+    /*borde de cada td*/
+    border: 1px solid #BED3AB;
+    -moz-border-radius:8px;
+    -webkit-border-radius:8px;
+    border-radius:8px;
+    color:#666;
+    text-shadow:1px 1px 1px #fff;
+}
+
+#fechaproceso{
+    padding:5px;
+    text-align:center;
+    vertical-align: central;
+    background-color:#DEF3CA;
+    /*borde de cada td*/
+    border: 1px solid #BED3AB;
+    -moz-border-radius:8px;
+    -webkit-border-radius:8px;
+    border-radius:8px;
+    color:#666;
+    text-shadow:1px 1px 1px #fff;
+}
+
+
+

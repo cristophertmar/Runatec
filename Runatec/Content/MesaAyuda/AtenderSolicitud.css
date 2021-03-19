@@ -1,0 +1,39 @@
+﻿#contenedor_atencion{
+    margin: 30px 0;
+}
+table {
+    margin: auto;
+    color: black;
+}
+td {
+    padding:5px;
+}
+textarea {
+    outline: none;
+    width: 600px;
+    border-radius: 5px;
+    border: 1px solid;
+    border-color: #cecece;
+    padding: 5px;
+    resize:none;
+}
+
+select, input {
+    outline: none;
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid;
+    border-color: #cecece;
+    width: 600px;
+    padding: 0 5px;
+    background: white;
+}
+.td_titulo {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 20px;
+    color: rgb(25,165,25);
+    font-weight:700;
+}
+
+

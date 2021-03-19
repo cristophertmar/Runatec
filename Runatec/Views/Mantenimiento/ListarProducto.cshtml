@@ -1,0 +1,148 @@
+﻿
+@{
+    ViewBag.Title = "ListarProducto";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Carga de Precios</title>
+    <link href="~/Content/Mantenimiento/listarproducto.css?v=@ViewData["qversion"]" rel="stylesheet" />
+    <link href="~/Content/jquery-ui.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div>
+        <input id="version_v" value=@ViewData["qversion"] style="display:none">
+    </div>
+    <table class="tabla_inputs">
+
+        <tr>
+            <td style="padding-left:30px;">Producto: </td>
+            <td>
+                <input type="text" id="txt_producto" />
+            </td>
+            <td>
+                <button class="boton" id="btn_buscar" style="cursor:pointer">Buscar</button>
+            </td>
+        </tr>
+
+    </table>
+    <table class="tabla_carga">
+        <thead>
+            <tr>
+                <td class="excepto"><button id="AgregarProducto" class="boton"><i style="padding-right:3px; width:8px;" class="fas fa-plus"></i>Agregar</button></td>
+            </tr>
+            <tr>                
+                <td width="90">Código</td>
+                <td>Descripción</td>
+                <td >Calidad</td>
+                <td width="40">Medida</td>
+
+                <td></td>
+            </tr>
+        </thead>
+        <tbody id="GridListar"></tbody>
+    </table>
+
+    <div id="fondoPopup" class="fondo">&nbsp;</div>
+    @*popup producto*@
+    <div id="PopupProducto" class="ventana" style="overflow:hidden">
+        <div id="PopupProductodivheader" style="width:100%;">
+            <table style="width:100% ; border-spacing:0px 0px; ">
+                <tr style="background:rgb(25,165,25);" onmouseover="this.style.cursor='move'">
+                    <td style="width:100%; height:40px; text-align:center;">
+                        &nbsp;&nbsp;
+                        <span id="tituloPopup">&nbsp;</span>&nbsp;&nbsp;
+                    </td>
+                    <td id="CerrarPopupProducto" onclick="CerrarPopupProducto();">
+                        <span><i class="far fa-window-close iconocerrar"></i></span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <table class="tablapopup" style="margin:auto; padding:10px">
+                <tr>
+                    <td><input type="text" id="nidproducto" style="display:none;"/></td>
+                </tr>
+                <tr>
+                    <td>Familia:</td>
+                    <td>
+                        <select id="select_familia">
+                            
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Sub-Familia:</td>
+                    <td>
+                        <select id="select_subfamilia"></select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Variedad:</td>
+                    <td>
+                        <select id="select_variedad"></select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Origen:</td>
+                    <td>
+                        <select id="select_origen"></select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Calidad:</td>
+                    <td>
+                        <select id="select_calidad"></select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Medida:</td>
+                    <td>
+                        <select id="select_medida"></select>
+                    </td>
+                </tr>
+                <tr id="tr_estado">
+                    <td>Estado:</td>
+                    <td>
+                        <select id="select_estado">
+                            <option>-- SELECCIONAR --</option>
+                            <option value="0">INACTIVO</option>
+                            <option value="1">ACTIVO</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Descripción Corta:</td>
+                    <td><input type="text" id="txt_descripcioncorta"/></td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <table style="margin:auto">
+                <tr></tr>
+                <tr>
+                    <td>
+                        <input type="button" class="boton" id="GrabarProducto" value="Grabar" />
+                    </td>
+                    <td>
+                        <input type="button" class="boton" onclick="CerrarPopupProducto();" value="Cancelar" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div id="div_paginacion" class="div_paginacion"></div>
+</body>
+</html>
+
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script src="~/Scripts/jquery-ui.min.js"></script>
+<script src="~/Scripts/Mantenimiento/ListarProducto.js?v=@ViewData["qversion"]"></script>
+
+

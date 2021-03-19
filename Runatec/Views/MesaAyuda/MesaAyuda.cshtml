@@ -1,0 +1,66 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Mesa de Ayuda</title>
+    <link href="~/Content/MesaAyuda/MesaAyuda.css?v=@ViewData["qversion"]" rel="stylesheet" />
+</head>
+<body>
+<div>
+    <input id="version_v" value=@ViewData["qversion"] style="display:none">
+</div>
+<div id="contenedor_total">
+    <div class="text-center"><label id="title" class="titulo"></label></div>
+    <div id="contenedor_filtros">
+        <div>
+            <label class="lab">Categor&iacutea:</label>
+            <select id="select_categoria" class="form-control"></select>
+        </div>
+        <div>
+            <label class="lab" for="txt_descripcion">Comentario:</label>
+            <textarea id="txt_descripcion" rows="9" class="form-control"></textarea>
+        </div>
+        <div id="tr_correos">
+            <label class="lab">Correo:</label>
+            <input type="email" id="txt_correo" class="form-control" />
+        </div>
+        <div class="text-center">
+            <a class="btn btn-success" id="boton_enviarsolicitud">Enviar</a>
+        </div>
+    </div>
+    
+
+    @*<table class="tabla_form">
+        <tr>
+            <td>Categoría: </td>
+            <td>
+                <select id="select_categoria"></select>
+            </td>
+
+        </tr>
+        <tr>
+            <td style="vertical-align: top;padding-top:20px;">Comentario: </td>
+            <td style="padding-top:20px;"><textarea id="txt_descripcion" rows="12"></textarea></td>
+        </tr>
+
+        <tr id="tr_correos">
+            <td>Correo:</td>
+            <td><input type="email" id="txt_correo" /></td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td>
+                <button class="boton" id="boton_enviarsolicitud">ENVIAR</button>
+            </td>
+        </tr>
+    </table>*@
+</div>
+    <script src="~/Scripts/jquery-1.10.2.min.js?v=@ViewData["qversion"]"></script>
+    <script src="~/Scripts/Login/login.js?v=@ViewData["qversion"]"></script>
+    <script src="~/Scripts/MesaAyuda/MesaAyuda.js?v=@ViewData["qversion"]"></script>
+</body>
+</html>

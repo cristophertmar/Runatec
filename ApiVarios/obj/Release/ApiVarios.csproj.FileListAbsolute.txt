@@ -1,0 +1,18 @@
+J:\fuentes\MINAGRI\RUNATEC_ADMIN\Ambiente_Desarrollo\Runatec_20200127 v3\ApiVarios\bin\Release\ApiVarios.dll
+J:\fuentes\MINAGRI\RUNATEC_ADMIN\Ambiente_Desarrollo\Runatec_20200127 v3\ApiVarios\bin\Release\ApiVarios.pdb
+J:\fuentes\MINAGRI\RUNATEC_ADMIN\Ambiente_Desarrollo\Runatec_20200127 v3\ApiVarios\bin\Release\Newtonsoft.Json.dll
+J:\fuentes\MINAGRI\RUNATEC_ADMIN\Ambiente_Desarrollo\Runatec_20200127 v3\ApiVarios\bin\Release\RestSharp.dll
+J:\fuentes\MINAGRI\RUNATEC_ADMIN\Ambiente_Desarrollo\Runatec_20200127 v3\ApiVarios\bin\Release\Newtonsoft.Json.xml
+J:\fuentes\MINAGRI\RUNATEC_ADMIN\Ambiente_Desarrollo\Runatec_20200127 v3\ApiVarios\bin\Release\RestSharp.xml
+J:\fuentes\MINAGRI\RUNATEC_ADMIN\Ambiente_Desarrollo\Runatec_20200127 v3\ApiVarios\obj\Release\ApiVarios.csprojResolveAssemblyReference.cache
+J:\fuentes\MINAGRI\RUNATEC_ADMIN\Ambiente_Desarrollo\Runatec_20200127 v3\ApiVarios\obj\Release\ApiVarios.dll
+J:\fuentes\MINAGRI\RUNATEC_ADMIN\Ambiente_Desarrollo\Runatec_20200127 v3\ApiVarios\obj\Release\ApiVarios.pdb
+J:\fuentes\MINAGRI\RUNATEC_ADMIN\Ambiente_Desarrollo\Runatec_20200203\ApiVarios\bin\Release\ApiVarios.dll
+J:\fuentes\MINAGRI\RUNATEC_ADMIN\Ambiente_Desarrollo\Runatec_20200203\ApiVarios\bin\Release\ApiVarios.pdb
+J:\fuentes\MINAGRI\RUNATEC_ADMIN\Ambiente_Desarrollo\Runatec_20200203\ApiVarios\bin\Release\Newtonsoft.Json.dll
+J:\fuentes\MINAGRI\RUNATEC_ADMIN\Ambiente_Desarrollo\Runatec_20200203\ApiVarios\bin\Release\RestSharp.dll
+J:\fuentes\MINAGRI\RUNATEC_ADMIN\Ambiente_Desarrollo\Runatec_20200203\ApiVarios\bin\Release\Newtonsoft.Json.xml
+J:\fuentes\MINAGRI\RUNATEC_ADMIN\Ambiente_Desarrollo\Runatec_20200203\ApiVarios\bin\Release\RestSharp.xml
+J:\fuentes\MINAGRI\RUNATEC_ADMIN\Ambiente_Desarrollo\Runatec_20200203\ApiVarios\obj\Release\ApiVarios.csprojResolveAssemblyReference.cache
+J:\fuentes\MINAGRI\RUNATEC_ADMIN\Ambiente_Desarrollo\Runatec_20200203\ApiVarios\obj\Release\ApiVarios.dll
+J:\fuentes\MINAGRI\RUNATEC_ADMIN\Ambiente_Desarrollo\Runatec_20200203\ApiVarios\obj\Release\ApiVarios.pdb

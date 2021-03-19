@@ -1,0 +1,18 @@
+﻿body {
+}
+.tabla_inputs td input[type="text"], select{
+    margin: 0 8px;
+    display: block;
+    height: 22px;
+    padding: 0 10px;
+    border-width: 1px;
+    border-color: #cecece;
+    border-radius: 25px;
+    font-size: 14px;
+    outline: none;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+#div_paginacion{
+    text-align:center;
+}

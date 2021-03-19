@@ -1,0 +1,92 @@
+﻿[type="date"] {
+    background: #fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png) 92% 50% no-repeat;
+}
+
+    [type="date"]::-webkit-inner-spin-button {
+        display: none;
+    }
+
+    [type="date"]::-webkit-calendar-picker-indicator {
+        opacity: 0;
+    }
+
+[type="date"] {
+    height: 25px;
+    border-radius: 25px;
+    outline: none;
+    padding: 0 10px;
+    font-size: 14px;
+}
+input {
+    margin: 0 8px;
+    display: block;
+    height: 22px;
+    padding: 0 10px;
+    border-width: 1px;
+    border-color: #cecece;
+    border-radius: 25px;
+    font-size: 14px;
+    outline: none;
+    font-family: 'Lexend Deca', sans-serif;
+}
+select {
+    outline: none;
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid;
+    border-color: #cecece;
+    width: 200px;
+    padding: 0 5px;
+    background: white;
+    font-size:16px;
+}
+
+/***********Tabla de detalles**********/
+.tabladetalles {
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+.tabladetalles td {
+    border: none;
+    padding: 10px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    text-align:center;
+}
+
+.tabladetalles tr:nth-child(even) {
+    background-color: #DEF3CA;
+}
+
+#div_tabladetalles {
+    overflow-y: scroll;
+    height: 380px;
+}
+
+/*Estilos de la cabecera de la tabla de detalles*/
+.tabladetalles thead td {
+    text-align: center;
+    padding: 10px 20px;
+    color: #fff;
+    text-shadow: 1px 1px 1px #666;
+    border-bottom: 3px solid rgb(139,198,66);
+    background-color: rgb(139,198,66);
+    background: -webkit-gradient( linear, left bottom, left top, color-stop(0.02, rgb(123,192,67)), color-stop(0.51, rgba(25,165,25.5)), color-stop(0.87, rgb(123,192,67)) );
+    background: -moz-linear-gradient( center bottom, rgb(123,192,67), rgba(25,165,25.5), rgb(123,192,67) );
+}
+.tabladetalles thead td:first-child{
+    -webkit-border-top-left-radius: 5px;
+    -moz-border-radius: 5px 0px 0px 0px;
+}
+
+.tabladetalles thead td:last-child {
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius: 0px 5px 0px 0px;
+}
+
+#tbody_listar tr .td_star, #tbody_detallecalificacion tr .td_star{
+    color: gold;
+    font-size: 18px;
+    stroke: black;
+    stroke-width: 15px;
+}

@@ -1,0 +1,44 @@
+J:\fuentes\MINAGRI\RUNATEC_ADMIN\Ambiente_Desarrollo\RunatecAdmin_20200115\ApiVarios\bin\Debug\ApiVarios.dll
+J:\fuentes\MINAGRI\RUNATEC_ADMIN\Ambiente_Desarrollo\RunatecAdmin_20200115\ApiVarios\bin\Debug\ApiVarios.pdb
+J:\fuentes\MINAGRI\RUNATEC_ADMIN\Ambiente_Desarrollo\RunatecAdmin_20200115\ApiVarios\bin\Debug\Newtonsoft.Json.dll
+J:\fuentes\MINAGRI\RUNATEC_ADMIN\Ambiente_Desarrollo\RunatecAdmin_20200115\ApiVarios\bin\Debug\RestSharp.dll
+J:\fuentes\MINAGRI\RUNATEC_ADMIN\Ambiente_Desarrollo\RunatecAdmin_20200115\ApiVarios\bin\Debug\Newtonsoft.Json.xml
+J:\fuentes\MINAGRI\RUNATEC_ADMIN\Ambiente_Desarrollo\RunatecAdmin_20200115\ApiVarios\bin\Debug\RestSharp.xml
+J:\fuentes\MINAGRI\RUNATEC_ADMIN\Ambiente_Desarrollo\RunatecAdmin_20200115\ApiVarios\obj\Debug\ApiVarios.csprojResolveAssemblyReference.cache
+J:\fuentes\MINAGRI\RUNATEC_ADMIN\Ambiente_Desarrollo\RunatecAdmin_20200115\ApiVarios\obj\Debug\ApiVarios.dll
+J:\fuentes\MINAGRI\RUNATEC_ADMIN\Ambiente_Desarrollo\RunatecAdmin_20200115\ApiVarios\obj\Debug\ApiVarios.pdb
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\RunatecAdmin_20200121\ApiVarios\bin\Debug\ApiVarios.dll
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\RunatecAdmin_20200121\ApiVarios\bin\Debug\ApiVarios.pdb
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\RunatecAdmin_20200121\ApiVarios\bin\Debug\Newtonsoft.Json.dll
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\RunatecAdmin_20200121\ApiVarios\bin\Debug\RestSharp.dll
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\RunatecAdmin_20200121\ApiVarios\bin\Debug\Newtonsoft.Json.xml
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\RunatecAdmin_20200121\ApiVarios\bin\Debug\RestSharp.xml
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\RunatecAdmin_20200121\ApiVarios\obj\Debug\ApiVarios.csprojResolveAssemblyReference.cache
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\RunatecAdmin_20200121\ApiVarios\obj\Debug\ApiVarios.dll
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\RunatecAdmin_20200121\ApiVarios\obj\Debug\ApiVarios.pdb
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Nueva carpeta\Runatec_20200124\ApiVarios\bin\Debug\ApiVarios.dll
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Nueva carpeta\Runatec_20200124\ApiVarios\bin\Debug\ApiVarios.pdb
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Nueva carpeta\Runatec_20200124\ApiVarios\bin\Debug\Newtonsoft.Json.dll
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Nueva carpeta\Runatec_20200124\ApiVarios\bin\Debug\RestSharp.dll
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Nueva carpeta\Runatec_20200124\ApiVarios\bin\Debug\Newtonsoft.Json.xml
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Nueva carpeta\Runatec_20200124\ApiVarios\bin\Debug\RestSharp.xml
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Nueva carpeta\Runatec_20200124\ApiVarios\obj\Debug\ApiVarios.dll
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Nueva carpeta\Runatec_20200124\ApiVarios\obj\Debug\ApiVarios.pdb
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Runatec\Runatec_20200129\ApiVarios\bin\Debug\ApiVarios.dll
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Runatec\Runatec_20200129\ApiVarios\bin\Debug\ApiVarios.pdb
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Runatec\Runatec_20200129\ApiVarios\bin\Debug\Newtonsoft.Json.dll
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Runatec\Runatec_20200129\ApiVarios\bin\Debug\RestSharp.dll
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Runatec\Runatec_20200129\ApiVarios\bin\Debug\Newtonsoft.Json.xml
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Runatec\Runatec_20200129\ApiVarios\bin\Debug\RestSharp.xml
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Runatec\Runatec_20200129\ApiVarios\obj\Debug\ApiVarios.csprojResolveAssemblyReference.cache
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Runatec\Runatec_20200129\ApiVarios\obj\Debug\ApiVarios.dll
+I:\Fuentes\RunatecAdmin\Ambiente_Desarrollo\Runatec\Runatec_20200129\ApiVarios\obj\Debug\ApiVarios.pdb
+J:\fuentes\MINAGRI\RUNATEC_ADMIN\Ambiente_Desarrollo\Runatec_20200203\ApiVarios\bin\Debug\ApiVarios.dll
+J:\fuentes\MINAGRI\RUNATEC_ADMIN\Ambiente_Desarrollo\Runatec_20200203\ApiVarios\bin\Debug\ApiVarios.pdb
+J:\fuentes\MINAGRI\RUNATEC_ADMIN\Ambiente_Desarrollo\Runatec_20200203\ApiVarios\bin\Debug\Newtonsoft.Json.dll
+J:\fuentes\MINAGRI\RUNATEC_ADMIN\Ambiente_Desarrollo\Runatec_20200203\ApiVarios\bin\Debug\RestSharp.dll
+J:\fuentes\MINAGRI\RUNATEC_ADMIN\Ambiente_Desarrollo\Runatec_20200203\ApiVarios\bin\Debug\Newtonsoft.Json.xml
+J:\fuentes\MINAGRI\RUNATEC_ADMIN\Ambiente_Desarrollo\Runatec_20200203\ApiVarios\bin\Debug\RestSharp.xml
+J:\fuentes\MINAGRI\RUNATEC_ADMIN\Ambiente_Desarrollo\Runatec_20200203\ApiVarios\obj\Debug\ApiVarios.csprojResolveAssemblyReference.cache
+J:\fuentes\MINAGRI\RUNATEC_ADMIN\Ambiente_Desarrollo\Runatec_20200203\ApiVarios\obj\Debug\ApiVarios.dll
+J:\fuentes\MINAGRI\RUNATEC_ADMIN\Ambiente_Desarrollo\Runatec_20200203\ApiVarios\obj\Debug\ApiVarios.pdb

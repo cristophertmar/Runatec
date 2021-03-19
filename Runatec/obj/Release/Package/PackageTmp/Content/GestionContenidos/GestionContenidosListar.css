@@ -1,0 +1,146 @@
+﻿.iconoeditar{
+    text-align:right;
+    cursor:pointer;
+}
+.centrar {
+    text-align: center;
+}
+textarea{
+    width:1010px;
+    height:80px;
+    border-radius:5px;
+    padding:10px 5px 10px 10px;
+    margin:10px 10px 10px 0px;
+    outline:none;
+}
+.titulo{
+    font-size:13px;
+    padding:0!important;
+}
+
+.txt_titulo{
+    margin:10px 10px 10px 0px;
+    padding:10px;
+    width:1000px;
+    border-radius:5px;
+    border:solid 1px dimgrey;
+}
+
+.combo{
+    margin:15px;
+    padding:10px;
+    height:auto;
+    width:auto;
+    text-transform:uppercase;
+}
+
+
+.file{
+    display:none;
+}
+
+.labelfile{
+    display:inline-block;
+    color:#808080;
+    cursor:pointer;
+    border:2px solid #808080;
+    padding:6px;
+    width:200px;
+}
+.labelfile:hover{
+    opacity:0.6;
+
+}
+
+#campo_imagen img{
+    width:180px;
+    margin:0;
+}
+
+.tabla_lista{
+    margin:auto;
+    font-weight:bold;
+    font-size:22px;
+    padding:10px;
+    /*margin:auto;
+    overflow-y:scroll;
+    font-size:15px;
+    margin: 0 20px; 
+    width:500px;
+    display:inline-block;
+    height:400px;*/
+}
+
+
+
+/*.tabla_prioridad tr:nth-child(even){background-color: #DEF3CA;}*/
+
+.coldescripcion{
+    padding:25px;
+    width:750px;
+    /*border-bottom: 1px dashed rgb(128, 128, 128);*/ 
+}
+.coldescripcion:hover{
+    cursor:pointer;
+    text-decoration: underline;
+    color:rgb(25,168,25);
+}
+
+.colimagen{
+    margin:10px;
+    /*border-top: 1px solid rgb(128, 128, 128);*/ 
+}
+
+
+
+.tabla_prioridad thead{
+    font-size:18px;
+    text-align:center;
+    font-weight:600;
+}
+
+#select_estado, #txt_fecha{
+    height:25px;
+}
+
+.file{
+    display:none;
+}
+
+.labelfile{
+    display:inline-block;
+    color:#808080;
+    cursor:pointer;
+    border:2px solid #808080;
+    padding:6px;
+    width:200px;
+}
+.labelfile:hover{
+    opacity:0.6;
+
+}
+.tablapopup {
+    overflow-y: scroll;
+    font-size: 15px;
+    display: inline-block;
+    margin: 0 35px;
+    height: 450px;
+}
+
+.boton{
+    font-family: 'Lexend Deca', sans-serif;
+    color:white;
+    border:none;
+	border-radius:5px;
+	background:rgba(25,165,25,.9);
+    outline:none;
+    cursor:pointer;
+    padding:15px;
+    margin:10px;
+    text-transform:uppercase;
+    font-size:12px;
+    height:auto;
+}
+.boton:hover{
+    background:rgba(25,165,25,.7);
+}

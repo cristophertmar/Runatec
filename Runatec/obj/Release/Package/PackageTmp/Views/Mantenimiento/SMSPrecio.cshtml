@@ -1,0 +1,52 @@
+﻿
+@{
+    ViewBag.Title = "SMSPrecio";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Usuario</title>
+    <link href="~/Content/jquery-ui.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap" rel="stylesheet">
+    <link href="~/Content/Mantenimiento/SMSPrecio.css?v=@ViewData["qversion"]" rel="stylesheet" />
+</head>
+<body>
+    <div>
+        <input id="version_v" value=@ViewData["qversion"] style="display:none">
+    </div>
+   
+    @*listado usuarios*@
+    <table id="tablaencabezado">
+        <tr>
+            <td>
+                Mensaje:
+            </td>            
+        </tr>
+        <tr>
+            <td>
+                <textarea></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Hora de envío:
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="time" name="newdate"/>
+            </td>
+        </tr>
+
+    </table>   
+
+</body>
+</html>
+
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script src="~/Scripts/jquery-ui.min.js"></script>
+<script src="~/Scripts/Mantenimiento/SMSPrecio.js?v=@ViewData["qversion"]"></script>
+
+

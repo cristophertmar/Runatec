@@ -1,0 +1,95 @@
+﻿span{
+    margin:auto 10px;
+}
+.lab {
+    color: #19a819;
+    margin: auto 0;
+}
+#contenedor_filtros {
+}
+#select_amplitud, #select_mercado {
+    width: 30%;
+}
+/*Select de productos*/
+#listaproducto label{
+    color:black;
+    font-size:12px;
+    width:650px;
+}
+#listaproducto{
+    width:650px;
+}
+
+#listaproducto{
+    z-index:1;
+    overflow:auto;
+    height:250px;
+    margin:auto 10px!important;
+}
+
+ul li a:hover{
+    text-decoration:none;
+}
+span:hover{
+    text-decoration:none;
+
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  float: left;
+  min-width: 160px;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  font-size: 14px;
+  list-style: none;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+          box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  background-clip: padding-box;
+}
+
+.open > .dropdown-menu {
+  display: block;
+}
+
+/*Select de productos*/
+button{
+    width:500px;
+}
+
+#grafico_precios{
+    margin: 3%;
+}
+#contenedor_total div{
+    margin-bottom: 10px;
+}
+@media (min-width: 701px) {
+    #contenedor_fecha{
+        display:flex;
+    }
+    #contenedor_fecha div{
+        margin-right: 20px;
+    }
+    
+}
+@media (max-width: 700px) {
+    button {
+        width: 280px;
+    }
+    .contenedor_select {
+        display: block;
+    }
+    #listaproducto, #listamercado {
+        width: 240px;
+    }
+    #select_amplitud{
+        width:100%;
+    }
+}

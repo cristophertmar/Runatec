@@ -1,0 +1,59 @@
+﻿
+@{
+    ViewBag.Title = "InfoClima";
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="~/Content/Infoclima/InfoClima.css?v=@ViewData["qversion"]" rel="stylesheet" />
+</head>
+<body>
+    <div>
+        <input id="version_v" value=@ViewData["qversion"] style="display:none">
+    </div>
+    <div id="contenedor_total">
+        <div class="text-center"><label id="titulo" class="titulo"></label></div>
+
+        <!-- Graficos -->
+        <div class="div_reporte">
+            <p class="h3">Temperatura:</p>
+            <p id="p_comentario_temperatura" class="p_comentario"></p>
+            <div id="grafico_temperatura"></div>
+            <p id="p_descripcion_temperatura" class="p_descripcion"></p>
+
+            <p class="h3">Nubosidad:</p>
+            <p id="p_comentario_nubosidad" class="p_comentario"></p>
+            <div id="grafico_nubosidad"></div>
+            <p id="p_descripcion_nubosidad" class="p_descripcion"></p>
+
+            <p class="h3">Precipitación:</p>
+            <p id="p_comentario_precipitacion" class="p_comentario"></p>
+            <div id="grafico_precipitacion"></div>
+            <p id="p_descripcion_precipitacion" class="p_descripcion"></p>
+
+            <p class="h3">Horas de luz:</p>
+            <p id="p_comentario_horasluz" class="p_comentario"></p>
+            <div id="grafico_horasluz"></div>
+            <p id="p_descripcion_horasluz" class="p_descripcion"></p>
+
+            <p class="h3">Lluvia:</p>
+            <p id="p_comentario_lluvia" class="p_comentario"></p>
+            <div id="grafico_lluvia"></div>
+            <p id="p_descripcion_lluvia" class="p_descripcion"></p>
+        </div>
+        <div id="scrollToHere">
+        </div>
+        <div id="fondoPopup" class="fondoproceso">&nbsp;</div>
+        <div id="PopupEnProceso" class="ventanaproceso" style="overflow:hidden">
+            <div id="loading_wrap">
+                <img src="~/imagenes/CargaPrecios/loading.gif" />
+            </div>
+        </div>
+    </div>
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/font-all.js"></script>
+    <script src="~/Scripts/Infoclima/InfoClima.js?v=@ViewData["qversion"]"></script>
+</body>
+</html>

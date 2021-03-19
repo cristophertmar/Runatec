@@ -1,0 +1,68 @@
+﻿
+@{
+    ViewBag.Title = "CargaUsuarios";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Carga de Precios</title>
+    <link href="~/Content/Mantenimiento/CargaUsuarios.css?v=@ViewData["qversion"]" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div>
+        <input id="version_v" value=@ViewData["qversion"] style="display:none">
+    </div>
+    <div>
+        <div>
+            <table class="tabla_inputs">
+
+                <tr>
+                    <td>
+                        <input class="file-path validate" type="file" id="excelusuario" accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" />
+                    </td>
+                    <td>
+                        <input class="boton" type="button" id="btnImportarUsuario" style="cursor:pointer" value="Importar" />
+                    </td>
+                    <td>
+                        <input class="boton" type="button" id="btnProcesarUsuario" style="cursor:pointer" value="Procesar Registros" />
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+
+
+        <div>
+            <table class="tabla_carga">
+                <thead>
+                    <tr id="agregarcomunidad"></tr>
+                    <tr>
+                        <td>N°</td>
+                        <td>Nombres</td>
+                        <td>Apellido Paterno</td>
+                        <td>Apellido Materno</td>
+                        <td>DNI</td>
+                        <td>Celular</td>
+                        <td>Estado</td>
+                    </tr>
+                </thead>
+                <tbody id="GridListar"></tbody>
+            </table>
+        </div>
+
+    </div>
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/jquery-ui.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/xlsx.full.min.js"></script>
+    <script src="~/Scripts/Mantenimiento/CargaUsuarios.js?v=@ViewData["qversion"]"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,92 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/CargaPrecios/historicopreciospublico.css?v=@ViewData["qversion"]" rel="stylesheet" />
+
+    <title>Histórico de Precios</title>
+</head>
+
+<body>
+    <div id="contenedor_total">
+        <div>
+            <input id="version_v" value=@ViewData["qversion"] style="display:none">
+        </div>
+        <div class="text-center"><label id="titulo" class="titulo"></label></div>
+        <div>
+            <div id="contenedor_filtros">
+                <div id="contenedor_prodmerc">
+                    <div>
+                        <label class="lab" for="txtproducto">Producto:</label>
+                        <input type="text" id="txtproducto" class="form-control" />
+                    </div>
+                    <div>
+                        <label class="lab">Mercado:</label>
+                        <select id="select_mercado" class="form-control"></select>
+                    </div>
+                </div>
+                <div id="contenedor_fecha">
+                    <div>
+                        <label class="lab" for="txtfechainicio">Fecha de Inicio:</label>
+                        <input type="date" id="txtfechainicio" class="form-control" />
+                    </div>
+                    <div>
+                        <label class="lab" for="txtfechafin">Fecha de Fin:</label>
+                        <input type="date" id="txtfechafin" class="form-control" />
+                    </div>
+                </div>
+                    <div>
+                        <a class="btn btn-success" id="btnBuscar">Buscar</a>
+                    </div>
+            </div>
+
+            <div>
+                <table id="table_list" class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col" style="display:none;">ID</th>
+                            <th scope="col">N°</th>
+                            <th scope="col">Fecha</th>
+                            <th scope="col">Mercado</th>
+                            <th scope="col">Producto</th>
+                            <th scope="col">Promedio</th>
+                        </tr>
+                    </thead>
+                    <tbody id="GridListar"></tbody>
+                </table>
+            </div>
+
+        </div>
+        <div id="div_paginacion" class="div_paginacion"></div>
+
+    </div>
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/CargaPrecios/HistoricoPreciosPublico.js?v=@ViewData["qversion"]"></script>
+
+    <link href="~/Content/LayoutPublico/css/bootstrap-fullscreen-select.css" rel="stylesheet" />
+    <script src="~/Scripts/LayoutPublico/js/bootstrap-fullscreen-select.min.js"></script>
+
+    <script>
+        //Cuando el dispositivo es de menos de 700px de ancho 
+        if ($(window).width() <= 700) {
+            //se usa el select mobile
+            $("#select_mercado").addClass("mobileSelect");
+
+            $('.mobileSelect').mobileSelect({
+                animation: 'scale',
+                animationSpeed: 400
+            });
+            //la tabla tiene clase responsive
+            $("#table_list").removeClass("table");
+            $("#table_list").removeClass("table-hover");
+            $("#table_list").addClass("table-responsive");
+        }
+    </script>
+</body>
+</html>

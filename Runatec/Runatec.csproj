@@ -1,0 +1,619 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{426D4667-B60D-4CA9-BF88-897031F92087}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Runatec</RootNamespace>
+    <AssemblyName>Runatec</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EPPlus, Version=4.1.0.0, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
+      <HintPath>..\packages\EPPlus.4.1.0\lib\net40\EPPlus.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.1\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.0.0\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.0.0\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.0.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.0.0\lib\net45\Microsoft.AI.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.0.0\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.0.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="OfficeOpenXml.Extends, Version=1.0.6.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\OfficeOpenXml.Extends.1.0.6.0\lib\net40\OfficeOpenXml.Extends.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="RestSharp, Version=106.0.0.0, Culture=neutral, PublicKeyToken=598062e77f915f75, processorArchitecture=MSIL">
+      <HintPath>..\packages\RestSharp.106.10.1\lib\net452\RestSharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\CalificacionController.cs" />
+    <Compile Include="Controllers\ConsultaController.cs" />
+    <Compile Include="Controllers\ConsultaDinamicaController.cs" />
+    <Compile Include="Controllers\ContactoController.cs" />
+    <Compile Include="Controllers\CrearCuentaController.cs" />
+    <Compile Include="Controllers\fileUploadController.cs" />
+    <Compile Include="Controllers\GestionContenidosController.cs" />
+    <Compile Include="Controllers\GraficoPreciosController.cs" />
+    <Compile Include="Controllers\InfoClimaController.cs" />
+    <Compile Include="Controllers\InicioController.cs" />
+    <Compile Include="Controllers\MantenimientoController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\MenuController.cs" />
+    <Compile Include="Controllers\MesaAyudaController.cs" />
+    <Compile Include="Controllers\PrecioController.cs" />
+    <Compile Include="Controllers\ServicesController.cs" />
+    <Compile Include="Controllers\SuscripcionController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\css\main.css" />
+    <Content Include="assets\img\banner\logo.JPG" />
+    <Content Include="assets\img\banner\playstore.svg" />
+    <Content Include="assets\img\carrousel\banner1.jpg" />
+    <Content Include="assets\img\carrousel\banner2.jpg" />
+    <Content Include="assets\img\carrousel\banner3.jpg" />
+    <Content Include="assets\img\footer\facebook.svg" />
+    <Content Include="assets\img\footer\logo-footer.jpg" />
+    <Content Include="assets\img\footer\logo_1.svg" />
+    <Content Include="assets\img\footer\logo_2.svg" />
+    <Content Include="assets\img\footer\twitter.svg" />
+    <Content Include="assets\img\footer\youtube.svg" />
+    <Content Include="assets\img\iconos\flecha_abajo.svg" />
+    <Content Include="assets\img\iconos\icon_consulta.svg" />
+    <Content Include="assets\img\iconos\icon_costos.svg" />
+    <Content Include="assets\img\iconos\icon_iclima.svg" />
+    <Content Include="assets\img\iconos\icon_itecnica.svg" />
+    <Content Include="assets\img\iconos\icon_mesaayuda.svg" />
+    <Content Include="assets\img\iconos\icon_oportunidades.svg" />
+    <Content Include="assets\img\iconos\icon_precio.svg" />
+    <Content Include="assets\img\parallax\parallax1.jpg" />
+    <Content Include="assets\js\slider.js" />
+    <Content Include="assets\video\shaskis_video.mp4" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Calificacion\servicio.css" />
+    <Content Include="Content\CargaPrecios\analisisprecios.css" />
+    <Content Include="Content\CargaPrecios\analisispromedios.css" />
+    <Content Include="Content\CargaPrecios\cargaprecios.css" />
+    <Content Include="Content\CargaPrecios\historicoprecios.css" />
+    <Content Include="Content\CargaPrecios\historicopreciospublico.css" />
+    <Content Include="Content\CargaPrecios\preciosventa.css" />
+    <Content Include="Content\CargaPrecios\procesarprecios.css" />
+    <Content Include="Content\Consulta\graficoclima.css" />
+    <Content Include="Content\Consulta\ListarSMSEnviados.css" />
+    <Content Include="Content\Contacto\Contacto.css" />
+    <Content Include="Content\CrearCuenta\crearcuenta.css" />
+    <Content Include="Content\CrearCuenta\cuentascliente.css" />
+    <Content Include="Content\GestionContenidos\GestionContenidosListar.css" />
+    <Content Include="Content\GestionContenidos\GestionContenidos_Detalles.css" />
+    <Content Include="Content\GraficoPrecios\graficoprecios.css" />
+    <Content Include="Content\GraficoPrecios\multiselect2.css" />
+    <Content Include="Content\GraficoPrecios\multiselect.css" />
+    <Content Include="Content\Infoclima\InfoClima.css" />
+    <Content Include="Content\Inicio\inicio.css" />
+    <Content Include="Content\Inicio\IrNoticia.css" />
+    <Content Include="Content\Inicio\Noticia.css" />
+    <Content Include="Content\LayoutPublico\css\bootstrap-fullscreen-select.css" />
+    <Content Include="Content\LayoutPublico\css\bootstrap.min.css" />
+    <Content Include="Content\LayoutPublico\css\font-awesome.min.css" />
+    <Content Include="Content\LayoutPublico\css\font.css" />
+    <Content Include="Content\LayoutPublico\css\layers.css" />
+    <Content Include="Content\LayoutPublico\css\magnific-popup.css" />
+    <Content Include="Content\LayoutPublico\css\navigation.css" />
+    <Content Include="Content\LayoutPublico\css\nice-select.css" />
+    <Content Include="Content\LayoutPublico\css\range.css" />
+    <Content Include="Content\LayoutPublico\css\settings.css" />
+    <Content Include="Content\LayoutPublico\css\swiper.min.css" />
+    <Content Include="Content\LayoutPublico\layoutpublico.css" />
+    <Content Include="Content\jquery-ui.css" />
+    <Content Include="Content\LayoutPublico\style.css" />
+    <Content Include="Content\Login\login.css" />
+    <Content Include="Content\Layout\layout.css" />
+    <Content Include="Content\Mantenimiento\CargaUsuarios.css" />
+    <Content Include="Content\Mantenimiento\Editorial.css" />
+    <Content Include="Content\Mantenimiento\GestionContenidos.css" />
+    <Content Include="Content\Mantenimiento\GestionContenidos_Registro.css" />
+    <Content Include="Content\Mantenimiento\listarmercado.css" />
+    <Content Include="Content\Mantenimiento\ListarPreferencia.css" />
+    <Content Include="Content\Mantenimiento\listarproducto.css" />
+    <Content Include="Content\Mantenimiento\ListarUsuario.css" />
+    <Content Include="Content\Mantenimiento\Noticia.css" />
+    <Content Include="Content\Mantenimiento\SMSConfiguracionEnvio.css" />
+    <Content Include="Content\Mantenimiento\SMSPrecio.css" />
+    <Content Include="Content\Mantenimiento\Clima.css" />
+    <Content Include="Content\MesaAyuda\AsignarCategoria.css" />
+    <Content Include="Content\MesaAyuda\AtenderSolicitud.css" />
+    <Content Include="Content\MesaAyuda\Calificacion.css" />
+    <Content Include="Content\MesaAyuda\Consulta.css" />
+    <Content Include="Content\MesaAyuda\DetalleCalificacion.css" />
+    <Content Include="Content\MesaAyuda\MesaAyuda.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="flexmonster\lib\canvg.min.js" />
+    <Content Include="flexmonster\lib\d3.v3.min.js" />
+    <Content Include="flexmonster\lib\flexmonster.amcharts.js" />
+    <Content Include="flexmonster\lib\flexmonster.fusioncharts.js" />
+    <Content Include="flexmonster\lib\flexmonster.googlecharts.js" />
+    <Content Include="flexmonster\lib\flexmonster.highcharts.js" />
+    <Content Include="flexmonster\lib\html2canvas.min.js" />
+    <Content Include="flexmonster\lib\jquery.min.js" />
+    <Content Include="flexmonster\lib\jspdf.min.js" />
+    <Content Include="flexmonster\lib\promise.min.js" />
+    <Content Include="flexmonster\lib\sha1.min.js" />
+    <Content Include="flexmonster\theme\accessible\flexmonster.css" />
+    <Content Include="flexmonster\theme\accessible\flexmonster.min.css" />
+    <Content Include="flexmonster\theme\assets\flexmonster-icons.svg" />
+    <Content Include="flexmonster\theme\blackorange\flexmonster.css" />
+    <Content Include="flexmonster\theme\blackorange\flexmonster.min.css" />
+    <Content Include="flexmonster\theme\brightorange\flexmonster.css" />
+    <Content Include="flexmonster\theme\brightorange\flexmonster.min.css" />
+    <Content Include="flexmonster\theme\dark\flexmonster.css" />
+    <Content Include="flexmonster\theme\dark\flexmonster.min.css" />
+    <Content Include="flexmonster\theme\green\flexmonster.css" />
+    <Content Include="flexmonster\theme\green\flexmonster.min.css" />
+    <Content Include="flexmonster\theme\lightblue\flexmonster.css" />
+    <Content Include="flexmonster\theme\lightblue\flexmonster.min.css" />
+    <Content Include="flexmonster\theme\macos\flexmonster.css" />
+    <Content Include="flexmonster\theme\macos\flexmonster.min.css" />
+    <Content Include="flexmonster\theme\midnight\flexmonster.css" />
+    <Content Include="flexmonster\theme\midnight\flexmonster.min.css" />
+    <Content Include="flexmonster\theme\old\flexmonster.css" />
+    <Content Include="flexmonster\theme\old\flexmonster.min.css" />
+    <Content Include="flexmonster\theme\orange\flexmonster.css" />
+    <Content Include="flexmonster\theme\orange\flexmonster.min.css" />
+    <Content Include="flexmonster\theme\purple\flexmonster.css" />
+    <Content Include="flexmonster\theme\purple\flexmonster.min.css" />
+    <Content Include="flexmonster\theme\softdefault\flexmonster.css" />
+    <Content Include="flexmonster\theme\softdefault\flexmonster.min.css" />
+    <Content Include="flexmonster\theme\stripedblue\flexmonster.css" />
+    <Content Include="flexmonster\theme\stripedblue\flexmonster.min.css" />
+    <Content Include="flexmonster\theme\stripedteal\flexmonster.css" />
+    <Content Include="flexmonster\theme\stripedteal\flexmonster.min.css" />
+    <Content Include="flexmonster\theme\teal\flexmonster.css" />
+    <Content Include="flexmonster\theme\teal\flexmonster.min.css" />
+    <Content Include="flexmonster\theme\yellow\flexmonster.css" />
+    <Content Include="flexmonster\theme\yellow\flexmonster.min.css" />
+    <Content Include="flexmonster\toolbar\flexmonster.toolbar.js" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\Site.css" />
+    <Content Include="imagenes\buzon.png" />
+    <Content Include="imagenes\calendar.png" />
+    <Content Include="imagenes\CargaPrecios\loading2.gif" />
+    <Content Include="imagenes\CargaPrecios\loading.gif" />
+    <Content Include="imagenes\correo.png" />
+    <Content Include="imagenes\download.png" />
+    <Content Include="imagenes\Editorial\Editorial01.jpeg" />
+    <Content Include="imagenes\garden_service1.png" />
+    <Content Include="imagenes\garden_underline3.png" />
+    <Content Include="imagenes\Inicio\slider1.jpg" />
+    <Content Include="imagenes\Login\fondo1.jpg" />
+    <Content Include="imagenes\Login\fondo2.jpg" />
+    <Content Include="imagenes\Login\logo.png" />
+    <Content Include="imagenes\logo2.png" />
+    <Content Include="imagenes\logobig.png" />
+    <Content Include="imagenes\logochaskis.png" />
+    <Content Include="imagenes\logoprincipal_chaskis.png" />
+    <Content Include="imagenes\logo_runatec.png" />
+    <Content Include="imagenes\Noticia\Noticia01.png" />
+    <Content Include="imagenes\Noticia\Noticia02.png" />
+    <Content Include="imagenes\Noticia\Noticia03.png" />
+    <Content Include="imagenes\Noticia\Noticia04.jpg" />
+    <Content Include="imagenes\Noticia\Noticia05.jpg" />
+    <Content Include="imagenes\question.png" />
+    <Content Include="Scripts\ai.0.22.9-build00167.js" />
+    <Content Include="Scripts\ai.0.22.9-build00167.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="flexmonster\theme\accessible\flexmonster.less" />
+    <Content Include="flexmonster\theme\assets\flexmonster-icons.eot" />
+    <Content Include="flexmonster\theme\assets\flexmonster-icons.ttf" />
+    <Content Include="flexmonster\theme\assets\flexmonster-icons.woff" />
+    <Content Include="flexmonster\theme\blackorange\flexmonster.less" />
+    <Content Include="flexmonster\theme\brightorange\flexmonster.less" />
+    <Content Include="flexmonster\theme\dark\flexmonster.less" />
+    <Content Include="flexmonster\theme\default\flexmonster.less" />
+    <Content Include="flexmonster\theme\flexmonster-base.less" />
+    <Content Include="flexmonster\theme\green\flexmonster.less" />
+    <Content Include="flexmonster\theme\lightblue\flexmonster.less" />
+    <Content Include="flexmonster\theme\macos\flexmonster.less" />
+    <Content Include="flexmonster\theme\midnight\flexmonster.less" />
+    <Content Include="flexmonster\theme\old\flexmonster.less" />
+    <Content Include="flexmonster\theme\orange\flexmonster.less" />
+    <Content Include="flexmonster\theme\purple\flexmonster.less" />
+    <Content Include="flexmonster\theme\softdefault\flexmonster.less" />
+    <Content Include="flexmonster\theme\stripedblue\flexmonster.less" />
+    <Content Include="flexmonster\theme\stripedteal\flexmonster.less" />
+    <Content Include="flexmonster\theme\teal\flexmonster.less" />
+    <Content Include="flexmonster\theme\yellow\flexmonster.less" />
+    <None Include="Properties\PublishProfiles\20191211.pubxml" />
+    <None Include="Properties\PublishProfiles\20200128.pubxml" />
+    <None Include="Properties\PublishProfiles\20200203.pubxml" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\Calificacion\servicio.js" />
+    <Content Include="Scripts\CargaPrecios\AnalisisPrecios.js" />
+    <Content Include="Scripts\CargaPrecios\AnalisisPromedios.js" />
+    <Content Include="Scripts\CargaPrecios\cargaprecios.js" />
+    <Content Include="Scripts\CargaPrecios\HistoricoPreciosPublico.js" />
+    <Content Include="Scripts\CargaPrecios\HistoricoPrecios.js" />
+    <Content Include="Scripts\CargaPrecios\PreciosVenta.js" />
+    <Content Include="Scripts\CargaPrecios\ProcesarPrecios.js" />
+    <Content Include="Scripts\Clima\clima.js" />
+    <Content Include="Scripts\Consulta\ListarSMSEnviados.js" />
+    <Content Include="Scripts\CrearCuenta\crearcuenta.js" />
+    <Content Include="flexmonster\flexmonster.css" />
+    <Content Include="flexmonster\flexmonster.es5.js" />
+    <Content Include="flexmonster\flexmonster.js" />
+    <Content Include="flexmonster\flexmonster.min.css" />
+    <Content Include="Scripts\GestionContenidos\GestionContenidosDetalles.js" />
+    <Content Include="Scripts\GestionContenidos\GestionContenidosListar.js" />
+    <Content Include="Scripts\GraficoPrecios\multiselect2.js" />
+    <Content Include="Scripts\Infoclima\InfoClima.js" />
+    <Content Include="Scripts\Inicio\IrNoticia.js" />
+    <Content Include="Scripts\LayoutPublico\js\ai.0.22.9-build00167.js" />
+    <Content Include="Scripts\LayoutPublico\js\ai.0.22.9-build00167.min.js" />
+    <Content Include="Scripts\LayoutPublico\js\bootstrap-fullscreen-select.min.js" />
+    <Content Include="Scripts\LayoutPublico\js\bootstrap.js" />
+    <Content Include="Scripts\LayoutPublico\js\bootstrap.min.js" />
+    <Content Include="Scripts\LayoutPublico\js\custom.js" />
+    <Content Include="Scripts\LayoutPublico\js\isotope.min.js" />
+    <None Include="Scripts\LayoutPublico\js\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\LayoutPublico\js\jquery-1.10.2.js" />
+    <Content Include="Scripts\LayoutPublico\js\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\LayoutPublico\js\jquery.appear.js" />
+    <Content Include="Scripts\LayoutPublico\js\jquery.countTo.js" />
+    <Content Include="Scripts\LayoutPublico\js\jquery.js" />
+    <Content Include="Scripts\LayoutPublico\js\jquery.themepunch.revolution.min.js" />
+    <Content Include="Scripts\LayoutPublico\js\jquery.themepunch.tools.min.js" />
+    <None Include="Scripts\LayoutPublico\js\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\LayoutPublico\js\jquery.validate.js" />
+    <Content Include="Scripts\LayoutPublico\js\jquery.validate.min.js" />
+    <Content Include="Scripts\LayoutPublico\js\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\LayoutPublico\js\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\LayoutPublico\js\magnific-popup.min.js" />
+    <Content Include="Scripts\LayoutPublico\js\modernizr-2.6.2.js" />
+    <Content Include="Scripts\LayoutPublico\js\nice-select.min.js" />
+    <Content Include="Scripts\LayoutPublico\js\range.js" />
+    <Content Include="Scripts\LayoutPublico\js\respond.js" />
+    <Content Include="Scripts\LayoutPublico\js\respond.min.js" />
+    <Content Include="Scripts\LayoutPublico\js\revolution.extension.actions.min.js" />
+    <Content Include="Scripts\LayoutPublico\js\revolution.extension.carousel.min.js" />
+    <Content Include="Scripts\LayoutPublico\js\revolution.extension.kenburn.min.js" />
+    <Content Include="Scripts\LayoutPublico\js\revolution.extension.layeranimation.min.js" />
+    <Content Include="Scripts\LayoutPublico\js\revolution.extension.migration.min.js" />
+    <Content Include="Scripts\LayoutPublico\js\revolution.extension.navigation.min.js" />
+    <Content Include="Scripts\LayoutPublico\js\revolution.extension.parallax.min.js" />
+    <Content Include="Scripts\LayoutPublico\js\revolution.extension.slideanims.min.js" />
+    <Content Include="Scripts\LayoutPublico\js\revolution.extension.video.min.js" />
+    <Content Include="Scripts\LayoutPublico\js\swiper.min.js" />
+    <None Include="Scripts\LayoutPublico\js\_references.js" />
+    <Content Include="Scripts\Mantenimiento\Clima\HorasLuz.js" />
+    <Content Include="Scripts\Mantenimiento\Clima\Lluvia.js" />
+    <Content Include="Scripts\Mantenimiento\Clima\Nubosidad.js" />
+    <Content Include="Scripts\Mantenimiento\Clima\Precipitacion.js" />
+    <Content Include="Scripts\Mantenimiento\Clima\Temperatura.js" />
+    <Content Include="Scripts\Mantenimiento\Editorial.js" />
+    <Content Include="Scripts\Mantenimiento\GestionContenidos.js" />
+    <Content Include="Scripts\Mantenimiento\GestionContenidos_Registro.js" />
+    <Content Include="Scripts\Mantenimiento\Noticia.js" />
+    <Content Include="Scripts\MesaAyuda\AsignarCategoria.js" />
+    <Content Include="Scripts\MesaAyuda\AtenderSolicitud.js" />
+    <Content Include="Scripts\MesaAyuda\Calificacion.js" />
+    <Content Include="Scripts\MesaAyuda\Consulta.js" />
+    <Content Include="Scripts\MesaAyuda\DetalleCalificacion.js" />
+    <Content Include="Scripts\MesaAyuda\MesaAyuda.js" />
+    <Content Include="Scripts\Suscripcion\cuentascliente.js" />
+    <Content Include="Scripts\font-all.js" />
+    <Content Include="Scripts\GraficoPrecios\data.js" />
+    <Content Include="Scripts\GraficoPrecios\exporting.js" />
+    <Content Include="Scripts\GraficoPrecios\graficoprecios.js" />
+    <Content Include="Scripts\GraficoPrecios\highcharts-3d.js" />
+    <Content Include="Scripts\GraficoPrecios\highcharts.js" />
+    <Content Include="Scripts\GraficoPrecios\jquery.js" />
+    <Content Include="Scripts\GraficoPrecios\multiselect.js" />
+    <Content Include="Scripts\GraficoPrecios\solid-gauge.js" />
+    <Content Include="Scripts\icons.js" />
+    <Content Include="Scripts\Inicio\Noticia.js" />
+    <Content Include="Scripts\LayoutPublico\layoutpublico.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery-ui.min.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\Layout\layout.js" />
+    <Content Include="Scripts\Login\login.js" />
+    <Content Include="Scripts\Mantenimiento\CargaUsuarios.js" />
+    <Content Include="Scripts\Mantenimiento\SMSConfiguracionEnvio.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\Mantenimiento\ListarMercado.js" />
+    <Content Include="Scripts\Mantenimiento\ListarPreferencia.js" />
+    <Content Include="Scripts\Mantenimiento\ListarProducto.js" />
+    <Content Include="Scripts\Mantenimiento\ListarUsuario.js" />
+    <Content Include="Scripts\Mantenimiento\SMSPrecio.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\xlsx.full.min.js" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Login\Login.cshtml" />
+    <Content Include="Views\Menu\Menu.cshtml" />
+    <Content Include="Views\Precio\PlantillaCargaPrecios.cshtml" />
+    <Content Include="Views\Mantenimiento\ListarMercado.cshtml" />
+    <Content Include="Views\Mantenimiento\ListarProducto.cshtml" />
+    <Content Include="Views\Precio\ProcesarPrecios.cshtml" />
+    <Content Include="Views\Mantenimiento\ListarPreferencia.cshtml" />
+    <Content Include="Views\Mantenimiento\ListarUsuario.cshtml" />
+    <Content Include="Views\Mantenimiento\SMSPrecio.cshtml" />
+    <Content Include="Views\Inicio\Inicio.cshtml" />
+    <Content Include="Views\Shared\_Layout_Publico.cshtml" />
+    <Content Include="Views\GraficoPrecios\GraficoPrecios.cshtml" />
+    <Content Include="Views\Consulta\ListarSMSEnviados.cshtml" />
+    <Content Include="Views\CrearCuenta\CrearCuenta.cshtml" />
+    <Content Include="Views\Suscripcion\CuentasCliente.cshtml" />
+    <Content Include="Views\Inicio\Noticia.cshtml" />
+    <Content Include="Views\Mantenimiento\SMSConfiguracionEnvio.cshtml" />
+    <Content Include="Views\Mantenimiento\CargaUsuarios.cshtml" />
+    <Content Include="Views\Precio\HistoricoPrecios.cshtml" />
+    <Content Include="Views\Precio\PreciosVenta.cshtml" />
+    <Content Include="Views\Precio\AnalisisPromedios.cshtml" />
+    <Content Include="Views\Mantenimiento\Noticia.cshtml" />
+    <Content Include="Views\Mantenimiento\Editorial.cshtml" />
+    <Content Include="Views\MesaAyuda\MesaAyuda.cshtml" />
+    <Content Include="Views\MesaAyuda\Solicitud.cshtml" />
+    <Content Include="Views\MesaAyuda\AtenderSolicitud.cshtml" />
+    <Content Include="Views\MesaAyuda\AsignarCategoria.cshtml" />
+    <Content Include="Views\Calificacion\Servicio.cshtml" />
+    <Content Include="Views\MesaAyuda\Calificacion.cshtml" />
+    <Content Include="Views\Mantenimiento\Temperatura.cshtml" />
+    <Content Include="Views\Mantenimiento\Nubosidad.cshtml" />
+    <Content Include="Views\Mantenimiento\Precipitacion.cshtml" />
+    <Content Include="Views\Consulta\Clima.cshtml" />
+    <Content Include="Views\InfoClima\InfoClima.cshtml" />
+    <Content Include="Views\Precio\AnalisisPrecios.cshtml" />
+    <Content Include="Views\MesaAyuda\DetalleCalificacion.cshtml" />
+    <Content Include="Views\Mantenimiento\HorasLuz.cshtml" />
+    <Content Include="Views\Contacto\Contacto.cshtml" />
+    <Content Include="Views\Inicio\IrNoticia.cshtml" />
+    <Content Include="Views\Precio\HistoricoPreciosPublico.cshtml" />
+    <Content Include="Views\ConsultaDinamica\ConsultaDinamica.cshtml" />
+    <Content Include="Scripts\LayoutPublico\js\jquery-1.10.2.min.map" />
+    <Content Include="Views\Mantenimiento\GestionContenidos.cshtml" />
+    <Content Include="Views\Mantenimiento\GestionContenidos_Registro.cshtml" />
+    <Content Include="Views\GestionContenidos\GestionContenidosDetalles.cshtml" />
+    <Content Include="Views\GestionContenidos\GestionContenidosListar.cshtml" />
+    <Content Include="Views\Mantenimiento\Lluvia.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="imagenes\GestionContenido\" />
+    <Folder Include="UploadsUser\" />
+    <Folder Include="Uploads\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="packages.config" />
+    <None Include="Project_Readme.html" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CapaDatos\CapaDatos.csproj">
+      <Project>{04eb4322-e99e-4f4c-9605-9818f6052130}</Project>
+      <Name>CapaDatos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entidad\Entidad.csproj">
+      <Project>{12b602ae-b3fa-467c-9d76-e86aa966a06a}</Project>
+      <Name>Entidad</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>38112</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:38112/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

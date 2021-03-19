@@ -1,0 +1,46 @@
+﻿
+@{
+    ViewBag.Title = "Consulta de Solicitudes";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<html>
+<head>
+    <link href="~/Content/MesaAyuda/Consulta.css?v=@ViewData["qversion"]" rel="stylesheet" />
+</head>
+<body>
+    <div>
+        <input id="version_v" value=@ViewData["qversion"] style="display:none">
+    </div>
+    <h1 id="titulo"></h1>
+
+    <table class="tabla_inputs">
+        <tr>
+            <td><label>Usuario:</label></td>
+            <td><input type="text" id="txt_usuario" style="width:250px;"/></td>
+            <td><label>Categoría:</label></td>
+            <td><select id="select_categoria"></select></td>
+            <td><label>Estado:</label></td>
+            <td><select id="select_estado"></select></td>
+            <td><input type="button" id="btn_buscar" class="boton" value="BUSCAR"/></td>
+        </tr>
+    </table>
+    <table class="tabla_carga">
+        <thead>
+            <tr>
+                <td>N°</td>
+                <td>Usuario Adm</td>
+                <td>Asunto</td>
+                <td>Categoría</td>
+                <td>Estado</td>
+                <td></td>
+            </tr>
+        </thead>
+        <tbody id="tbody_listar"></tbody>
+    </table>
+    <div id="div_paginacion"></div>
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/icons.js"></script>
+    <script src="~/Scripts/MesaAyuda/Consulta.js?v=@ViewData["qversion"]"></script>
+</body>
+</html>
+

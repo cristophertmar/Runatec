@@ -1,0 +1,110 @@
+﻿
+@{
+    ViewBag.Title = "Editorial";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <link href="~/Content/jquery-ui.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-ui.min.js"></script>
+    <script src="~/Scripts/Mantenimiento/Editorial.js?v=@ViewData["qversion"]"></script>
+    <link href="~/Content/Mantenimiento/Editorial.css?v=@ViewData["qversion"]" rel="stylesheet" />
+</head>
+<body>
+    <div>
+        <input id="version_v" value=@ViewData["qversion"] style="display:none">
+    </div>
+
+    <table class="tabla_carga">
+        <thead>
+            <tr>
+                <td class="excepto"><button id="AgregarEditorial" class="boton"><i style="padding-right:3px; width:8px;" class="fas fa-plus"></i>Agregar</button></td>
+            </tr>
+            <tr>
+                <td>Título</td>
+                <td>Contenido</td>
+                <td>Estado</td>
+                <td></td>
+            </tr>
+        </thead>
+        <tbody id="tablaeditorial"></tbody>
+    </table>
+
+    @*popup noticia*@
+    <div id="fondoPopup" class="fondo">&nbsp;</div>
+    <div id="PopupEditorial" class="ventana" style="overflow:hidden">
+        <div id="PopupEditorialdivheader" style="width:100%;">
+            <table style="width:100% ; border-spacing:0px 0px; ">
+                <tr style="background:rgb(25,165,25);" onmouseover="this.style.cursor='move'">
+                    <td style="width:100%; height:40px; text-align:center;">
+                        &nbsp;&nbsp;
+                        <span id="tituloPopup">&nbsp;</span>&nbsp;&nbsp;
+                    </td>
+                    <td id="CerrarPopupEditorial" onclick="CerrarPopupEditorial();">
+                        <span><i class="far fa-window-close iconocerrar"></i></span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <table class="tablapopup" style="margin:auto; padding:5px">
+                <tr style="display:none;"><td colspan="2"><input id="txt_ideditorial" /></td></tr>
+                <tr>
+                    <td colspan="2" id="campo_imagen" class="centrar"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="centrar">
+                        <label id="labelfile" for="txt_imagen" class="labelfile"><i class="fas fa-upload"></i> Elige una imagen</label>
+                        <input id="txt_imagen" class="file" type="file" accept="image/*" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="titulo">Título:</td>
+                </tr>
+                <tr>
+                    <td colspan="2"><textarea id="txt_titulo"></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="titulo">Contenido:</td>
+                </tr>
+                <tr>
+                    <td colspan="2"><textarea id="txt_contenido"></textarea></td>
+
+                </tr>
+                <tr>
+                    <td class="titulo">Estado:</td>
+                </tr>
+                <tr>
+                    <td>
+                        <select id="select_estado">
+                            <option value="">--Seleccionar--</option>
+                            <option value="0">INACTIVO</option>
+                            <option value="1">ACTIVO</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <table style="margin:auto">
+                <tr></tr>
+                <tr>
+                    <td>
+                        <input type="button" class="boton" id="GrabarEditorial" value="Grabar" />
+                    </td>
+                    <td>
+                        <input type="button" class="boton" onclick="CerrarPopupEditorial();" value="Cancelar" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+</body>
+</html>
+
+
+

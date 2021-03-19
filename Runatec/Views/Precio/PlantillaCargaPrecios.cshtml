@@ -1,0 +1,84 @@
+﻿
+@{
+    ViewBag.Title = "PlantillaCargaPrecios";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Carga de Precios</title>
+    <link href="~/Content/CargaPrecios/cargaprecios.css?v=@ViewData["qversion"]" rel="stylesheet" />
+</head>
+
+<body>
+    <div>
+        <input id="version_v" value=@ViewData["qversion"] style="display:none">
+    </div>
+    <div>
+        <div>
+            <table class="tabla_inputs">
+
+                <tr>
+                    <td>
+                        <input class="file-path validate" type="file" id="fileexcel" accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" />
+                    </td>
+                    <td>
+                        <input class="boton" type="button" id="idImportar" style="cursor:pointer" value="Importar" />
+                    </td>
+                    <td>
+                        <input class="boton" type="button" id="idProcesar" style="cursor:pointer" value="Procesar Registros" />
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+
+
+        <div>
+            <table class="tabla_carga">
+                <thead>
+                    <tr id="agregarmercado">
+                    </tr>
+                    <tr>
+
+                        <td>ID Producto</td>
+                        <td>Descripción</td>
+                        <td>Medida</td>
+                        <td>Precio 1</td>
+                        <td>Precio 2</td>
+                        <td>Precio 3</td>
+                        <td>Precio 4</td>
+                        <td>Precio 5</td>
+                        <td>Precio 6</td>
+                        <td>Precio 7</td>
+                        <td>Precio 8</td>
+                        <td>Precio 9</td>
+                        <td>Precio 10</td>
+                        <td>Estado</td>
+                    </tr>
+                </thead>
+                <tbody id="GridListar">
+
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+    @*Div Loading (Cargando) *@
+    <div id='loading_wrap'>
+        <img src="~/imagenes/CargaPrecios/loading.gif" />
+    </div>
+    <link href="~/Content/CargaPrecios/cargaprecios.css?v=@ViewData["qversion"]" rel="stylesheet" />
+
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/jquery-ui.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/xlsx.full.min.js"></script>
+    <script src="~/Scripts/CargaPrecios/cargaprecios.js?v=@ViewData["qversion"]"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,49 @@
+﻿.lab {
+    font-size: 15px;
+    margin: auto 0;
+    color: #19a819;
+}
+#contenedor_filtros{
+    display:block;
+}
+#contenedor_filtros div{
+    margin-right:10px;
+}
+    #contenedor_prodmerc, #contenedor_fecha {
+        display: flex;
+        margin-bottom: 10px;
+    }
+    #contenedor_prodmerc div input, #contenedor_prodmerc div select{
+        width:400px;
+    }
+    #contenedor_fecha div input{
+        width:200px;
+    }
+
+
+@media (min-width: 701px) {
+    button .btn-mobileSelect-gen:not([class*=col-]):not([class*=form-control]):not(.input-group-btn):not(.btn-block), input[type="text"], select {
+        width: 50%;
+    }
+
+    input[type="date"] {
+        width: 20%;
+    }
+}
+@media (max-width: 700px) {
+    button.btn-mobileSelect-gen:not([class*=col-]):not([class*=form-control]):not(.input-group-btn):not(.btn-block) {
+        width: 100%;
+    }
+        #contenedor_prodmerc, #contenedor_fecha {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        #contenedor_prodmerc div input, #contenedor_prodmerc div select {
+            width: 100%;
+        }
+
+        #contenedor_fecha div input {
+            width: 100%;
+        }
+}

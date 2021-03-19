@@ -1,0 +1,46 @@
+﻿
+@{
+    ViewBag.Title = "Listar - Gestión Contenido";
+    Layout = null;
+}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="~/Content/GestionContenidos/GestionContenidosListar.css?v=@ViewData["qversion"]" rel="stylesheet" />
+
+</head>
+<body>
+    <div>
+        <input id="version_v" value=@ViewData["qversion"] style="display:none">
+    </div>
+    <h1 id="titulo" style="color:#19a819; margin:25px 0; text-align:center;"></h1>
+
+
+    <table class="tabla_lista">
+        <thead>
+            <tr>
+                <td class="excepto" style="display:none;"><input type="text" id="txt_fila" /></td>
+            </tr>
+            @*<tr>
+                <td style="display:none">ID</td>
+                <td>Titulo</td>
+                <td>Descripción</td>
+                <td>Imagen</td>                
+                <td></td>
+            </tr>*@
+            <tr>
+                <td></td>
+                <td></td>                
+            </tr>
+        </thead>
+        <tbody id="GridListar"></tbody>
+    </table>
+
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/font-all.js"></script>
+    <script src="~/Scripts/GestionContenidos/GestionContenidosListar.js?v=@ViewData["qversion"]"></script>
+</body>
+</html>
