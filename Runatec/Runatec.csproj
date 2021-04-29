@@ -194,6 +194,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="assets\css\bootstrap.min.css" />
     <Content Include="assets\css\main.css" />
     <Content Include="assets\img\banner\logo.JPG" />
     <Content Include="assets\img\banner\playstore.svg" />
@@ -215,6 +216,9 @@
     <Content Include="assets\img\iconos\icon_oportunidades.svg" />
     <Content Include="assets\img\iconos\icon_precio.svg" />
     <Content Include="assets\img\parallax\parallax1.jpg" />
+    <Content Include="assets\js\bootstrap.min.js" />
+    <Content Include="assets\js\jquery-3.5.1.slim.min.js" />
+    <Content Include="assets\js\popper.min.js" />
     <Content Include="assets\js\slider.js" />
     <Content Include="assets\video\shaskis_video.mp4" />
     <Content Include="Content\bootstrap.css" />

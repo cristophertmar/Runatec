@@ -966,3 +966,14 @@ C:\Users\Cristopher\Desktop\Runatec_20210125\Entidad\obj\Debug\Entidad.csproj.Co
 C:\Users\Cristopher\Desktop\Runatec_20210125\Entidad\obj\Debug\Entidad.csproj.CopyComplete
 C:\Users\Cristopher\Desktop\Runatec_20210125\Entidad\obj\Debug\Entidad.dll
 C:\Users\Cristopher\Desktop\Runatec_20210125\Entidad\obj\Debug\Entidad.pdb
+C:\Users\Cristopher\Desktop\Runatec\Runatec\Entidad\bin\Debug\Entidad.dll
+C:\Users\Cristopher\Desktop\Runatec\Runatec\Entidad\bin\Debug\Entidad.pdb
+C:\Users\Cristopher\Desktop\Runatec\Runatec\Entidad\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Cristopher\Desktop\Runatec\Runatec\Entidad\bin\Debug\RestSharp.dll
+C:\Users\Cristopher\Desktop\Runatec\Runatec\Entidad\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Cristopher\Desktop\Runatec\Runatec\Entidad\bin\Debug\RestSharp.xml
+C:\Users\Cristopher\Desktop\Runatec\Runatec\Entidad\obj\Debug\Entidad.csprojAssemblyReference.cache
+C:\Users\Cristopher\Desktop\Runatec\Runatec\Entidad\obj\Debug\Entidad.csproj.CoreCompileInputs.cache
+C:\Users\Cristopher\Desktop\Runatec\Runatec\Entidad\obj\Debug\Entidad.csproj.CopyComplete
+C:\Users\Cristopher\Desktop\Runatec\Runatec\Entidad\obj\Debug\Entidad.dll
+C:\Users\Cristopher\Desktop\Runatec\Runatec\Entidad\obj\Debug\Entidad.pdb

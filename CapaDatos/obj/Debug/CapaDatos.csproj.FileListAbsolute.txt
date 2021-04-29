@@ -1471,3 +1471,16 @@ C:\Users\Cristopher\Desktop\Runatec_20210125\CapaDatos\obj\Debug\CapaDatos.cspro
 C:\Users\Cristopher\Desktop\Runatec_20210125\CapaDatos\obj\Debug\CapaDatos.csproj.CopyComplete
 C:\Users\Cristopher\Desktop\Runatec_20210125\CapaDatos\obj\Debug\CapaDatos.dll
 C:\Users\Cristopher\Desktop\Runatec_20210125\CapaDatos\obj\Debug\CapaDatos.pdb
+C:\Users\Cristopher\Desktop\Runatec\Runatec\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\Cristopher\Desktop\Runatec\Runatec\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\Cristopher\Desktop\Runatec\Runatec\CapaDatos\bin\Debug\Entidad.dll
+C:\Users\Cristopher\Desktop\Runatec\Runatec\CapaDatos\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Cristopher\Desktop\Runatec\Runatec\CapaDatos\bin\Debug\RestSharp.dll
+C:\Users\Cristopher\Desktop\Runatec\Runatec\CapaDatos\bin\Debug\Entidad.pdb
+C:\Users\Cristopher\Desktop\Runatec\Runatec\CapaDatos\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Cristopher\Desktop\Runatec\Runatec\CapaDatos\bin\Debug\RestSharp.xml
+C:\Users\Cristopher\Desktop\Runatec\Runatec\CapaDatos\obj\Debug\CapaDatos.csprojAssemblyReference.cache
+C:\Users\Cristopher\Desktop\Runatec\Runatec\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
+C:\Users\Cristopher\Desktop\Runatec\Runatec\CapaDatos\obj\Debug\CapaDatos.csproj.CopyComplete
+C:\Users\Cristopher\Desktop\Runatec\Runatec\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\Cristopher\Desktop\Runatec\Runatec\CapaDatos\obj\Debug\CapaDatos.pdb
